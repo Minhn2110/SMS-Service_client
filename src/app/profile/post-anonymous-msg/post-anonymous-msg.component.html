@@ -1,0 +1,54 @@
+<!-- Dashboard Headline -->
+<div class="dashboard-headline">
+	<h3>Send message to anonymous person</h3>
+
+	<!-- Breadcrumbs -->
+	<nav id="breadcrumbs" class="dark">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Dashboard</a></li>
+			<li>Post a message</li>
+		</ul>
+	</nav>
+</div>
+
+<!-- Row -->
+<div class="row">
+	<form [formGroup]="postAnonymousMsgForm" (ngSubmit)="onSubmit()" style="width: 100%">
+
+		<!-- Dashboard Box -->
+		<div class="col-xl-12">
+			<div class="dashboard-box margin-top-0">
+
+				<!-- Headline -->
+				<div class="headline">
+					<h3><i class="icon-feather-folder-plus"></i> Message Form</h3>
+				</div>
+
+				<div class="content with-padding padding-bottom-10">
+					<div class="row">
+						<div class="col-xl-4">
+							<div class="submit-field">
+								<h5>Phone Number</h5>
+								<input type="text" class="with-border" formControlName="phoneNumber">
+							</div>
+						</div>
+
+						<div class="col-xl-12">
+							<div class="submit-field">
+								<h5>Message</h5>
+								<textarea cols="30" rows="5" class="with-border" formControlName="content"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xl-12">
+			<button type="submit" class="button ripple-effect big margin-top-30"><i class="icon-feather-plus"></i> Send Message</button>
+		</div>
+	</form>
+
+</div>
+<!-- Row / End -->

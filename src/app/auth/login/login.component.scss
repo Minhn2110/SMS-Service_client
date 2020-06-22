@@ -1,0 +1,61 @@
+.mat-dialog-container {
+  padding: 0;
+  overflow: hidden;
+}
+.mat-dialog-content {
+  margin: 0;
+  padding: 0;
+}
+
+.log-in {
+}
+.mat-tab-labels {
+  background: #f8f8f8;
+}
+.mat-tab-label {
+  border-right: 1px solid #e0e0e0;
+}
+.mat-tab-label-active {
+  color: #2a41e8;
+  font-weight: 600;
+}
+
+.register {
+
+}
+.mat-radio-checked {
+  .mat-radio-outer-circle {
+    border-color: #2a41e8 !important;
+  }
+}
+
+.mat-radio-inner-circle {
+  background-color: #2a41e8 !important ;
+}
+
+.mat-radio-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+// .swal2-header {
+//   font-weight: 700;
+//   color: #333;
+//   font-size: 24px;
+//   font-family: "Nunito", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// }
+
+.phone-verification-header {
+  font-weight: 700;
+  color: #333;
+  font-size: 24px;
+  font-family: "Nunito", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.swal2-actions {
+  justify-content: space-between;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #2a41e8 !important ;
+}
