@@ -23,6 +23,8 @@
     "@angular/platform-browser-dynamic": "~8.2.13",
     "@angular/router": "~8.2.13",
     "@sweetalert2/ngx-sweetalert2": "^8.1.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.4.0",
     "simplebar-angular": "^2.2.0",
     "sweetalert2": "^9.15.1",
