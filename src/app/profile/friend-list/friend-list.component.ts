@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminService } from 'src/app/services/admin.service';
+import { Store } from '@ngrx/store';
+import * as ProfileActions from '../state/profile.actions';
 
 @Component({
   selector: 'sms-friend-list',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FriendListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private adminService: AdminService,
+    private store: Store
+  ) { }
 
   ngOnInit() {
+    this.store.dispatch(ProfileActions.ProfileGetUserInfo());
+    // this.adminService.getUserInfo().subscribe(data => {
+    //   if (data) {
+    //     console.log(data)
+    //   }
+    // }
+    // );
   }
 
 }

@@ -22,6 +22,13 @@ import { SimplebarAngularModule } from 'simplebar-angular';
 import { FooterAdminComponent } from './layout/footer-admin/footer-admin.component';
 import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
 
+// NgrX
+import { environment } from 'src/environments/environment';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './state/app.reducer';
+import { EffectsModule } from '@ngrx/effects';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +51,13 @@ import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.co
     HttpClientModule,
     FormsModule, ReactiveFormsModule,
     SweetAlert2Module.forRoot(),
-    SimplebarAngularModule
+    StoreModule.forRoot({ count: counterReducer }),
+    EffectsModule.forRoot([]),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+    }),   
+     SimplebarAngularModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

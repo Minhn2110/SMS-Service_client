@@ -37,3 +37,7 @@ $sms-client-theme: mat-light-theme($sms-client-primary, $sms-client-accent, $sms
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.swal2-styled.swal2-confirm {
+  background-color: #2a41e8 !important ;
+}

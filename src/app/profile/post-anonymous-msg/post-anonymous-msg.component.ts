@@ -21,7 +21,8 @@ export class PostAnonymousMsgComponent implements OnInit {
     this.postAnonymousMsgForm = this.formBuilder.group({
       phoneNumber: ['', Validators.required],
       content: ['', Validators.required],
-    })
+    });
+    this.adminService.getUserInfo().subscribe(data => console.log(data));
   }
   get f() {
     return this.postAnonymousMsgForm.controls;

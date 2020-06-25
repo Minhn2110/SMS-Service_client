@@ -4,6 +4,7 @@ import { HomeComponent } from './feature/home/home.component';
 import { NormalLayoutComponent } from './layout/normal-layout/normal-layout.component';
 import { ProfileLayoutComponent } from './layout/profile-layout/profile-layout.component';
 import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
+import { AuthGuard } from './auth/auth.guard';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
       { path: 'pages-404', component: PageNotFoundComponent },
     ]
   },
-  { path: 'profile', component: ProfileLayoutComponent, loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) },
+  { path: 'profile', component: ProfileLayoutComponent, loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule), canActivate: [AuthGuard]},
   { path: '', redirectTo: '/client/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/client/pages-404' },
 ];
