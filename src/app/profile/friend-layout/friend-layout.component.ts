@@ -60,7 +60,7 @@ export class FriendLayoutComponent implements OnInit {
     });
   }
   getRequestFriend() {
-    this.adminService.getFriendList(false, '', true, 1, 10).subscribe(friends => {
+    this.adminService.getFriendList(true, '', true, 1, 10).subscribe(friends => {
       console.log(friends);
       if (friends && friends.length > 0) {
         this.totalFriend = friends.length;
