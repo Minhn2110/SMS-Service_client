@@ -53,7 +53,8 @@
 												<!-- Buttons -->
 												<div class="buttons-to-right always-visible margin-top-25 margin-bottom-5">
 													<a href="javascript:void(0)" class="button ripple-effect" (click)="addFriend(item.Id)" *ngIf="type === 'suggestion'"><i class="icon-feather-file-text"></i> Add Friend</a>
-													<a href="javascript:void(0)" class="button ripple-effect" (click)="approveFriend(item.Id)" *ngIf="type === 'request'"><i class="icon-feather-file-text"></i>Approve</a>
+													<a href="javascript:void(0)" class="button ripple-effect" (click)="approveFriend(item.Id)" *ngIf="type === 'request'"><i class="icon-feather-file-text"></i>Waiting to Apply</a>
+													<a href="javascript:void(0)" class="button ripple-effect" (click)="approveFriend(item.Id)" *ngIf="type === 'receive'"><i class="icon-feather-file-text"></i>Approve</a>
 													<a href="javascript:void(0)" class="popup-with-zoom-anim button dark ripple-effect" *ngIf="type === 'list'"><i class="icon-feather-mail"></i> Send Message</a>
 													<a href="#" class="button gray ripple-effect ico" title="Remove Candidate" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
 												</div>

@@ -34,10 +34,13 @@ export class FriendLayoutComponent implements OnInit {
       this.getSuggestionFriend();
     } else if (this.type == 'list') {
       this.title = 'Manage Friend List';
-      alert('list');
+      this.getListFriend();
     } else if (this.type == 'request') {
       this.title = 'Manage Friend Request List';
       this.getRequestFriend();
+    } else if (this.type == 'receive') {
+      this.title = 'Manage Friend Reiceve List';
+      this.getReceiveFriend();
     }
     console.log(this.type);
   }
@@ -61,6 +64,24 @@ export class FriendLayoutComponent implements OnInit {
   }
   getRequestFriend() {
     this.adminService.getFriendList(true, '', true, 1, 10).subscribe(friends => {
+      console.log(friends);
+      if (friends && friends.length > 0) {
+        this.totalFriend = friends.length;
+        this.datasource = friends;
+      }
+    });
+  }
+  getReceiveFriend() {
+    this.adminService.getFriendList(false, '', true, 1, 10).subscribe(friends => {
+      console.log(friends);
+      if (friends && friends.length > 0) {
+        this.totalFriend = friends.length;
+        this.datasource = friends;
+      }
+    });
+  }
+  getListFriend() {
+    this.adminService.getFriendList(null, '', true, 1, 10).subscribe(friends => {
       console.log(friends);
       if (friends && friends.length > 0) {
         this.totalFriend = friends.length;

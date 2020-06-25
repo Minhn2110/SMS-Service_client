@@ -13,6 +13,7 @@ import { counterReducer } from './state/profile.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { ProfileEffects } from './state/profile.effects';
 import { FriendRequestComponent } from './friend-request/friend-request.component';
+import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FriendRequestComponent } from './friend-request/friend-request.componen
     FriendSuggestionComponent,
     FriendRequestComponent,
     FriendLayoutComponent,
+    FriendReiceveComponent,
     ProfileComponent
 
   ],
