@@ -20,8 +20,8 @@
 
 					<ul data-submenu-title="Start">
 						<li><a routerLink='/profile/dashboard'><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-						<li><a routerLink='/profile/post-anonymous'><i class="icon-material-outline-star-border"></i> Send SMS to Anonymous</a></li>
-						<li><a href="dashboard-reviews.html"><i class="icon-material-outline-rate-review"></i> Send SMS to Friend</a></li>
+						<li><a routerLink='/profile/post-anonymous'><i class="icon-material-outline-star-border"></i> Send SMS</a></li>
+						<!-- <li><a href="dashboard-reviews.html"><i class="icon-material-outline-rate-review"></i> Send SMS to Friend</a></li> -->
 					</ul>
 					
 					<ul data-submenu-title="Manage">
@@ -30,13 +30,14 @@
 								<li><a routerLink="/profile/friend-request">Request <span class="nav-tag">3</span></a></li>
 								<li><a routerLink="/profile/friend-list">List</a></li>
 								<li><a routerLink="/profile/friend-suggestion">Suggestion</a></li>
+								<li><a routerLink="/profile/friend-receive">Receive</a></li>
 							</ul>	
 						</li>
 					</ul>
 
 					<ul data-submenu-title="Account">
-						<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
-						<li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+						<li><a routerLink="/profile/setting"><i class="icon-material-outline-settings"></i> Settings</a></li>
+						<li><a href="javascript:void(0)" (click)="logout()"><i class="icon-material-outline-power-settings-new" ></i> Log Out</a></li>
 					</ul>
 				</div>
 			</div>

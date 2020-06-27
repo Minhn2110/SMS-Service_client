@@ -3,6 +3,10 @@ import { AdminService } from 'src/app/services/admin.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import swal from 'sweetalert2';
+import { ActivatedRoute } from '@angular/router';
+import { Store } from '@ngrx/store';
+import * as profileSelector from '../../profile/state/profile.selector';
+import * as ProfileActions from '../../profile/state/profile.actions';
 
 @Component({
   selector: 'sms-post-anonymous-msg',
@@ -11,15 +15,33 @@ import swal from 'sweetalert2';
 })
 export class PostAnonymousMsgComponent implements OnInit {
   postAnonymousMsgForm: FormGroup
+  friendId: any;
+  currentFriendArray: any[] = [];
+  currentFriend: any;
   constructor(
     private formBuilder: FormBuilder,
     private adminService: AdminService,
+    private route: ActivatedRoute, 
+    private store: Store,
+
     private authenticationService: AuthenticationService,
   ) { }
 
   ngOnInit() {
+
+    this.friendId = this.route.snapshot.paramMap.get('id');
+    console.log(this.friendId)
+    this.store.select(profileSelector.friendList).subscribe(friends => {
+      console.log('a', friends);
+      if (friends && friends.length > 0) {
+        this.currentFriendArray = friends;
+        this.currentFriendArray = this.currentFriendArray.filter(x => x.Id == this.friendId);
+        this.currentFriend = this.currentFriendArray[0];
+        console.log(this.currentFriend);
+      }
+    })
     this.postAnonymousMsgForm = this.formBuilder.group({
-      phoneNumber: ['', Validators.required],
+      phoneNumber: [`${this.currentFriend ? this.currentFriend.PhoneNumber : '' }`, Validators.required],
       content: ['', Validators.required],
     });
     this.adminService.getUserInfo().subscribe(data => console.log(data));

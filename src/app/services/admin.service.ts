@@ -12,6 +12,9 @@ export class AdminService {
   sendAnonymousMsg(body) {
     return this.http.post<any>(`${environment.apiUrl}/api/Sms`, body)
   }
+  editProfile(body) {
+    return this.http.put<any>(`${environment.apiUrl}/api/Account/EditProfile`, body)
+  }
   getUserInfo() {
     return this.http.get<any>(`${environment.apiUrl}/api/Account/UserInfo`)
   }
@@ -22,7 +25,11 @@ export class AdminService {
     return this.http.post<any>(`${environment.apiUrl}/api/Friends`, body)
   }
   removeFriend(body) {
-    return this.http.delete<any>(`${environment.apiUrl}/api/Friend`, body)
+    // return this.http.delete<any>(`${environment.apiUrl}/api/Friends`, body)
+    return this.http.request('delete', `${environment.apiUrl}/api/Friends`, {
+      body: body,
+      observe: 'response'
+    });
   }
   approveFriend(body) {
     return this.http.put<any>(`${environment.apiUrl}/api/Friends`, body)

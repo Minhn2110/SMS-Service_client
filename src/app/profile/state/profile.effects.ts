@@ -3,7 +3,7 @@ import { Observable, of, EMPTY } from 'rxjs';
 import { Action } from '@ngrx/store';
 import { Actions, Effect, ofType, createEffect } from '@ngrx/effects';
 import { AdminService } from 'src/app/services/admin.service';
-import { map, mergeMap, catchError } from 'rxjs/operators';
+import { map, mergeMap, catchError, switchMap } from 'rxjs/operators';
 import * as ProfileActions from './profile.actions';
 
 @Injectable()
@@ -23,5 +23,16 @@ export class ProfileEffects {
       ))
     )
   );
+  getFriendList$ = createEffect(() => {
+    return this.actions$.pipe(
+        ofType(ProfileActions.ProfileActionTypes.ProfileGetFriendList),
+        mergeMap(() =>
+          this.adminService.getFriendList(null, '', true, 1, 10).pipe(
+            map(friendList => ProfileActions.ProfileGetFriendListSuccess({friendList})),
+            // catchError(error => of(FeatureActions.actionFailure({ error })))
+            )
+          ),
+    );
+  });
 
 }

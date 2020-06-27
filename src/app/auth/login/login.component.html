@@ -72,9 +72,14 @@
 							placeholder="Phone Number" />
 					</div>
 
-					<div class="input-with-icon-left">
+					<!-- <div class="input-with-icon-left">
 						<i class="icon-material-baseline-mail-outline"></i>
 						<input type="text" class="input-text with-border" formControlName="avartar" placeholder="Avartar" />
+					</div> -->
+					<div class="uploadButton margin-top-0">
+						<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload" (change)="uploadAvatar($event)" multiple/>
+						<label class="uploadButton-button ripple-effect" for="upload" >Upload Avatar</label>
+						<span class="uploadButton-file-name">{{fileName}}</span>
 					</div>
 
 					<div class='register-select'>

@@ -16,7 +16,7 @@ export class AuthenticationService {
         this.currentUser = this.currentUserSubject.asObservable();
     }
 
-    public get currentUserValue(): User {
+    public get currentUserValue(): any {
         return this.currentUserSubject.value;
     }
 
@@ -47,7 +47,7 @@ export class AuthenticationService {
         localStorage.removeItem('currentUser');
         this.currentUserSubject.next(null); 
     }
-    register(Email: string, Password: string, ConfirmPassword: string, PhoneNumber: string, Avatar: string, Name: string, Gender: number, ) {
+    register(Email: string, Password: string, ConfirmPassword: string, PhoneNumber: string, Avatar: any, Name: string, Gender: number, ) {
         return this.http.post<any>(`${environment.apiUrl}/api/Account/Register`, { Email, Password, ConfirmPassword, PhoneNumber, Avatar, Name, Gender })
         .pipe(map(user => {
             console.log('register', user);

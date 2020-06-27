@@ -7,15 +7,18 @@ import { FriendSuggestionComponent } from './friend-suggestion/friend-suggestion
 import { AuthGuard } from '../auth/auth.guard';
 import { FriendRequestComponent } from './friend-request/friend-request.component';
 import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'post-anonymous', component: PostAnonymousMsgComponent, canActivate: [AuthGuard] },
+  { path: 'post-anonymous/:id', component: PostAnonymousMsgComponent},
   { path: 'friend-list', component: FriendListComponent, canActivate: [AuthGuard] },
   { path: 'friend-suggestion', component: FriendSuggestionComponent, canActivate: [AuthGuard] },
-  { path: 'friend-request', component: FriendRequestComponent },
-  { path: 'friend-reiceve', component: FriendReiceveComponent },
+  { path: 'friend-request', component: FriendRequestComponent, canActivate: [AuthGuard] },
+  { path: 'friend-receive', component: FriendReiceveComponent, canActivate: [AuthGuard] },
+  { path: 'setting', component: SettingsComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({

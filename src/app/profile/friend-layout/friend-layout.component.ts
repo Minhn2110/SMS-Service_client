@@ -3,7 +3,8 @@ import { AdminService } from 'src/app/services/admin.service';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { increment, decrement, reset } from 'src/app/state/app.actions';
-import * as profileSelector from '../../profile/state/profile.selector'
+import * as profileSelector from '../../profile/state/profile.selector';
+import * as ProfileActions from '../../profile/state/profile.actions';
 import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
@@ -45,8 +46,8 @@ export class FriendLayoutComponent implements OnInit {
     console.log(this.type);
   }
   getUserInfo() {
-    this.store.select(profileSelector.selectFeatureProperty).subscribe(data => {
-      console.log('a', data);
+    this.store.select(profileSelector.userInfo).subscribe(data => {
+      // console.log('a', data);
       if (data) {
         this.userName = data.Name;
         // this.userName = data.Avatar;
@@ -56,7 +57,7 @@ export class FriendLayoutComponent implements OnInit {
   getSuggestionFriend() {
     this.adminService.getRecommendFriend().subscribe(friends => {
       console.log(friends);
-      if (friends && friends.length > 0) {
+      if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
       }
@@ -65,7 +66,7 @@ export class FriendLayoutComponent implements OnInit {
   getRequestFriend() {
     this.adminService.getFriendList(true, '', true, 1, 10).subscribe(friends => {
       console.log(friends);
-      if (friends && friends.length > 0) {
+      if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
       }
@@ -74,20 +75,28 @@ export class FriendLayoutComponent implements OnInit {
   getReceiveFriend() {
     this.adminService.getFriendList(false, '', true, 1, 10).subscribe(friends => {
       console.log(friends);
-      if (friends && friends.length > 0) {
+      if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
       }
     });
   }
   getListFriend() {
-    this.adminService.getFriendList(null, '', true, 1, 10).subscribe(friends => {
+    this.store.dispatch(ProfileActions.ProfileGetFriendList())
+    this.store.select(profileSelector.friendList).subscribe(friends => {
       console.log(friends);
-      if (friends && friends.length > 0) {
+      if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
       }
-    });
+    })
+    // this.adminService.getFriendList(null, '', true, 1, 10).subscribe(friends => {
+    //   console.log(friends);
+    //   if (friends && friends.length > 0) {
+    //     this.totalFriend = friends.length;
+    //     this.datasource = friends;
+    //   } 
+    // });
   }
   addFriend(id) {
     console.log('id', id);
@@ -98,6 +107,7 @@ export class FriendLayoutComponent implements OnInit {
       console.log(res);
       if (res) {
         this.alertService.success('Friend request successfully sent.');
+        this.getSuggestionFriend();
       }
     });
   }
@@ -111,6 +121,21 @@ export class FriendLayoutComponent implements OnInit {
       console.log(res);
       if (res) {
         this.alertService.success('Approve friend success.');
+        this.getReceiveFriend();
+        // Reset datasource
+      }
+    });
+  }
+  removeFriend(id) {
+    const body = {
+      FriendId : id
+    }
+    this.adminService.removeFriend(body).subscribe(res => {
+      console.log(res);
+      if (res) {
+        this.alertService.success('Delete friend success.');
+        this.getListFriend();
+        // Reset datasource
       }
     });
   }

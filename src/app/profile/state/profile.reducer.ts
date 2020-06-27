@@ -12,6 +12,9 @@ const _counterReducer = createReducer(
   on(ProfileActions.ProfileGetUserSuccess, (state, { info }) => {
     return {...state, userInfo: info}
   }),
+  on(ProfileActions.ProfileGetFriendListSuccess, (state, { friendList }) => {
+    return {...state, friendList: friendList}
+  }),
   // on(decrement, state => state - 1),
   // on(reset, state => 0),
 );

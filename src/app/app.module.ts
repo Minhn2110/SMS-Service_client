@@ -29,6 +29,21 @@ import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './state/app.reducer';
 import { EffectsModule } from '@ngrx/effects';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBBignCfPEtIIGntZzCpopvW0ZaJ_vl0SQ",
+  authDomain: "testsmartfund.firebaseapp.com",
+  databaseURL: "https://testsmartfund.firebaseio.com",
+  projectId: "testsmartfund",
+  storageBucket: "testsmartfund.appspot.com",
+  messagingSenderId: "852175374861",
+  appId: "1:852175374861:web:904159eb09735d43"
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,13 +71,17 @@ import { EffectsModule } from '@ngrx/effects';
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
-    }),   
-     SimplebarAngularModule
+    }),
+    SimplebarAngularModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+		AngularFirestoreModule, // firestore
+		AngularFireAuthModule, // auth
+		AngularFireStorageModule // storage
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
- ],  bootstrap: [AppComponent],
+  ], bootstrap: [AppComponent],
   entryComponents: [LoginComponent],
 })
 export class AppModule { }

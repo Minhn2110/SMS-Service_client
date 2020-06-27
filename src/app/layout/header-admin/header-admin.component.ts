@@ -18,8 +18,8 @@ export class HeaderAdminComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(ProfileActions.ProfileGetUserInfo());
-    this.store.select(profileSelector.selectFeatureProperty).subscribe(data =>{
-      console.log(data);
+    this.store.select(profileSelector.userInfo).subscribe(data =>{
+      // console.log(data);
       if (data) {
         this.avatar = data.Avatar;
       }
