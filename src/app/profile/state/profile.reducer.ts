@@ -15,6 +15,9 @@ const _counterReducer = createReducer(
   on(ProfileActions.ProfileGetFriendListSuccess, (state, { friendList }) => {
     return {...state, friendList: friendList}
   }),
+  on(ProfileActions.ProfileGetSubscribeServiceSuccess, (state, { subscribeList }) => {
+    return {...state, subscribeList: subscribeList}
+  }),
   // on(decrement, state => state - 1),
   // on(reset, state => 0),
 );
@@ -22,4 +25,3 @@ const _counterReducer = createReducer(
 export function counterReducer(state, action) {
   return _counterReducer(state, action);
 }
-

@@ -10,3 +10,7 @@ export const friendList = createSelector(
   profileFeature,
   (state: any) => state.friendList
 );
+export const subscribeList = createSelector(
+  profileFeature,
+  (state: any) => state.subscribeList
+);

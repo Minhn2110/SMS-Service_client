@@ -5204,7 +5204,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"intro-banner\" data-background-image=\"https://wallpaperaccess.com/full/776490.jpg\">\n\t<div class=\"container\">\n\t\t\n\t\t<!-- Intro Headline -->\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12\">\n\t\t\t\t<div class=\"banner-headline\">\n\t\t\t\t\t<h3>\n\t\t\t\t\t\t<strong>Hire experts or be hired for any job, any time.</strong>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<span>Thousands of small businesses use <strong class=\"color\">Hireo</strong> to turn their ideas into reality.</span>\n\t\t\t\t\t</h3>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t\n\t\t<!-- Search Bar -->\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12\">\n\t\t\t\t<div class=\"intro-banner-search-form margin-top-95\">\n\n\t\t\t\t\t<!-- Search Field -->\n\t\t\t\t\t<div class=\"intro-search-field with-autocomplete\">\n\t\t\t\t\t\t<label for=\"autocomplete-input\" class=\"field-title ripple-effect\">Where?</label>\n\t\t\t\t\t\t<div class=\"input-with-icon\">\n\t\t\t\t\t\t\t<input id=\"autocomplete-input\" type=\"text\" placeholder=\"Online Job\">\n\t\t\t\t\t\t\t<i class=\"icon-material-outline-location-on\"></i>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Search Field -->\n\t\t\t\t\t<div class=\"intro-search-field\">\n\t\t\t\t\t\t<label for =\"intro-keywords\" class=\"field-title ripple-effect\">What job you want?</label>\n\t\t\t\t\t\t<input id=\"intro-keywords\" type=\"text\" placeholder=\"Job Title or Keywords\">\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Button -->\n\t\t\t\t\t<div class=\"intro-search-button\">\n\t\t\t\t\t\t<button class=\"button ripple-effect\" onclick=\"window.location.href='jobs-list-layout-full-page-map.html'\">Search</button>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- Stats -->\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12\">\n\t\t\t\t<ul class=\"intro-stats margin-top-45 hide-under-992px\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<strong class=\"counter\">1,586</strong>\n\t\t\t\t\t\t<span>Jobs Posted</span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<strong class=\"counter\">3,543</strong>\n\t\t\t\t\t\t<span>Tasks Posted</span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<strong class=\"counter\">1,232</strong>\n\t\t\t\t\t\t<span>Freelancers</span>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\n  </div>\n  <div class=\"background-image-container\" style=\"background-image: url('https://wallpaperaccess.com/full/776490.jpg');\"></div>\n</div>\n<!-- Category Boxes -->\n<div class=\"section margin-top-65\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-xl-12\">\n\n        <div class=\"section-headline centered margin-bottom-15\">\n          <h3>Popular Job Categories</h3>\n        </div>\n\n        <!-- Category Boxes Container -->\n        <div class=\"categories-container\">\n\n          <!-- Category Box -->\n          <a href=\"jobs-grid-layout-full-page.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-file-code-o\"></i>\n            </div>\n            <div class=\"category-box-counter\">612</div>\n            <div class=\"category-box-content\">\n              <h3>Web & Software Dev</h3>\n              <p>Software Engineer, Web / Mobile Developer & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-full-page-map.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-cloud-upload\"></i>\n            </div>\n            <div class=\"category-box-counter\">113</div>\n            <div class=\"category-box-content\">\n              <h3>Data Science & Analitycs</h3>\n              <p>Data Specialist / Scientist, Data Analyst & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-full-page-map.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-suitcase\"></i>\n            </div>\n            <div class=\"category-box-counter\">186</div>\n            <div class=\"category-box-content\">\n              <h3>Accounting & Consulting</h3>\n              <p>Auditor, Accountant, Fnancial Analyst & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-1.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-pencil\"></i>\n            </div>\n            <div class=\"category-box-counter\">298</div>\n            <div class=\"category-box-content\">\n              <h3>Writing & Translations</h3>\n              <p>Copywriter, Creative Writer, Translator & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-2.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-pie-chart\"></i>\n            </div>\n            <div class=\"category-box-counter\">549</div>\n            <div class=\"category-box-content\">\n              <h3>Sales & Marketing</h3>\n              <p>Brand Manager, Marketing Coordinator & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-1.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-image\"></i>\n            </div>\n            <div class=\"category-box-counter\">873</div>\n            <div class=\"category-box-content\">\n              <h3>Graphics & Design</h3>\n              <p>Creative Director, Web Designer & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-2.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-bullhorn\"></i>\n            </div>\n            <div class=\"category-box-counter\">125</div>\n            <div class=\"category-box-content\">\n              <h3>Digital Marketing</h3>\n              <p>Darketing Analyst, Social Profile Admin & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-grid-layout-full-page.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-graduation-cap\"></i>\n            </div>\n            <div class=\"category-box-counter\">445</div>\n            <div class=\"category-box-content\">\n              <h3>Education & Training</h3>\n              <p>Advisor, Coach, Education Coordinator & More</p>\n            </div>\n          </a>\n\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- Category Boxes / End -->\n\n<!-- Features Jobs -->\n<div class=\"section gray margin-top-45 padding-top-65 padding-bottom-75\">\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t\n\t\t\t\t<!-- Section Headline -->\n\t\t\t\t<div class=\"section-headline margin-top-0 margin-bottom-35\">\n\t\t\t\t\t<h3>Featured Jobs</h3>\n\t\t\t\t\t<a href=\"jobs-list-layout-full-page-map.html\" class=\"headline-link\">Browse All Jobs</a>\n\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t<!-- Jobs Container -->\n\t\t\t\t<div class=\"listings-container compact-list-layout margin-top-35\">\n\t\t\t\t\t\n\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t<a href=\"single-job-page.html\" class=\"job-listing with-apply-button\">\n\n\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t<!-- Logo -->\n\t\t\t\t\t\t\t<div class=\"job-listing-company-logo\">\n\t\t\t\t\t\t\t\t<img src=\"images/company-logo-01.png\" alt=\"\">\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\">Bilingual Event Support Specialist</h3>\n\n\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business\"></i> Hexagon <div class=\"verified-badge\" title=\"Verified Employer\" data-tippy-placement=\"top\"></div></li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-location-on\"></i> San Francissco</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business-center\"></i> Full Time</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 2 days ago</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Apply Button -->\n\t\t\t\t\t\t\t<span class=\"list-apply-button ripple-effect\">Apply Now</span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</a>\t\n\n\n\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t<a href=\"single-job-page.html\" class=\"job-listing with-apply-button\">\n\n\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t<!-- Logo -->\n\t\t\t\t\t\t\t<div class=\"job-listing-company-logo\">\n\t\t\t\t\t\t\t\t<img src=\"images/company-logo-05.png\" alt=\"\">\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\">Competition Law Officer</h3>\n\n\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business\"></i> Laxo</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-location-on\"></i> San Francissco</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business-center\"></i> Full Time</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 2 days ago</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Apply Button -->\n\t\t\t\t\t\t\t<span class=\"list-apply-button ripple-effect\">Apply Now</span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</a>\n\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t<a href=\"single-job-page.html\" class=\"job-listing with-apply-button\">\n\n\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t<!-- Logo -->\n\t\t\t\t\t\t\t<div class=\"job-listing-company-logo\">\n\t\t\t\t\t\t\t\t<img src=\"images/company-logo-02.png\" alt=\"\">\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\">Barista and Cashier</h3>\n\n\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business\"></i> Coffee</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-location-on\"></i> San Francissco</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business-center\"></i> Full Time</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 2 days ago</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Apply Button -->\n\t\t\t\t\t\t\t<span class=\"list-apply-button ripple-effect\">Apply Now</span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</a>\n\t\t\t\t\t\n\n\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t<a href=\"single-job-page.html\" class=\"job-listing with-apply-button\">\n\n\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t<!-- Logo -->\n\t\t\t\t\t\t\t<div class=\"job-listing-company-logo\">\n\t\t\t\t\t\t\t\t<img src=\"images/company-logo-03.png\" alt=\"\">\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\">Restaurant General Manager</h3>\n\n\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business\"></i> King <div class=\"verified-badge\" title=\"Verified Employer\" data-tippy-placement=\"top\"></div></li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-location-on\"></i> San Francissco</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business-center\"></i> Full Time</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 2 days ago</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Apply Button -->\n\t\t\t\t\t\t\t<span class=\"list-apply-button ripple-effect\">Apply Now</span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</a>\n\n\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t<a href=\"single-job-page.html\" class=\"job-listing with-apply-button\">\n\n\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t<!-- Logo -->\n\t\t\t\t\t\t\t<div class=\"job-listing-company-logo\">\n\t\t\t\t\t\t\t\t<img src=\"images/company-logo-05.png\" alt=\"\">\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\">International Marketing Coordinator</h3>\n\n\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business\"></i> Skyist</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-location-on\"></i> San Francissco</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business-center\"></i> Full Time</li>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 2 days ago</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Apply Button -->\n\t\t\t\t\t\t\t<span class=\"list-apply-button ripple-effect\">Apply Now</span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</a>\n\n\t\t\t\t</div>\n\t\t\t\t<!-- Jobs Container / End -->\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!-- Featured Jobs / End -->\n\n<!-- Membership Plans -->\n<div class=\"section padding-top-60 padding-bottom-75\">\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\n\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t<!-- Section Headline -->\n\t\t\t\t<div class=\"section-headline centered margin-top-0 margin-bottom-35\">\n\t\t\t\t\t<h3>Membership Plans</h3>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\n\t\t\t<div class=\"col-xl-12\">\n\n\t\t\t\t<!-- Billing Cycle  -->\n\t\t\t\t<div class=\"billing-cycle-radios margin-bottom-70\">\n\t\t\t\t\t<div class=\"radio billed-monthly-radio\">\n\t\t\t\t\t\t<input id=\"radio-5\" name=\"radio-payment-type\" type=\"radio\" checked>\n\t\t\t\t\t\t<label for=\"radio-5\"><span class=\"radio-label\"></span> Billed Monthly</label>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"radio billed-yearly-radio\">\n\t\t\t\t\t\t<input id=\"radio-6\" name=\"radio-payment-type\" type=\"radio\">\n\t\t\t\t\t\t<label for=\"radio-6\"><span class=\"radio-label\"></span> Billed Yearly <span class=\"small-label\">Save 10%</span></label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t\t<!-- Pricing Plans Container -->\n\t\t\t\t<div class=\"pricing-plans-container\">\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan\">\n\t\t\t\t\t\t<h3>Basic Plan</h3>\n\t\t\t\t\t\t<p class=\"margin-top-10\">One time fee for one listing or task highlighted in search results.</p>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$19</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-yearly-label\"><strong>$205</strong>/ yearly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Basic Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>1 Listing</li>\n\t\t\t\t\t\t\t\t<li>30 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Buy Now</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan recommended\">\n\t\t\t\t\t\t<div class=\"recommended-badge\">Recommended</div>\n\t\t\t\t\t\t<h3>Standard Plan</h3>\n\t\t\t\t\t\t<p class=\"margin-top-10\">One time fee for one listing or task highlighted in search results.</p>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$49</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-yearly-label\"><strong>$529</strong>/ yearly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Standard Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>5 Listings</li>\n\t\t\t\t\t\t\t\t<li>60 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Buy Now</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan\">\n\t\t\t\t\t\t<h3>Extended Plan</h3>\n\t\t\t\t\t\t<p class=\"margin-top-10\">One time fee for one listing or task highlighted in search results.</p>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$99</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-yearly-label\"><strong>$1069</strong>/ yearly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Extended Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>Unlimited Listings Listing</li>\n\t\t\t\t\t\t\t\t<li>90 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Buy Now</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\n\t\t</div>\n\t</div>\n</div>\n<!-- Membership Plans / End-->";
+    __webpack_exports__["default"] = "<div class=\"intro-banner\" data-background-image=\"https://wallpaperaccess.com/full/776490.jpg\">\n\t<div class=\"container\">\n\t\t\n\t\t<!-- Intro Headline -->\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12\">\n\t\t\t\t<div class=\"banner-headline\">\n\t\t\t\t\t<h3>\n\t\t\t\t\t\t<strong>Hire experts or be hired for any job, any time.</strong>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<span>Thousands of small businesses use <strong class=\"color\">Hireo</strong> to turn their ideas into reality.</span>\n\t\t\t\t\t</h3>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t\n\t\t<!-- Search Bar -->\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12\">\n\t\t\t\t<div class=\"intro-banner-search-form margin-top-95\">\n\n\t\t\t\t\t<!-- Search Field -->\n\t\t\t\t\t<div class=\"intro-search-field with-autocomplete\">\n\t\t\t\t\t\t<label for=\"autocomplete-input\" class=\"field-title ripple-effect\">Where?</label>\n\t\t\t\t\t\t<div class=\"input-with-icon\">\n\t\t\t\t\t\t\t<input id=\"autocomplete-input\" type=\"text\" placeholder=\"Online Job\">\n\t\t\t\t\t\t\t<i class=\"icon-material-outline-location-on\"></i>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Search Field -->\n\t\t\t\t\t<div class=\"intro-search-field\">\n\t\t\t\t\t\t<label for =\"intro-keywords\" class=\"field-title ripple-effect\">What job you want?</label>\n\t\t\t\t\t\t<input id=\"intro-keywords\" type=\"text\" placeholder=\"Job Title or Keywords\">\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Button -->\n\t\t\t\t\t<div class=\"intro-search-button\">\n\t\t\t\t\t\t<button class=\"button ripple-effect\" onclick=\"window.location.href='jobs-list-layout-full-page-map.html'\">Search</button>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- Stats -->\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12\">\n\t\t\t\t<ul class=\"intro-stats margin-top-45 hide-under-992px\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<strong class=\"counter\">1,586</strong>\n\t\t\t\t\t\t<span>Jobs Posted</span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<strong class=\"counter\">3,543</strong>\n\t\t\t\t\t\t<span>Tasks Posted</span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<strong class=\"counter\">1,232</strong>\n\t\t\t\t\t\t<span>Freelancers</span>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\n  </div>\n  <div class=\"background-image-container\" style=\"background-image: url('https://wallpaperaccess.com/full/776490.jpg');\"></div>\n</div>\n<!-- Category Boxes -->\n<div class=\"section margin-top-65\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-xl-12\">\n\n        <div class=\"section-headline centered margin-bottom-15\">\n          <h3>Popular Subscription Services</h3>\n        </div>\n\n        <!-- Category Boxes Container -->\n        <div class=\"categories-container\">\n\n          <!-- Category Box -->\n          <a href=\"jobs-grid-layout-full-page.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-file-code-o\"></i>\n            </div>\n            <div class=\"category-box-counter\">612</div>\n            <div class=\"category-box-content\">\n              <h3>Breaking News</h3>\n              <p>Software Engineer, Web / Mobile Developer & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-full-page-map.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-cloud-upload\"></i>\n            </div>\n            <div class=\"category-box-counter\">113</div>\n            <div class=\"category-box-content\">\n              <h3>Sport News</h3>\n              <p>Data Specialist / Scientist, Data Analyst & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-full-page-map.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-suitcase\"></i>\n            </div>\n            <div class=\"category-box-counter\">186</div>\n            <div class=\"category-box-content\">\n              <h3>Stock News</h3>\n              <p>Auditor, Accountant, Fnancial Analyst & More</p>\n            </div>\n          </a>\n\n          <!-- Category Box -->\n          <a href=\"jobs-list-layout-1.html\" class=\"category-box\">\n            <div class=\"category-box-icon\">\n              <i class=\"icon-line-awesome-pencil\"></i>\n            </div>\n            <div class=\"category-box-counter\">298</div>\n            <div class=\"category-box-content\">\n              <h3>COVID-19 News</h3>\n              <p>Copywriter, Creative Writer, Translator & More</p>\n            </div>\n          </a>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n<!-- Category Boxes / End -->\n\n<!-- Features Jobs -->\n<div class=\"section gray margin-top-45 padding-top-65 padding-bottom-75\">\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t\n\t\t\t\t<!-- Section Headline -->\n\t\t\t\t<div class=\"section-headline margin-top-0 margin-bottom-35\">\n\t\t\t\t\t<h3>Friend Suggestions</h3>\n\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t<!-- Jobs Container -->\n\t\t\t\t<div class=\"listings-container compact-list-layout margin-top-35\">\n\t\t\t\t\t\n\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t<a href=\"single-job-page.html\" class=\"job-listing with-apply-button\" *ngFor=\"let item of friend\">\n\n\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t<!-- Logo -->\n\t\t\t\t\t\t\t<div class=\"job-listing-company-logo\">\n\t\t\t\t\t\t\t\t<img src=\"{{item.Avatar}}\" alt=\"\">\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\">{{item.Name}}</h3>\n\n\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-business\"></i> Available <div class=\"verified-badge\" title=\"Verified Employer\" data-tippy-placement=\"top\"></div></li>\n\t\t\t\t\t\t\t\t\t\t<!-- <li><i class=\"icon-material-outline-location-on\"></i> San Francissco</li> -->\n\t\t\t\t\t\t\t\t\t\t<!-- <li><i class=\"icon-material-outline-business-center\"></i> Full Time</li> -->\n\t\t\t\t\t\t\t\t\t\t<!-- <li><i class=\"icon-material-outline-access-time\"></i>{{item.Email}}</li> -->\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<!-- Apply Button -->\n\t\t\t\t\t\t\t<span class=\"list-apply-button ripple-effect\">Add Now</span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</a>\t\n\n\t\t\t\t</div>\n\t\t\t\t<!-- Jobs Container / End -->\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<!-- Featured Jobs / End -->\n\n<!-- Membership Plans -->\n<div class=\"section padding-top-60 padding-bottom-75\">\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\n\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t<!-- Section Headline -->\n\t\t\t\t<div class=\"section-headline centered margin-top-0 margin-bottom-35\">\n\t\t\t\t\t<h3>Membership Plans</h3>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\n\t\t\t<div class=\"col-xl-12\">\n\n\t\t\t\t<!-- Billing Cycle  -->\n\t\t\t\t<div class=\"billing-cycle-radios margin-bottom-70\">\n\t\t\t\t\t<div class=\"radio billed-monthly-radio\">\n\t\t\t\t\t\t<input id=\"radio-5\" name=\"radio-payment-type\" type=\"radio\" checked>\n\t\t\t\t\t\t<label for=\"radio-5\"><span class=\"radio-label\"></span> Billed Monthly</label>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"radio billed-yearly-radio\">\n\t\t\t\t\t\t<input id=\"radio-6\" name=\"radio-payment-type\" type=\"radio\">\n\t\t\t\t\t\t<label for=\"radio-6\"><span class=\"radio-label\"></span> Billed Yearly <span class=\"small-label\">Save 10%</span></label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t\t<!-- Pricing Plans Container -->\n\t\t\t\t<div class=\"pricing-plans-container\">\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan\">\n\t\t\t\t\t\t<h3>Basic Plan</h3>\n\t\t\t\t\t\t<p class=\"margin-top-10\">One time fee for one listing or task highlighted in search results.</p>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$19</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-yearly-label\"><strong>$205</strong>/ yearly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Basic Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>1 Listing</li>\n\t\t\t\t\t\t\t\t<li>30 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Buy Now</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan recommended\">\n\t\t\t\t\t\t<div class=\"recommended-badge\">Recommended</div>\n\t\t\t\t\t\t<h3>Standard Plan</h3>\n\t\t\t\t\t\t<p class=\"margin-top-10\">One time fee for one listing or task highlighted in search results.</p>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$49</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-yearly-label\"><strong>$529</strong>/ yearly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Standard Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>5 Listings</li>\n\t\t\t\t\t\t\t\t<li>60 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Buy Now</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan\">\n\t\t\t\t\t\t<h3>Extended Plan</h3>\n\t\t\t\t\t\t<p class=\"margin-top-10\">One time fee for one listing or task highlighted in search results.</p>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$99</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-yearly-label\"><strong>$1069</strong>/ yearly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Extended Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>Unlimited Listings Listing</li>\n\t\t\t\t\t\t\t\t<li>90 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Buy Now</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\n\t\t</div>\n\t</div>\n</div>\n<!-- Membership Plans / End-->";
     /***/
   },
 
@@ -5364,7 +5364,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\t<!-- Dashboard Sidebar\n\t================================================== -->\n\n\t<div class=\"dashboard-sidebar-inner\" data-simplebar>\n\t\t<div class=\"dashboard-nav-container\">\n\n\t\t\t<!-- Responsive Navigation Trigger -->\n\t\t\t<a href=\"#\" class=\"dashboard-responsive-nav-trigger\">\n\t\t\t\t<span class=\"hamburger hamburger--collapse\" >\n\t\t\t\t\t<span class=\"hamburger-box\">\n\t\t\t\t\t\t<span class=\"hamburger-inner\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t\t<span class=\"trigger-title\">Dashboard Navigation</span>\n\t\t\t</a>\n\t\t\t\n\t\t\t<!-- Navigation -->\n\t\t\t<div class=\"dashboard-nav\">\n\t\t\t\t<div class=\"dashboard-nav-inner\">\n\n\t\t\t\t\t<ul data-submenu-title=\"Start\">\n\t\t\t\t\t\t<li><a routerLink='/profile/dashboard'><i class=\"icon-material-outline-dashboard\"></i> Dashboard</a></li>\n\t\t\t\t\t\t<li><a routerLink='/profile/post-anonymous'><i class=\"icon-material-outline-star-border\"></i> Send SMS</a></li>\n\t\t\t\t\t\t<!-- <li><a href=\"dashboard-reviews.html\"><i class=\"icon-material-outline-rate-review\"></i> Send SMS to Friend</a></li> -->\n\t\t\t\t\t</ul>\n\t\t\t\t\t\n\t\t\t\t\t<ul data-submenu-title=\"Manage\">\n\t\t\t\t\t\t<li class=\"active-submenu\"><a href=\"#\"><i class=\"icon-material-outline-business-center\"></i> Friends</a>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-request\">Request <span class=\"nav-tag\">3</span></a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-list\">List</a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-suggestion\">Suggestion</a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-receive\">Receive</a></li>\n\t\t\t\t\t\t\t</ul>\t\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\n\t\t\t\t\t<ul data-submenu-title=\"Account\">\n\t\t\t\t\t\t<li><a routerLink=\"/profile/setting\"><i class=\"icon-material-outline-settings\"></i> Settings</a></li>\n\t\t\t\t\t\t<li><a href=\"javascript:void(0)\" (click)=\"logout()\"><i class=\"icon-material-outline-power-settings-new\" ></i> Log Out</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!-- Navigation / End -->\n\n\t\t</div>\n\t</div>\n\t<!-- Dashboard Sidebar / End -->";
+    __webpack_exports__["default"] = "\t<!-- Dashboard Sidebar\n\t================================================== -->\n\n\t<div class=\"dashboard-sidebar-inner\" data-simplebar>\n\t\t<div class=\"dashboard-nav-container\">\n\n\t\t\t<!-- Responsive Navigation Trigger -->\n\t\t\t<a href=\"#\" class=\"dashboard-responsive-nav-trigger\">\n\t\t\t\t<span class=\"hamburger hamburger--collapse\" >\n\t\t\t\t\t<span class=\"hamburger-box\">\n\t\t\t\t\t\t<span class=\"hamburger-inner\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t\t<span class=\"trigger-title\">Dashboard Navigation</span>\n\t\t\t</a>\n\t\t\t\n\t\t\t<!-- Navigation -->\n\t\t\t<div class=\"dashboard-nav\">\n\t\t\t\t<div class=\"dashboard-nav-inner\">\n\n\t\t\t\t\t<ul data-submenu-title=\"Start\">\n\t\t\t\t\t\t<li><a routerLink='/profile/dashboard'><i class=\"icon-material-outline-dashboard\"></i> Dashboard</a></li>\n\t\t\t\t\t\t<li><a routerLink='/profile/post-anonymous'><i class=\"icon-material-outline-star-border\"></i> Send SMS</a></li>\n\t\t\t\t\t\t<li><a routerLink='/profile/manage-subscription'><i class=\"icon-material-outline-star-border\"></i>Subscription Services</a></li>\n\t\t\t\t\t\t<!-- <li><a href=\"dashboard-reviews.html\"><i class=\"icon-material-outline-rate-review\"></i> Send SMS to Friend</a></li> -->\n\t\t\t\t\t</ul>\n\t\t\t\t\t\n\t\t\t\t\t<ul data-submenu-title=\"Manage\">\n\t\t\t\t\t\t<li class=\"active-submenu\"><a href=\"#\"><i class=\"icon-material-outline-business-center\"></i> Friends</a>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-request\">Request <span class=\"nav-tag\">3</span></a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-list\">List</a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-suggestion\">Suggestion</a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-receive\">Receive</a></li>\n\t\t\t\t\t\t\t</ul>\t\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\n\t\t\t\t\t<ul data-submenu-title=\"Account\">\n\t\t\t\t\t\t<li><a routerLink=\"/profile/setting\"><i class=\"icon-material-outline-settings\"></i> Settings</a></li>\n\t\t\t\t\t\t<li><a href=\"javascript:void(0)\" (click)=\"logout()\"><i class=\"icon-material-outline-power-settings-new\" ></i> Log Out</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!-- Navigation / End -->\n\n\t\t</div>\n\t</div>\n\t<!-- Dashboard Sidebar / End -->";
     /***/
   },
 
@@ -7134,19 +7134,57 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_dashboard_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/dashboard.service */
+    "./src/app/services/dashboard.service.ts");
+    /* harmony import */
+
+
+    var src_app_services_admin_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/services/admin.service */
+    "./src/app/services/admin.service.ts");
 
     var HomeComponent = /*#__PURE__*/function () {
-      function HomeComponent() {
+      function HomeComponent(dashBoardService, adminService) {
         _classCallCheck(this, HomeComponent);
+
+        this.dashBoardService = dashBoardService;
+        this.adminService = adminService;
       }
 
       _createClass(HomeComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.dashBoardService.getAllServices(null).subscribe(function (data) {
+            return console.log(data);
+          });
+          this.getSuggestionFriend();
+        }
+      }, {
+        key: "getSuggestionFriend",
+        value: function getSuggestionFriend() {
+          var _this5 = this;
+
+          this.adminService.getRecommendFriend().subscribe(function (friends) {
+            console.log(friends);
+            _this5.friend = friends;
+          });
+        }
       }]);
 
       return HomeComponent;
     }();
+
+    HomeComponent.ctorParameters = function () {
+      return [{
+        type: src_app_services_dashboard_service__WEBPACK_IMPORTED_MODULE_2__["DashboardService"]
+      }, {
+        type: src_app_services_admin_service__WEBPACK_IMPORTED_MODULE_3__["AdminService"]
+      }];
+    };
 
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'sms-home',
@@ -7394,13 +7432,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HeaderAdminComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.store.dispatch(_profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_4__["ProfileGetUserInfo"]());
           this.store.select(_profile_state_profile_selector__WEBPACK_IMPORTED_MODULE_3__["userInfo"]).subscribe(function (data) {
             // console.log(data);
             if (data) {
-              _this5.avatar = data.Avatar;
+              _this6.avatar = data.Avatar;
             }
           });
         }
@@ -7520,11 +7558,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HeaderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.isSubscribing = true;
           this.store.select(_profile_state_profile_selector__WEBPACK_IMPORTED_MODULE_5__["userInfo"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeWhile"])(function () {
-            return _this6.isSubscribing;
+            return _this7.isSubscribing;
           })).subscribe(function (data) {
             return console.log(data);
           });
@@ -8158,7 +8196,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/profile/state/profile.actions.ts ***!
     \**************************************************/
 
-  /*! exports provided: ProfileActionTypes, ProfileGetUserInfo, ProfileGetUserSuccess, ProfileGetFriendList, ProfileGetFriendListSuccess */
+  /*! exports provided: ProfileActionTypes, ProfileGetUserInfo, ProfileGetUserSuccess, ProfileGetFriendList, ProfileGetFriendListSuccess, ProfileGetSubscribeService, ProfileGetSubscribeServiceSuccess */
 
   /***/
   function srcAppProfileStateProfileActionsTs(module, __webpack_exports__, __webpack_require__) {
@@ -8195,6 +8233,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     __webpack_require__.d(__webpack_exports__, "ProfileGetFriendListSuccess", function () {
       return ProfileGetFriendListSuccess;
     });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ProfileGetSubscribeService", function () {
+      return ProfileGetSubscribeService;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ProfileGetSubscribeServiceSuccess", function () {
+      return ProfileGetSubscribeServiceSuccess;
+    });
     /* harmony import */
 
 
@@ -8215,12 +8265,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       ProfileActionTypes["ProfileGetUserInfoSuccess"] = "[Profile] Get User Info Success";
       ProfileActionTypes["ProfileGetFriendList"] = "[Profile] Get Friend List";
       ProfileActionTypes["ProfileGetFriendListSuccess"] = "[Profile] Get Friend List Success";
+      ProfileActionTypes["ProfileGetSubscribeService"] = "[Profile] Get Subscribe Service";
+      ProfileActionTypes["ProfileGetSubscribeServiceSuccess"] = "[Profile] Get Subscribe Service Success";
     })(ProfileActionTypes || (ProfileActionTypes = {}));
 
     var ProfileGetUserInfo = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createAction"])(ProfileActionTypes.ProfileGetUserInfo);
     var ProfileGetUserSuccess = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createAction"])(ProfileActionTypes.ProfileGetUserInfoSuccess, Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["props"])());
     var ProfileGetFriendList = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createAction"])(ProfileActionTypes.ProfileGetFriendList);
     var ProfileGetFriendListSuccess = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createAction"])(ProfileActionTypes.ProfileGetFriendListSuccess, Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["props"])());
+    var ProfileGetSubscribeService = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createAction"])(ProfileActionTypes.ProfileGetSubscribeService, Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["props"])());
+    var ProfileGetSubscribeServiceSuccess = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createAction"])(ProfileActionTypes.ProfileGetSubscribeServiceSuccess, Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["props"])());
     /***/
   },
 
@@ -8230,7 +8284,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/profile/state/profile.selector.ts ***!
     \***************************************************/
 
-  /*! exports provided: profileFeature, userInfo, friendList */
+  /*! exports provided: profileFeature, userInfo, friendList, subscribeList */
 
   /***/
   function srcAppProfileStateProfileSelectorTs(module, __webpack_exports__, __webpack_require__) {
@@ -8255,6 +8309,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     __webpack_require__.d(__webpack_exports__, "friendList", function () {
       return friendList;
     });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "subscribeList", function () {
+      return subscribeList;
+    });
     /* harmony import */
 
 
@@ -8278,6 +8338,151 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var friendList = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createSelector"])(profileFeature, function (state) {
       return state.friendList;
     });
+    var subscribeList = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createSelector"])(profileFeature, function (state) {
+      return state.subscribeList;
+    });
+    /***/
+  },
+
+  /***/
+  "./src/app/services/admin.service.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/services/admin.service.ts ***!
+    \*******************************************/
+
+  /*! exports provided: AdminService */
+
+  /***/
+  function srcAppServicesAdminServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminService", function () {
+      return AdminService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../environments/environment */
+    "./src/environments/environment.ts");
+
+    var AdminService = /*#__PURE__*/function () {
+      function AdminService(http) {
+        _classCallCheck(this, AdminService);
+
+        this.http = http;
+      }
+
+      _createClass(AdminService, [{
+        key: "sendAnonymousMsg",
+        value: function sendAnonymousMsg(body) {
+          return this.http.post("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Sms"), body);
+        }
+      }, {
+        key: "editProfile",
+        value: function editProfile(body) {
+          return this.http.put("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Account/EditProfile"), body);
+        }
+      }, {
+        key: "getUserInfo",
+        value: function getUserInfo() {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Account/UserInfo"));
+        }
+      }, {
+        key: "getFriendList",
+        value: function getFriendList(isPending, keyword, isDesc, page, pageSize) {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Friend/GetFriends?isPending=").concat(isPending, "&keyword=").concat(keyword, "&isDesc=").concat(isDesc, "&page=").concat(page, "&pageSize=").concat(pageSize));
+        }
+      }, {
+        key: "sendFriendRequest",
+        value: function sendFriendRequest(body) {
+          return this.http.post("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Friends"), body);
+        }
+      }, {
+        key: "removeFriend",
+        value: function removeFriend(body) {
+          // return this.http.delete<any>(`${environment.apiUrl}/api/Friends`, body)
+          return this.http.request('delete', "".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Friends"), {
+            body: body,
+            observe: 'response'
+          });
+        }
+      }, {
+        key: "approveFriend",
+        value: function approveFriend(body) {
+          return this.http.put("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Friends"), body);
+        }
+      }, {
+        key: "getRecommendFriend",
+        value: function getRecommendFriend() {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Friend/GetRecommendFriend"));
+        }
+      }, {
+        key: "setHeader",
+        value: function setHeader(body) {
+          // let headers: HttpHeaders = new HttpHeaders();
+          // headers = headers.set('angularVN', 'Angular Viet Nam'); // --> gán lại cho biến headers
+          //   return this.http.get<PostEntityModel[]>(
+          //     'https://jsonplaceholder.typicode.com/posts',
+          //     { headers}
+          // );
+          return this.http.post("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Friend"), body, {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+              angularVN: 'Angular Viet Nam'
+            })
+          });
+        }
+      }, {
+        key: "getAllServices",
+        value: function getAllServices(status) {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Services/GetServices?isRegistered=").concat(status));
+        }
+      }, {
+        key: "subscribeServices",
+        value: function subscribeServices(id, day) {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Services/Subscribe?serviceId=").concat(id, "&due=").concat(day));
+        }
+      }, {
+        key: "unSubscribeServices",
+        value: function unSubscribeServices(id) {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Services/UnSubscribe?serviceId=").concat(id));
+        }
+      }]);
+
+      return AdminService;
+    }();
+
+    AdminService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    AdminService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], AdminService);
     /***/
   },
 
@@ -8480,7 +8685,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AuthenticationService, [{
         key: "login",
         value: function login(username, password) {
-          var _this7 = this;
+          var _this8 = this;
 
           // return this.http.post<any>(`${environment.apiUrl}/users/authenticate`, { username, password })
           //     .pipe(map(user => {
@@ -8497,7 +8702,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             // store user details and jwt token in local storage to keep user logged in between page refreshes
             localStorage.setItem('currentUser', JSON.stringify(user));
 
-            _this7.currentUserSubject.next(user);
+            _this8.currentUserSubject.next(user);
 
             return user;
           }));
@@ -8619,6 +8824,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../environments/environment */
+    "./src/environments/environment.ts");
 
     var DashboardService = /*#__PURE__*/function () {
       function DashboardService(http) {
@@ -8639,6 +8850,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             // 'Content-Type': 'application/json; charset=UTF-8',
             // }
           });
+        }
+      }, {
+        key: "getAllServices",
+        value: function getAllServices(status) {
+          return this.http.get("".concat(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/api/Services/GetServices?isRegistered=").concat(status));
         }
       }]);
 

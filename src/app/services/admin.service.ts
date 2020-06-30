@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment'
+import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class AdminService {
@@ -46,6 +47,15 @@ export class AdminService {
   //     { headers}
   // );
     return this.http.post<any>(`${environment.apiUrl}/api/Friend`, body, { headers: new HttpHeaders({ angularVN: 'Angular Viet Nam' })})
+  }
+  getAllServices(status): Observable<any> {
+    return this.http.get<any>(`${environment.apiUrl}/api/Services/GetServices?isRegistered=${status}`);
+  }
+  subscribeServices(id, day) {
+    return this.http.get<any>(`${environment.apiUrl}/api/Services/Subscribe?serviceId=${id}&due=${day}`);
+  }
+  unSubscribeServices(id) {
+    return this.http.get<any>(`${environment.apiUrl}/api/Services/UnSubscribe?serviceId=${id}`);
   }
 
 }

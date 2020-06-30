@@ -8,6 +8,7 @@ import { AuthGuard } from '../auth/auth.guard';
 import { FriendRequestComponent } from './friend-request/friend-request.component';
 import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.component';
 import { SettingsComponent } from './settings/settings.component';
+import { SubscriptionListComponent } from './subscription-list/subscription-list.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'friend-suggestion', component: FriendSuggestionComponent, canActivate: [AuthGuard] },
   { path: 'friend-request', component: FriendRequestComponent, canActivate: [AuthGuard] },
   { path: 'friend-receive', component: FriendReiceveComponent, canActivate: [AuthGuard] },
+  { path: 'manage-subscription', component: SubscriptionListComponent },
   { path: 'setting', component: SettingsComponent, canActivate: [AuthGuard] },
 ];
 

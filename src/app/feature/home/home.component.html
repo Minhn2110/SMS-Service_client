@@ -72,7 +72,7 @@
       <div class="col-xl-12">
 
         <div class="section-headline centered margin-bottom-15">
-          <h3>Popular Job Categories</h3>
+          <h3>Popular Subscription Services</h3>
         </div>
 
         <!-- Category Boxes Container -->
@@ -85,7 +85,7 @@
             </div>
             <div class="category-box-counter">612</div>
             <div class="category-box-content">
-              <h3>Web & Software Dev</h3>
+              <h3>Breaking News</h3>
               <p>Software Engineer, Web / Mobile Developer & More</p>
             </div>
           </a>
@@ -97,7 +97,7 @@
             </div>
             <div class="category-box-counter">113</div>
             <div class="category-box-content">
-              <h3>Data Science & Analitycs</h3>
+              <h3>Sport News</h3>
               <p>Data Specialist / Scientist, Data Analyst & More</p>
             </div>
           </a>
@@ -109,7 +109,7 @@
             </div>
             <div class="category-box-counter">186</div>
             <div class="category-box-content">
-              <h3>Accounting & Consulting</h3>
+              <h3>Stock News</h3>
               <p>Auditor, Accountant, Fnancial Analyst & More</p>
             </div>
           </a>
@@ -121,59 +121,10 @@
             </div>
             <div class="category-box-counter">298</div>
             <div class="category-box-content">
-              <h3>Writing & Translations</h3>
+              <h3>COVID-19 News</h3>
               <p>Copywriter, Creative Writer, Translator & More</p>
             </div>
           </a>
-
-          <!-- Category Box -->
-          <a href="jobs-list-layout-2.html" class="category-box">
-            <div class="category-box-icon">
-              <i class="icon-line-awesome-pie-chart"></i>
-            </div>
-            <div class="category-box-counter">549</div>
-            <div class="category-box-content">
-              <h3>Sales & Marketing</h3>
-              <p>Brand Manager, Marketing Coordinator & More</p>
-            </div>
-          </a>
-
-          <!-- Category Box -->
-          <a href="jobs-list-layout-1.html" class="category-box">
-            <div class="category-box-icon">
-              <i class="icon-line-awesome-image"></i>
-            </div>
-            <div class="category-box-counter">873</div>
-            <div class="category-box-content">
-              <h3>Graphics & Design</h3>
-              <p>Creative Director, Web Designer & More</p>
-            </div>
-          </a>
-
-          <!-- Category Box -->
-          <a href="jobs-list-layout-2.html" class="category-box">
-            <div class="category-box-icon">
-              <i class="icon-line-awesome-bullhorn"></i>
-            </div>
-            <div class="category-box-counter">125</div>
-            <div class="category-box-content">
-              <h3>Digital Marketing</h3>
-              <p>Darketing Analyst, Social Profile Admin & More</p>
-            </div>
-          </a>
-
-          <!-- Category Box -->
-          <a href="jobs-grid-layout-full-page.html" class="category-box">
-            <div class="category-box-icon">
-              <i class="icon-line-awesome-graduation-cap"></i>
-            </div>
-            <div class="category-box-counter">445</div>
-            <div class="category-box-content">
-              <h3>Education & Training</h3>
-              <p>Advisor, Coach, Education Coordinator & More</p>
-            </div>
-          </a>
-
         </div>
 
       </div>
@@ -190,168 +141,42 @@
 				
 				<!-- Section Headline -->
 				<div class="section-headline margin-top-0 margin-bottom-35">
-					<h3>Featured Jobs</h3>
-					<a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Jobs</a>
+					<h3>Friend Suggestions</h3>
 				</div>
 				
 				<!-- Jobs Container -->
 				<div class="listings-container compact-list-layout margin-top-35">
 					
 					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
+					<a href="single-job-page.html" class="job-listing with-apply-button" *ngFor="let item of friend">
 
 						<!-- Job Listing Details -->
 						<div class="job-listing-details">
 
 							<!-- Logo -->
 							<div class="job-listing-company-logo">
-								<img src="images/company-logo-01.png" alt="">
+								<img src="{{item.Avatar}}" alt="">
 							</div>
 
 							<!-- Details -->
 							<div class="job-listing-description">
-								<h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
+								<h3 class="job-listing-title">{{item.Name}}</h3>
 
 								<!-- Job Listing Footer -->
 								<div class="job-listing-footer">
 									<ul>
-										<li><i class="icon-material-outline-business"></i> Hexagon <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+										<li><i class="icon-material-outline-business"></i> Available <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
+										<!-- <li><i class="icon-material-outline-location-on"></i> San Francissco</li> -->
+										<!-- <li><i class="icon-material-outline-business-center"></i> Full Time</li> -->
+										<!-- <li><i class="icon-material-outline-access-time"></i>{{item.Email}}</li> -->
 									</ul>
 								</div>
 							</div>
 
 							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
+							<span class="list-apply-button ripple-effect">Add Now</span>
 						</div>
 					</a>	
-
-
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="images/company-logo-05.png" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Competition Law Officer</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Laxo</li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
-						</div>
-					</a>
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="images/company-logo-02.png" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Barista and Cashier</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Coffee</li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
-						</div>
-					</a>
-					
-
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="images/company-logo-03.png" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Restaurant General Manager</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> King <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
-						</div>
-					</a>
-
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="images/company-logo-05.png" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">International Marketing Coordinator</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Skyist</li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
-						</div>
-					</a>
 
 				</div>
 				<!-- Jobs Container / End -->

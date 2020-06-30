@@ -15,6 +15,7 @@ import { ProfileEffects } from './state/profile.effects';
 import { FriendRequestComponent } from './friend-request/friend-request.component';
 import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.component';
 import { SettingsComponent } from './settings/settings.component';
+import { SubscriptionListComponent } from './subscription-list/subscription-list.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SettingsComponent } from './settings/settings.component';
     FriendLayoutComponent,
     FriendReiceveComponent,
     SettingsComponent,
+    SubscriptionListComponent,
     ProfileComponent
 
   ],

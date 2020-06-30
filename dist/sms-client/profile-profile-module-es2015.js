@@ -117,6 +117,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/profile/subscription-list/subscription-list.component.html":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/profile/subscription-list/subscription-list.component.html ***!
+  \******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\t\t\t<!-- Dashboard Headline -->\n\t\t\t<div class=\"dashboard-headline\">\n\t\t\t\t<h3>Manage Subscriptions</h3>\n\n\t\t\t\t<!-- Breadcrumbs -->\n\t\t\t\t<nav id=\"breadcrumbs\" class=\"dark\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t\t\t\t<li><a href=\"#\">Dashboard</a></li>\n\t\t\t\t\t\t<li>Manage Tasks</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</nav>\n\t\t\t</div>\n\t\n\t\t\t<!-- Row -->\n\t\t\t<div class=\"row\">\n\n\t\t\t\t<!-- Dashboard Box -->\n\t\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t\t<div class=\"dashboard-box margin-top-0\">\n\n\t\t\t\t\t\t<!-- Headline -->\n\t\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t\t\t<h3><i class=\"icon-material-outline-assignment\"></i> My Tasks</h3>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"content\">\n\t\t\t\t\t\t\t<ul class=\"dashboard-box-list\">\n\t\t\t\t\t\t\t\t<li *ngFor=\"let item of subscriptionList\">\n\t\t\t\t\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t\t\t\t\t<div class=\"job-listing width-adjustment\">\n\n\t\t\t\t\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\"><a href=\"#\">{{item.Name}}</a> <span class=\"dashboard-status-button yellow\">Expiring</span></h3>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 23 hours left</li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<!-- Task Details -->\n\t\t\t\t\t\t\t\t\t<ul class=\"dashboard-task-info\">\n\t\t\t\t\t\t\t\t\t\t<li><strong>3</strong><span>Subscribers</span></li>\n\t\t\t\t\t\t\t\t\t\t<li><strong>${{item.Price}}</strong><span>Price</span></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\n\t\t\t\t\t\t\t\t\t<!-- Buttons -->\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-to-right always-visible\">\n                    <a href=\"javascript:void(0)\" class=\"button ripple-effect\" (click)=\"enterSubscriptionLength(item.Id)\" *ngIf=\"item.active\"><i class=\"icon-material-outline-supervisor-account\" ></i> Subscribe</a>\n                    <a href=\"javascript:void(0)\" *ngIf=\"!item.active\" class=\"button dark ripple-effect\"><i class=\"icon-feather-rotate-ccw\"></i> Already Subscribed</a>\n\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"button gray ripple-effect ico\" title=\"Remove\" data-tippy-placement=\"top\" (click)=\"unsubscribeService(item.Id)\"><i class=\"icon-feather-trash-2\"></i></a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\t\t\t<!-- Row / End -->");
+
+/***/ }),
+
 /***/ "./src/app/profile/dashboard/dashboard.component.scss":
 /*!************************************************************!*\
   !*** ./src/app/profile/dashboard/dashboard.component.scss ***!
@@ -762,6 +775,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _friend_request_friend_request_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./friend-request/friend-request.component */ "./src/app/profile/friend-request/friend-request.component.ts");
 /* harmony import */ var _friend_reiceve_friend_reiceve_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./friend-reiceve/friend-reiceve.component */ "./src/app/profile/friend-reiceve/friend-reiceve.component.ts");
 /* harmony import */ var _settings_settings_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./settings/settings.component */ "./src/app/profile/settings/settings.component.ts");
+/* harmony import */ var _subscription_list_subscription_list_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./subscription-list/subscription-list.component */ "./src/app/profile/subscription-list/subscription-list.component.ts");
+
 
 
 
@@ -793,6 +808,7 @@ ProfileModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _friend_layout_friend_layout_component__WEBPACK_IMPORTED_MODULE_10__["FriendLayoutComponent"],
             _friend_reiceve_friend_reiceve_component__WEBPACK_IMPORTED_MODULE_16__["FriendReiceveComponent"],
             _settings_settings_component__WEBPACK_IMPORTED_MODULE_17__["SettingsComponent"],
+            _subscription_list_subscription_list_component__WEBPACK_IMPORTED_MODULE_18__["SubscriptionListComponent"],
             _profile_component__WEBPACK_IMPORTED_MODULE_8__["ProfileComponent"]
         ],
         imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
@@ -831,6 +847,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _friend_request_friend_request_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./friend-request/friend-request.component */ "./src/app/profile/friend-request/friend-request.component.ts");
 /* harmony import */ var _friend_reiceve_friend_reiceve_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./friend-reiceve/friend-reiceve.component */ "./src/app/profile/friend-reiceve/friend-reiceve.component.ts");
 /* harmony import */ var _settings_settings_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./settings/settings.component */ "./src/app/profile/settings/settings.component.ts");
+/* harmony import */ var _subscription_list_subscription_list_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./subscription-list/subscription-list.component */ "./src/app/profile/subscription-list/subscription-list.component.ts");
+
 
 
 
@@ -850,6 +868,7 @@ const routes = [
     { path: 'friend-suggestion', component: _friend_suggestion_friend_suggestion_component__WEBPACK_IMPORTED_MODULE_6__["FriendSuggestionComponent"], canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
     { path: 'friend-request', component: _friend_request_friend_request_component__WEBPACK_IMPORTED_MODULE_8__["FriendRequestComponent"], canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
     { path: 'friend-receive', component: _friend_reiceve_friend_reiceve_component__WEBPACK_IMPORTED_MODULE_9__["FriendReiceveComponent"], canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    { path: 'manage-subscription', component: _subscription_list_subscription_list_component__WEBPACK_IMPORTED_MODULE_11__["SubscriptionListComponent"] },
     { path: 'setting', component: _settings_settings_component__WEBPACK_IMPORTED_MODULE_10__["SettingsComponent"], canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
 ];
 let ProfileRoutingModule = class ProfileRoutingModule {
@@ -1044,6 +1063,29 @@ let ProfileEffects = class ProfileEffects {
         this.getFriendList$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["createEffect"])(() => {
             return this.actions$.pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["ofType"])(_profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileActionTypes"].ProfileGetFriendList), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["mergeMap"])(() => this.adminService.getFriendList(null, '', true, 1, 10).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(friendList => _profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileGetFriendListSuccess"]({ friendList })))));
         });
+        this.getsubscribeList$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["createEffect"])(() => {
+            return this.actions$.pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["ofType"])(_profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileGetSubscribeService"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((obj) => this.adminService.getAllServices(obj.status).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["tap"])(subscribeList => {
+                subscribeList.forEach(item2 => {
+                    item2.active = true;
+                });
+                this.adminService.getAllServices(true).subscribe(res => {
+                    if (res) {
+                        if (res.length > 0) {
+                            res.forEach(item1 => {
+                                subscribeList.forEach(item2 => {
+                                    if (item1.Id == item2.Id) {
+                                        item2.active = false;
+                                    }
+                                    else {
+                                        item2.active = true;
+                                    }
+                                });
+                            });
+                        }
+                    }
+                });
+            }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["delay"])(2000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(subscribeList => _profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileGetSubscribeServiceSuccess"]({ subscribeList })))));
+        });
     }
 };
 ProfileEffects.ctorParameters = () => [
@@ -1082,6 +1124,8 @@ const _counterReducer = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createR
     return Object.assign({}, state, { userInfo: info });
 }), Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["on"])(_profile_actions__WEBPACK_IMPORTED_MODULE_2__["ProfileGetFriendListSuccess"], (state, { friendList }) => {
     return Object.assign({}, state, { friendList: friendList });
+}), Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["on"])(_profile_actions__WEBPACK_IMPORTED_MODULE_2__["ProfileGetSubscribeServiceSuccess"], (state, { subscribeList }) => {
+    return Object.assign({}, state, { subscribeList: subscribeList });
 }));
 function counterReducer(state, action) {
     return _counterReducer(state, action);
@@ -1090,72 +1134,115 @@ function counterReducer(state, action) {
 
 /***/ }),
 
-/***/ "./src/app/services/admin.service.ts":
-/*!*******************************************!*\
-  !*** ./src/app/services/admin.service.ts ***!
-  \*******************************************/
-/*! exports provided: AdminService */
+/***/ "./src/app/profile/subscription-list/subscription-list.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/profile/subscription-list/subscription-list.component.css ***!
+  \***************************************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminService", function() { return AdminService; });
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2ZpbGUvc3Vic2NyaXB0aW9uLWxpc3Qvc3Vic2NyaXB0aW9uLWxpc3QuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/profile/subscription-list/subscription-list.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/profile/subscription-list/subscription-list.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: SubscriptionListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubscriptionListComponent", function() { return SubscriptionListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var src_app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/admin.service */ "./src/app/services/admin.service.ts");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var src_app_services_alert_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/alert.service */ "./src/app/services/alert.service.ts");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm2015/store.js");
+/* harmony import */ var _profile_state_profile_selector__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../profile/state/profile.selector */ "./src/app/profile/state/profile.selector.ts");
+/* harmony import */ var _profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../profile/state/profile.actions */ "./src/app/profile/state/profile.actions.ts");
 
 
 
 
-let AdminService = class AdminService {
-    constructor(http) {
-        this.http = http;
+
+
+
+
+let SubscriptionListComponent = class SubscriptionListComponent {
+    constructor(adminService, alertService, store) {
+        this.adminService = adminService;
+        this.alertService = alertService;
+        this.store = store;
     }
-    sendAnonymousMsg(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Sms`, body);
+    ngOnInit() {
+        this.getSubscriptionList();
     }
-    editProfile(body) {
-        return this.http.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Account/EditProfile`, body);
-    }
-    getUserInfo() {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Account/UserInfo`);
-    }
-    getFriendList(isPending, keyword, isDesc, page, pageSize) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Friend/GetFriends?isPending=${isPending}&keyword=${keyword}&isDesc=${isDesc}&page=${page}&pageSize=${pageSize}`);
-    }
-    sendFriendRequest(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Friends`, body);
-    }
-    removeFriend(body) {
-        // return this.http.delete<any>(`${environment.apiUrl}/api/Friends`, body)
-        return this.http.request('delete', `${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Friends`, {
-            body: body,
-            observe: 'response'
+    getSubscriptionList() {
+        this.store.dispatch(_profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_7__["ProfileGetSubscribeService"]({ status: null }));
+        this.store.select(_profile_state_profile_selector__WEBPACK_IMPORTED_MODULE_6__["subscribeList"]).subscribe(list => {
+            console.log('list', list);
+            this.subscriptionList = list;
         });
     }
-    approveFriend(body) {
-        return this.http.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Friends`, body);
+    enterSubscriptionLength(id) {
+        console.log(id);
+        sweetalert2__WEBPACK_IMPORTED_MODULE_3___default.a.fire({
+            title: 'Please enter your days',
+            input: 'text',
+            width: '40em',
+            inputAttributes: {
+                autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Submit',
+            showLoaderOnConfirm: true,
+            customClass: {
+                title: 'phone-verification-header',
+                input: 'input-text with-border',
+                confirmButton: 'button'
+            },
+            allowOutsideClick: () => !sweetalert2__WEBPACK_IMPORTED_MODULE_3___default.a.isLoading()
+        }).then((result) => {
+            console.log('result', result);
+            if (result.value) {
+                this.adminService.subscribeServices(id, result.value).subscribe(data => {
+                    if (data) {
+                        this.alertService.successCounterup('Subscription', 'Subscription Success !!!');
+                        this.store.dispatch(_profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_7__["ProfileGetSubscribeService"]({ status: null }));
+                    }
+                });
+            }
+            else {
+                this.alertService.error('Please enter days');
+            }
+        });
     }
-    getRecommendFriend() {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Friend/GetRecommendFriend`);
-    }
-    setHeader(body) {
-        // let headers: HttpHeaders = new HttpHeaders();
-        // headers = headers.set('angularVN', 'Angular Viet Nam'); // --> gán lại cho biến headers
-        //   return this.http.get<PostEntityModel[]>(
-        //     'https://jsonplaceholder.typicode.com/posts',
-        //     { headers}
-        // );
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/api/Friend`, body, { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ angularVN: 'Angular Viet Nam' }) });
+    unsubscribeService(id) {
+        this.adminService.unSubscribeServices(id).subscribe(res => {
+            console.log(res);
+            this.store.dispatch(_profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_7__["ProfileGetSubscribeService"]({ status: null }));
+            this.alertService.successCounterup('Subscription', 'UnSubscription Success !!!');
+        });
     }
 };
-AdminService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+SubscriptionListComponent.ctorParameters = () => [
+    { type: src_app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__["AdminService"] },
+    { type: src_app_services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"] },
+    { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_5__["Store"] }
 ];
-AdminService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
-], AdminService);
+SubscriptionListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'sms-subscription-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./subscription-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/profile/subscription-list/subscription-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./subscription-list.component.css */ "./src/app/profile/subscription-list/subscription-list.component.css")).default]
+    })
+], SubscriptionListComponent);
 
 
 
