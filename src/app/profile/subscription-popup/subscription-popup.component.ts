@@ -1,58 +1,44 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-
-declare var paypal;
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Store } from '@ngrx/store';
+import * as profileSelector from '../../profile/state/profile.selector'
+import * as ProfileActions from '../../profile/state/profile.actions';
+import { AdminService } from 'src/app/services/admin.service';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'sms-subscription-popup',
   templateUrl: './subscription-popup.component.html',
-  styleUrls: ['./subscription-popup.component.css']
+  styleUrls: ['./subscription-popup.component.scss']
 })
 export class SubscriptionPopupComponent implements OnInit {
-  @ViewChild('paypal', { static: true }) paypalElement: ElementRef;
-  vipAccount = {
-    price: 70,
-    description: 'Vip Account',
-  };
+  price: any;
+  id: any;
   constructor(
-    public dialog: MatDialog
+    public dialog: MatDialog,
+
+    private store: Store,
+    private adminService: AdminService,
+    private alertService: AlertService,
+    @Inject(MAT_DIALOG_DATA) public data: any
+
 
   ) { }
 
   ngOnInit() {
-    this.integratePaypal();
+    this.price = this.data.price;
+    this.id = this.data.id
+    console.log(this.price);
+    console.log(this.id);
   }
 
-  integratePaypal(): void {
-    paypal
-      .Buttons({
-        createOrder: (data, actions) => {
-          return actions.order.create({
-            purchase_units: [
-              {
-                description: this.vipAccount.description,
-                amount: {
-                  currency_code: 'USD',
-                  value: this.vipAccount.price
-                }
-              }
-            ]
-          });
-        },
-        onApprove: async (data, actions) => {
-          const order = await actions.order.capture();
-          // this.showMsg('Payment Successful !!!', 'This message will close in <b></b> milliseconds.');
-          alert('success')
-          console.log('paypal', order);
-          setTimeout(() => {
-            // this.upgradeAccount();
-          }, 2500);
-        },
-        onError: err => {
-          console.log(err);
-        }
-      })
-      .render(this.paypalElement.nativeElement);
+  goToCheckout(price, Subscibetype: any) {
+    console.log('Subscibetype', Subscibetype);
+    this.store.dispatch(ProfileActions.ProfileSubscriptionPrice({id: this.id, price: price, subscriptionPlan: Subscibetype}));
+
+    console.log(price);
+
   }
   
 

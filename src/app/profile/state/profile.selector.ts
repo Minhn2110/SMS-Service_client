@@ -14,3 +14,7 @@ export const subscribeList = createSelector(
   profileFeature,
   (state: any) => state.subscribeList
 );
+export const subscribeInfo = createSelector(
+  profileFeature,
+  (state: any) => state.subscribeInfo
+);

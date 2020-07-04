@@ -21,7 +21,7 @@
 					<!-- Plan -->
 					<div class="pricing-plan">
 						<h3>Basic Plan</h3>
-						<div class="pricing-plan-label billed-monthly-label"><strong>4,49$</strong>/ monthly</div>
+						<div class="pricing-plan-label billed-monthly-label"><strong>{{price}} $</strong>/ monthly</div>
 						<div class="pricing-plan-features">
 							<strong>Features of Basic Plan</strong>
 							<ul>
@@ -30,14 +30,14 @@
 								<li>Highlighted in Search Results</li>
 							</ul>
 						</div>
-						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Select</a>
+						<a routerLink="/profile/checkout" routerLinkActive="router-link-active"  class="button full-width margin-top-20" (click)="goToCheckout(price, 'Basic')">Buy Now</a>
 					</div>
 
 					<!-- Plan -->
 					<div class="pricing-plan recommended">
 						<div class="recommended-badge">Recommended</div>
 						<h3>Standard Plan</h3>
-						<div class="pricing-plan-label billed-monthly-label"><strong>24,99$</strong>/ 6 months</div>
+						<div class="pricing-plan-label billed-monthly-label"><strong>{{price * 6}} $</strong>/ 6 months</div>
 						<div class="pricing-plan-features">
 							<strong>Features of Standard Plan</strong>
 							<ul>
@@ -46,13 +46,13 @@
 								<li>Highlighted in Search Results</li>
 							</ul>
 						</div>
-            <a href="pages-checkout-page.html" class="button full-width margin-top-20">Select</a>
+            <a routerLink="/profile/checkout" routerLinkActive="router-link-active"  class="button full-width margin-top-20" (click)="goToCheckout(price * 6, 'Standard')">Buy Now</a>
 					</div>
 
 					<!-- Plan -->
 					<div class="pricing-plan">
 						<h3>Extended Plan</h3>
-						<div class="pricing-plan-label billed-monthly-label"><strong>$42,99$</strong>/ year</div>
+						<div class="pricing-plan-label billed-monthly-label"><strong>{{price * 12}} $</strong>/ year</div>
 						<div class="pricing-plan-features">
 							<strong>Features of Extended Plan</strong>
 							<ul>
@@ -61,7 +61,7 @@
 								<li>Highlighted in Search Results</li>
 							</ul>
 						</div>
-						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Select</a>
+						<a routerLink="/profile/checkout" routerLinkActive="router-link-active"  class="button full-width margin-top-20" (click)="goToCheckout(price * 12, 'Extended')">Buy Now</a>
           </div>
           
 
@@ -69,7 +69,7 @@
 
       </div>
       
-      <div class="paypal_section col-xl-12" #paypal></div>
+      <!-- <div class="paypal_section col-xl-12" #paypal></div> -->
 
 
 		</div>

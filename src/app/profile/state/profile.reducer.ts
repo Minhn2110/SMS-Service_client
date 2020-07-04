@@ -18,6 +18,9 @@ const _counterReducer = createReducer(
   on(ProfileActions.ProfileGetSubscribeServiceSuccess, (state, { subscribeList }) => {
     return {...state, subscribeList: subscribeList}
   }),
+  on(ProfileActions.ProfileSubscriptionPrice, (state, { id, price, subscriptionPlan }) => {
+    return {...state, subscribeInfo: {id: id, subscribePrice: price, subscriptionPlan: subscriptionPlan} }
+  }),
   // on(decrement, state => state - 1),
   // on(reset, state => 0),
 );

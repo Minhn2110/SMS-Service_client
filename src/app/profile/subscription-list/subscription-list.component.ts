@@ -75,10 +75,14 @@ export class SubscriptionListComponent implements OnInit {
     })
   }
 
-  openDialog(id) {
+  openDialog(itemPrice, itemId) {
     const dialogRef = this.dialog.open(SubscriptionPopupComponent, {
       height: '600px',
-      width: '950px',
+      width: '1050px',
+      data: {
+        price: itemPrice,
+        id: itemId,
+      }
     });
 
     dialogRef.afterClosed().subscribe(result => {

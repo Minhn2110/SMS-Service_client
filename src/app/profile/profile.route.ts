@@ -9,6 +9,7 @@ import { FriendRequestComponent } from './friend-request/friend-request.componen
 import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SubscriptionListComponent } from './subscription-list/subscription-list.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'friend-request', component: FriendRequestComponent, canActivate: [AuthGuard] },
   { path: 'friend-receive', component: FriendReiceveComponent, canActivate: [AuthGuard] },
   { path: 'manage-subscription', component: SubscriptionListComponent },
+  { path: 'checkout', component: CheckoutComponent },
   { path: 'setting', component: SettingsComponent, canActivate: [AuthGuard] },
 ];
 
