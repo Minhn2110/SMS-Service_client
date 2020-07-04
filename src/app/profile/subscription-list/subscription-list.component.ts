@@ -5,6 +5,8 @@ import { AlertService } from 'src/app/services/alert.service';
 import { Store } from '@ngrx/store';
 import * as profileSelector from '../../profile/state/profile.selector'
 import * as ProfileActions from '../../profile/state/profile.actions';
+import { MatDialog } from '@angular/material/dialog';
+import { SubscriptionPopupComponent } from '../subscription-popup/subscription-popup.component';
 
 @Component({
   selector: 'sms-subscription-list',
@@ -16,7 +18,9 @@ export class SubscriptionListComponent implements OnInit {
   constructor(
     private adminService: AdminService,
     private alertService: AlertService,
-    private store: Store
+    private store: Store,
+    public dialog: MatDialog
+
 
   ) { }
 
@@ -69,6 +73,17 @@ export class SubscriptionListComponent implements OnInit {
       this.store.dispatch(ProfileActions.ProfileGetSubscribeService({status: null}));
       this.alertService.successCounterup('Subscription', 'UnSubscription Success !!!');
     })
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(SubscriptionPopupComponent, {
+      height: '600px',
+      width: '950px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }

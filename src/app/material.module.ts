@@ -37,8 +37,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    BrowserAnimationsModule,
+    // CommonModule,
+    // BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -70,7 +70,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatTableModule 
 
   ],
   exports: [
@@ -91,7 +92,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatPaginatorModule,
     MatDialogModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,MatSlideToggleModule
   ],
   providers: [
     MatDatepickerModule

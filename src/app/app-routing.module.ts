@@ -5,6 +5,8 @@ import { NormalLayoutComponent } from './layout/normal-layout/normal-layout.comp
 import { ProfileLayoutComponent } from './layout/profile-layout/profile-layout.component';
 import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
 import { AuthGuard } from './auth/auth.guard';
+import { AdminComponent } from './admin/admin.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 
 
 const routes: Routes = [
@@ -16,10 +18,11 @@ const routes: Routes = [
     ]
   },
   { path: 'profile', component: ProfileLayoutComponent, loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule), canActivate: [AuthGuard]},
+  { path: 'admin/login', component: AdminLoginComponent },
+  { path: 'admin', component: AdminComponent ,loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: '', redirectTo: '/client/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/client/pages-404' },
 ];
-
 
 
 @NgModule({

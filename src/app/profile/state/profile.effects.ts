@@ -38,21 +38,21 @@ export class ProfileEffects {
   getsubscribeList$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(ProfileActions.ProfileGetSubscribeService),
-      switchMap((obj) =>
+      mergeMap((obj) =>
         this.adminService.getAllServices(obj.status).pipe(
           tap(subscribeList => {
-            subscribeList.forEach(item2 => {
-              item2.active = true;
+            subscribeList.forEach(x => {
+              x.active = true;
             });
             this.adminService.getAllServices(true).subscribe(res => {
               if (res) {
                 if (res.length > 0) {
                   res.forEach(item1 => {
                     subscribeList.forEach(item2 => {
-                      if (item1.Id == item2.Id) {
+                      // debugger
+                      if (item1.Id === item2.Id) {
                         item2.active = false;
                       } else {
-                        item2.active = true;
                       }
                     })
                   });
@@ -61,7 +61,7 @@ export class ProfileEffects {
             })
           }
           ),
-          delay(2000),
+          delay(3000),
           map(subscribeList =>
             ProfileActions.ProfileGetSubscribeServiceSuccess({ subscribeList })),
           // catchError(error => of(FeatureActions.actionFailure({ error })))

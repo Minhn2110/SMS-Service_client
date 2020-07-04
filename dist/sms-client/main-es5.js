@@ -1,8 +1,8 @@
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
   /***/
@@ -5149,6 +5149,350 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+  /*!**************************************************!*\
+    !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+    \**************************************************/
+
+  /*! no static exports found */
+
+  /***/
+  function node_modulesMomentLocaleSyncRecursive$(module, exports, __webpack_require__) {
+    var map = {
+      "./af": "./node_modules/moment/locale/af.js",
+      "./af.js": "./node_modules/moment/locale/af.js",
+      "./ar": "./node_modules/moment/locale/ar.js",
+      "./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+      "./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+      "./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+      "./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+      "./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+      "./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+      "./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+      "./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+      "./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+      "./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+      "./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+      "./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+      "./ar.js": "./node_modules/moment/locale/ar.js",
+      "./az": "./node_modules/moment/locale/az.js",
+      "./az.js": "./node_modules/moment/locale/az.js",
+      "./be": "./node_modules/moment/locale/be.js",
+      "./be.js": "./node_modules/moment/locale/be.js",
+      "./bg": "./node_modules/moment/locale/bg.js",
+      "./bg.js": "./node_modules/moment/locale/bg.js",
+      "./bm": "./node_modules/moment/locale/bm.js",
+      "./bm.js": "./node_modules/moment/locale/bm.js",
+      "./bn": "./node_modules/moment/locale/bn.js",
+      "./bn.js": "./node_modules/moment/locale/bn.js",
+      "./bo": "./node_modules/moment/locale/bo.js",
+      "./bo.js": "./node_modules/moment/locale/bo.js",
+      "./br": "./node_modules/moment/locale/br.js",
+      "./br.js": "./node_modules/moment/locale/br.js",
+      "./bs": "./node_modules/moment/locale/bs.js",
+      "./bs.js": "./node_modules/moment/locale/bs.js",
+      "./ca": "./node_modules/moment/locale/ca.js",
+      "./ca.js": "./node_modules/moment/locale/ca.js",
+      "./cs": "./node_modules/moment/locale/cs.js",
+      "./cs.js": "./node_modules/moment/locale/cs.js",
+      "./cv": "./node_modules/moment/locale/cv.js",
+      "./cv.js": "./node_modules/moment/locale/cv.js",
+      "./cy": "./node_modules/moment/locale/cy.js",
+      "./cy.js": "./node_modules/moment/locale/cy.js",
+      "./da": "./node_modules/moment/locale/da.js",
+      "./da.js": "./node_modules/moment/locale/da.js",
+      "./de": "./node_modules/moment/locale/de.js",
+      "./de-at": "./node_modules/moment/locale/de-at.js",
+      "./de-at.js": "./node_modules/moment/locale/de-at.js",
+      "./de-ch": "./node_modules/moment/locale/de-ch.js",
+      "./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+      "./de.js": "./node_modules/moment/locale/de.js",
+      "./dv": "./node_modules/moment/locale/dv.js",
+      "./dv.js": "./node_modules/moment/locale/dv.js",
+      "./el": "./node_modules/moment/locale/el.js",
+      "./el.js": "./node_modules/moment/locale/el.js",
+      "./en-au": "./node_modules/moment/locale/en-au.js",
+      "./en-au.js": "./node_modules/moment/locale/en-au.js",
+      "./en-ca": "./node_modules/moment/locale/en-ca.js",
+      "./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+      "./en-gb": "./node_modules/moment/locale/en-gb.js",
+      "./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+      "./en-ie": "./node_modules/moment/locale/en-ie.js",
+      "./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+      "./en-il": "./node_modules/moment/locale/en-il.js",
+      "./en-il.js": "./node_modules/moment/locale/en-il.js",
+      "./en-in": "./node_modules/moment/locale/en-in.js",
+      "./en-in.js": "./node_modules/moment/locale/en-in.js",
+      "./en-nz": "./node_modules/moment/locale/en-nz.js",
+      "./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+      "./en-sg": "./node_modules/moment/locale/en-sg.js",
+      "./en-sg.js": "./node_modules/moment/locale/en-sg.js",
+      "./eo": "./node_modules/moment/locale/eo.js",
+      "./eo.js": "./node_modules/moment/locale/eo.js",
+      "./es": "./node_modules/moment/locale/es.js",
+      "./es-do": "./node_modules/moment/locale/es-do.js",
+      "./es-do.js": "./node_modules/moment/locale/es-do.js",
+      "./es-us": "./node_modules/moment/locale/es-us.js",
+      "./es-us.js": "./node_modules/moment/locale/es-us.js",
+      "./es.js": "./node_modules/moment/locale/es.js",
+      "./et": "./node_modules/moment/locale/et.js",
+      "./et.js": "./node_modules/moment/locale/et.js",
+      "./eu": "./node_modules/moment/locale/eu.js",
+      "./eu.js": "./node_modules/moment/locale/eu.js",
+      "./fa": "./node_modules/moment/locale/fa.js",
+      "./fa.js": "./node_modules/moment/locale/fa.js",
+      "./fi": "./node_modules/moment/locale/fi.js",
+      "./fi.js": "./node_modules/moment/locale/fi.js",
+      "./fil": "./node_modules/moment/locale/fil.js",
+      "./fil.js": "./node_modules/moment/locale/fil.js",
+      "./fo": "./node_modules/moment/locale/fo.js",
+      "./fo.js": "./node_modules/moment/locale/fo.js",
+      "./fr": "./node_modules/moment/locale/fr.js",
+      "./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+      "./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+      "./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+      "./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+      "./fr.js": "./node_modules/moment/locale/fr.js",
+      "./fy": "./node_modules/moment/locale/fy.js",
+      "./fy.js": "./node_modules/moment/locale/fy.js",
+      "./ga": "./node_modules/moment/locale/ga.js",
+      "./ga.js": "./node_modules/moment/locale/ga.js",
+      "./gd": "./node_modules/moment/locale/gd.js",
+      "./gd.js": "./node_modules/moment/locale/gd.js",
+      "./gl": "./node_modules/moment/locale/gl.js",
+      "./gl.js": "./node_modules/moment/locale/gl.js",
+      "./gom-deva": "./node_modules/moment/locale/gom-deva.js",
+      "./gom-deva.js": "./node_modules/moment/locale/gom-deva.js",
+      "./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+      "./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+      "./gu": "./node_modules/moment/locale/gu.js",
+      "./gu.js": "./node_modules/moment/locale/gu.js",
+      "./he": "./node_modules/moment/locale/he.js",
+      "./he.js": "./node_modules/moment/locale/he.js",
+      "./hi": "./node_modules/moment/locale/hi.js",
+      "./hi.js": "./node_modules/moment/locale/hi.js",
+      "./hr": "./node_modules/moment/locale/hr.js",
+      "./hr.js": "./node_modules/moment/locale/hr.js",
+      "./hu": "./node_modules/moment/locale/hu.js",
+      "./hu.js": "./node_modules/moment/locale/hu.js",
+      "./hy-am": "./node_modules/moment/locale/hy-am.js",
+      "./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+      "./id": "./node_modules/moment/locale/id.js",
+      "./id.js": "./node_modules/moment/locale/id.js",
+      "./is": "./node_modules/moment/locale/is.js",
+      "./is.js": "./node_modules/moment/locale/is.js",
+      "./it": "./node_modules/moment/locale/it.js",
+      "./it-ch": "./node_modules/moment/locale/it-ch.js",
+      "./it-ch.js": "./node_modules/moment/locale/it-ch.js",
+      "./it.js": "./node_modules/moment/locale/it.js",
+      "./ja": "./node_modules/moment/locale/ja.js",
+      "./ja.js": "./node_modules/moment/locale/ja.js",
+      "./jv": "./node_modules/moment/locale/jv.js",
+      "./jv.js": "./node_modules/moment/locale/jv.js",
+      "./ka": "./node_modules/moment/locale/ka.js",
+      "./ka.js": "./node_modules/moment/locale/ka.js",
+      "./kk": "./node_modules/moment/locale/kk.js",
+      "./kk.js": "./node_modules/moment/locale/kk.js",
+      "./km": "./node_modules/moment/locale/km.js",
+      "./km.js": "./node_modules/moment/locale/km.js",
+      "./kn": "./node_modules/moment/locale/kn.js",
+      "./kn.js": "./node_modules/moment/locale/kn.js",
+      "./ko": "./node_modules/moment/locale/ko.js",
+      "./ko.js": "./node_modules/moment/locale/ko.js",
+      "./ku": "./node_modules/moment/locale/ku.js",
+      "./ku.js": "./node_modules/moment/locale/ku.js",
+      "./ky": "./node_modules/moment/locale/ky.js",
+      "./ky.js": "./node_modules/moment/locale/ky.js",
+      "./lb": "./node_modules/moment/locale/lb.js",
+      "./lb.js": "./node_modules/moment/locale/lb.js",
+      "./lo": "./node_modules/moment/locale/lo.js",
+      "./lo.js": "./node_modules/moment/locale/lo.js",
+      "./lt": "./node_modules/moment/locale/lt.js",
+      "./lt.js": "./node_modules/moment/locale/lt.js",
+      "./lv": "./node_modules/moment/locale/lv.js",
+      "./lv.js": "./node_modules/moment/locale/lv.js",
+      "./me": "./node_modules/moment/locale/me.js",
+      "./me.js": "./node_modules/moment/locale/me.js",
+      "./mi": "./node_modules/moment/locale/mi.js",
+      "./mi.js": "./node_modules/moment/locale/mi.js",
+      "./mk": "./node_modules/moment/locale/mk.js",
+      "./mk.js": "./node_modules/moment/locale/mk.js",
+      "./ml": "./node_modules/moment/locale/ml.js",
+      "./ml.js": "./node_modules/moment/locale/ml.js",
+      "./mn": "./node_modules/moment/locale/mn.js",
+      "./mn.js": "./node_modules/moment/locale/mn.js",
+      "./mr": "./node_modules/moment/locale/mr.js",
+      "./mr.js": "./node_modules/moment/locale/mr.js",
+      "./ms": "./node_modules/moment/locale/ms.js",
+      "./ms-my": "./node_modules/moment/locale/ms-my.js",
+      "./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+      "./ms.js": "./node_modules/moment/locale/ms.js",
+      "./mt": "./node_modules/moment/locale/mt.js",
+      "./mt.js": "./node_modules/moment/locale/mt.js",
+      "./my": "./node_modules/moment/locale/my.js",
+      "./my.js": "./node_modules/moment/locale/my.js",
+      "./nb": "./node_modules/moment/locale/nb.js",
+      "./nb.js": "./node_modules/moment/locale/nb.js",
+      "./ne": "./node_modules/moment/locale/ne.js",
+      "./ne.js": "./node_modules/moment/locale/ne.js",
+      "./nl": "./node_modules/moment/locale/nl.js",
+      "./nl-be": "./node_modules/moment/locale/nl-be.js",
+      "./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+      "./nl.js": "./node_modules/moment/locale/nl.js",
+      "./nn": "./node_modules/moment/locale/nn.js",
+      "./nn.js": "./node_modules/moment/locale/nn.js",
+      "./oc-lnc": "./node_modules/moment/locale/oc-lnc.js",
+      "./oc-lnc.js": "./node_modules/moment/locale/oc-lnc.js",
+      "./pa-in": "./node_modules/moment/locale/pa-in.js",
+      "./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+      "./pl": "./node_modules/moment/locale/pl.js",
+      "./pl.js": "./node_modules/moment/locale/pl.js",
+      "./pt": "./node_modules/moment/locale/pt.js",
+      "./pt-br": "./node_modules/moment/locale/pt-br.js",
+      "./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+      "./pt.js": "./node_modules/moment/locale/pt.js",
+      "./ro": "./node_modules/moment/locale/ro.js",
+      "./ro.js": "./node_modules/moment/locale/ro.js",
+      "./ru": "./node_modules/moment/locale/ru.js",
+      "./ru.js": "./node_modules/moment/locale/ru.js",
+      "./sd": "./node_modules/moment/locale/sd.js",
+      "./sd.js": "./node_modules/moment/locale/sd.js",
+      "./se": "./node_modules/moment/locale/se.js",
+      "./se.js": "./node_modules/moment/locale/se.js",
+      "./si": "./node_modules/moment/locale/si.js",
+      "./si.js": "./node_modules/moment/locale/si.js",
+      "./sk": "./node_modules/moment/locale/sk.js",
+      "./sk.js": "./node_modules/moment/locale/sk.js",
+      "./sl": "./node_modules/moment/locale/sl.js",
+      "./sl.js": "./node_modules/moment/locale/sl.js",
+      "./sq": "./node_modules/moment/locale/sq.js",
+      "./sq.js": "./node_modules/moment/locale/sq.js",
+      "./sr": "./node_modules/moment/locale/sr.js",
+      "./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+      "./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+      "./sr.js": "./node_modules/moment/locale/sr.js",
+      "./ss": "./node_modules/moment/locale/ss.js",
+      "./ss.js": "./node_modules/moment/locale/ss.js",
+      "./sv": "./node_modules/moment/locale/sv.js",
+      "./sv.js": "./node_modules/moment/locale/sv.js",
+      "./sw": "./node_modules/moment/locale/sw.js",
+      "./sw.js": "./node_modules/moment/locale/sw.js",
+      "./ta": "./node_modules/moment/locale/ta.js",
+      "./ta.js": "./node_modules/moment/locale/ta.js",
+      "./te": "./node_modules/moment/locale/te.js",
+      "./te.js": "./node_modules/moment/locale/te.js",
+      "./tet": "./node_modules/moment/locale/tet.js",
+      "./tet.js": "./node_modules/moment/locale/tet.js",
+      "./tg": "./node_modules/moment/locale/tg.js",
+      "./tg.js": "./node_modules/moment/locale/tg.js",
+      "./th": "./node_modules/moment/locale/th.js",
+      "./th.js": "./node_modules/moment/locale/th.js",
+      "./tk": "./node_modules/moment/locale/tk.js",
+      "./tk.js": "./node_modules/moment/locale/tk.js",
+      "./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+      "./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+      "./tlh": "./node_modules/moment/locale/tlh.js",
+      "./tlh.js": "./node_modules/moment/locale/tlh.js",
+      "./tr": "./node_modules/moment/locale/tr.js",
+      "./tr.js": "./node_modules/moment/locale/tr.js",
+      "./tzl": "./node_modules/moment/locale/tzl.js",
+      "./tzl.js": "./node_modules/moment/locale/tzl.js",
+      "./tzm": "./node_modules/moment/locale/tzm.js",
+      "./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+      "./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+      "./tzm.js": "./node_modules/moment/locale/tzm.js",
+      "./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+      "./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+      "./uk": "./node_modules/moment/locale/uk.js",
+      "./uk.js": "./node_modules/moment/locale/uk.js",
+      "./ur": "./node_modules/moment/locale/ur.js",
+      "./ur.js": "./node_modules/moment/locale/ur.js",
+      "./uz": "./node_modules/moment/locale/uz.js",
+      "./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+      "./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+      "./uz.js": "./node_modules/moment/locale/uz.js",
+      "./vi": "./node_modules/moment/locale/vi.js",
+      "./vi.js": "./node_modules/moment/locale/vi.js",
+      "./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+      "./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+      "./yo": "./node_modules/moment/locale/yo.js",
+      "./yo.js": "./node_modules/moment/locale/yo.js",
+      "./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+      "./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+      "./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+      "./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+      "./zh-mo": "./node_modules/moment/locale/zh-mo.js",
+      "./zh-mo.js": "./node_modules/moment/locale/zh-mo.js",
+      "./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+      "./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+    };
+
+    function webpackContext(req) {
+      var id = webpackContextResolve(req);
+      return __webpack_require__(id);
+    }
+
+    function webpackContextResolve(req) {
+      if (!__webpack_require__.o(map, req)) {
+        var e = new Error("Cannot find module '" + req + "'");
+        e.code = 'MODULE_NOT_FOUND';
+        throw e;
+      }
+
+      return map[req];
+    }
+
+    webpackContext.keys = function webpackContextKeys() {
+      return Object.keys(map);
+    };
+
+    webpackContext.resolve = webpackContextResolve;
+    module.exports = webpackContext;
+    webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin-login/admin-login.component.html":
+  /*!****************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin-login/admin-login.component.html ***!
+    \****************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminAdminLoginAdminLoginComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<div class=\"container\">\n\t<div class=\"row\">\n\t\t<div class=\"col-xl-5 offset-xl-3\">\n\n\n\t\t\t<div class=\"login-register-page\">\n\t\t\t\t<!-- Welcome Text -->\n\t\t\t\t<div class=\"welcome-text\">\n\t\t\t\t\t<h3>SMS Services Portal</h3>\n\t\t\t\t\t<span><a href=\"javascript:void(0)\">Innovate Faster\n            With Movider SMS API</a></span>\n\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t<!-- Form -->\n\t\t\t\t<form method=\"post\" id=\"login-form\" [formGroup]=\"loginAdminForm\" (ngSubmit)=\"onLogin()\">\n\t\t\t\t\t<div class=\"input-with-icon-left\">\n\t\t\t\t\t\t<i class=\"icon-material-baseline-mail-outline\"></i>\n\t\t\t\t\t\t<input type=\"text\" class=\"input-text with-border\" name=\"emailaddress\" formControlName=\"email\" id=\"emailaddress\" placeholder=\"Email Address\" required/>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"input-with-icon-left\">\n\t\t\t\t\t\t<i class=\"icon-material-outline-lock\"></i>\n\t\t\t\t\t\t<input type=\"password\" class=\"input-text with-border\" name=\"password\" formControlName=\"password\" id=\"password\" placeholder=\"Password\" required/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<a href=\"#\" class=\"forgot-password\">Forgot Password?</a>\n\t\t\t\t\t<button class=\"button full-width button-sliding-icon ripple-effect margin-top-10\" type=\"submit\" form=\"login-form\">Log In <i class=\"icon-material-outline-arrow-right-alt\"></i></button>\n\t\t\t\t</form>\n\t\t\t\t\n\t\t\t\t<!-- Button -->\n\t\t\t\t\n\t\t\t\t<!-- Social Login -->\n\t\t\t\t<div class=\"social-login-separator\"><span>or</span></div>\n\t\t\t\t<div class=\"social-login-buttons\">\n\t\t\t\t\t<button class=\"facebook-login ripple-effect\"><i class=\"icon-brand-facebook-f\"></i> Log In via Facebook</button>\n\t\t\t\t\t<button class=\"google-login ripple-effect\"><i class=\"icon-brand-google-plus-g\"></i> Log In via Google+</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t</div>\n\t</div>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin.component.html":
+  /*!**********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin.component.html ***!
+    \**********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminAdminComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<!-- <p>\n  admin works!\n</p> -->\n<header id=\"header-container\" class=\"fullwidth\">\n\n\t<!-- Header -->\n\t<div id=\"header\">\n\t\t<div class=\"container\">\n\t\t\t\n\t\t\t<!-- Left Side Content -->\n\t\t\t<div class=\"left-side\">\n\t\t\t\t\n\t\t\t\t<!-- Logo -->\n\t\t\t\t<div id=\"logo\">\n\t\t\t\t\t<a href=\"index.html\"><img src=\"images/logo.png\" alt=\"\"></a>\n\t\t\t\t</div>\n\n\t\t\t\t<!-- Main Navigation -->\n\t\t\t\t<nav id=\"navigation\">\n\t\t\t\t\t<ul id=\"responsive\">\n\n\t\t\t\t\t\t<li><a href=\"#\">Home</a>\n\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t<li><a href=\"index.html\">Home 1</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"index-2.html\">Home 2</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"index-3.html\">Home 3</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t<li><a href=\"#\">Find Work</a>\n\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t<li><a href=\"#\">Browse Jobs</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"jobs-list-layout-full-page-map.html\">Full Page List + Map</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"jobs-grid-layout-full-page-map.html\">Full Page Grid + Map</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"jobs-grid-layout-full-page.html\">Full Page Grid</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"jobs-list-layout-1.html\">List Layout 1</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"jobs-list-layout-2.html\">List Layout 2</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"jobs-grid-layout.html\">Grid Layout</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li><a href=\"#\">Browse Tasks</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"tasks-list-layout-1.html\">List Layout 1</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"tasks-list-layout-2.html\">List Layout 2</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"tasks-grid-layout.html\">Grid Layout</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"tasks-grid-layout-full-page.html\">Full Page Grid</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li><a href=\"browse-companies.html\">Browse Companies</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"single-job-page.html\">Job Page</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"single-task-page.html\">Task Page</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"single-company-profile.html\">Company Profile</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t<li><a href=\"#\">For Employers</a>\n\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t<li><a href=\"#\">Find a Freelancer</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"freelancers-grid-layout-full-page.html\">Full Page Grid</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"freelancers-grid-layout.html\">Grid Layout</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"freelancers-list-layout-1.html\">List Layout 1</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"freelancers-list-layout-2.html\">List Layout 2</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li><a href=\"single-freelancer-profile.html\">Freelancer Profile</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-post-a-job.html\">Post a Job</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-post-a-task.html\">Post a Task</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t<li><a href=\"#\">Dashboard</a>\n\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard.html\">Dashboard</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-messages.html\">Messages</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-bookmarks.html\">Bookmarks</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-reviews.html\">Reviews</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-manage-jobs.html\">Jobs</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-manage-jobs.html\">Manage Jobs</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-manage-candidates.html\">Manage Candidates</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-post-a-job.html\">Post a Job</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-manage-tasks.html\">Tasks</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-manage-tasks.html\">Manage Tasks</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-manage-bidders.html\">Manage Bidders</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-my-active-bids.html\">My Active Bids</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"dashboard-post-a-task.html\">Post a Task</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li><a href=\"dashboard-settings.html\">Settings</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t<li><a href=\"#\" class=\"current\">Pages</a>\n\t\t\t\t\t\t\t<ul class=\"dropdown-nav\">\n\t\t\t\t\t\t\t\t<li><a href=\"pages-blog.html\">Blog</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-pricing-plans.html\">Pricing Plans</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-checkout-page.html\">Checkout Page</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-invoice-template.html\">Invoice Template</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-user-interface-elements.html\">User Interface Elements</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-icons-cheatsheet.html\">Icons Cheatsheet</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-login.html\">Login & Register</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-404.html\">404 Page</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"pages-contact.html\">Contact</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</li>\n\n\t\t\t\t\t</ul>\n\t\t\t\t</nav>\n\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t\t<!-- Main Navigation / End -->\n\t\t\t\t\n\t\t\t</div>\n\t\t\t<!-- Left Side Content / End -->\n\n\n\t\t\t<!-- Right Side Content / End -->\n\t\t\t<div class=\"right-side\">\n\n\t\t\t\t<!--  User Notifications -->\n\t\t\t\t<div class=\"header-widget hide-on-mobile\">\n\t\t\t\t\t\n\t\t\t\t\t<!-- Notifications -->\n\t\t\t\t\t<div class=\"header-notifications\">\n\n\t\t\t\t\t\t<!-- Trigger -->\n\t\t\t\t\t\t<div class=\"header-notifications-trigger\">\n\t\t\t\t\t\t\t<a href=\"#\"><i class=\"icon-feather-bell\"></i><span>4</span></a>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<!-- Dropdown -->\n\t\t\t\t\t\t<div class=\"header-notifications-dropdown\">\n\n\t\t\t\t\t\t\t<div class=\"header-notifications-headline\">\n\t\t\t\t\t\t\t\t<h4>Notifications</h4>\n\t\t\t\t\t\t\t\t<button class=\"mark-as-read ripple-effect-dark\" title=\"Mark all as read\" data-tippy-placement=\"left\">\n\t\t\t\t\t\t\t\t\t<i class=\"icon-feather-check-square\"></i>\n\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div class=\"header-notifications-content\">\n\t\t\t\t\t\t\t\t<div class=\"header-notifications-scroll\" data-simplebar>\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li class=\"notifications-not-read\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-manage-candidates.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-icon\"><i class=\"icon-material-outline-group\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Michael Shannah</strong> applied for a job <span class=\"color\">Full Stack Software Engineer</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-manage-bidders.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-icon\"><i class=\" icon-material-outline-gavel\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Gilbert Allanis</strong> placed a bid on your <span class=\"color\">iOS App Development</span> project\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-manage-jobs.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-icon\"><i class=\"icon-material-outline-autorenew\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tYour job listing <span class=\"color\">Full Stack PHP Developer</span> is expiring.\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-manage-candidates.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-icon\"><i class=\"icon-material-outline-group\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Sindy Forrest</strong> applied for a job <span class=\"color\">Full Stack Software Engineer</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<!-- Messages -->\n\t\t\t\t\t<div class=\"header-notifications\">\n\t\t\t\t\t\t<div class=\"header-notifications-trigger\">\n\t\t\t\t\t\t\t<a href=\"#\"><i class=\"icon-feather-mail\"></i><span>3</span></a>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<!-- Dropdown -->\n\t\t\t\t\t\t<div class=\"header-notifications-dropdown\">\n\n\t\t\t\t\t\t\t<div class=\"header-notifications-headline\">\n\t\t\t\t\t\t\t\t<h4>Messages</h4>\n\t\t\t\t\t\t\t\t<button class=\"mark-as-read ripple-effect-dark\" title=\"Mark all as read\" data-tippy-placement=\"left\">\n\t\t\t\t\t\t\t\t\t<i class=\"icon-feather-check-square\"></i>\n\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div class=\"header-notifications-content\">\n\t\t\t\t\t\t\t\t<div class=\"header-notifications-scroll\" data-simplebar>\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li class=\"notifications-not-read\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-messages.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-avatar status-online\"><img src=\"images/user-avatar-small-03.jpg\" alt=\"\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>David Peterson</strong>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"notification-msg-text\">Thanks for reaching out. I'm quite busy right now on many...</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"color\">4 hours ago</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li class=\"notifications-not-read\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-messages.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-avatar status-offline\"><img src=\"images/user-avatar-small-02.jpg\" alt=\"\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Sindy Forest</strong>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"notification-msg-text\">Hi Tom! Hate to break it to you, but I'm actually on vacation until...</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"color\">Yesterday</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t\t\t<!-- Notification -->\n\t\t\t\t\t\t\t\t\t\t<li class=\"notifications-not-read\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"dashboard-messages.html\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"notification-avatar status-online\"><img src=\"images/user-avatar-placeholder.png\" alt=\"\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"notification-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Marcin Kowalski</strong>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"notification-msg-text\">I received payment. Thanks for cooperation!</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"color\">Yesterday</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<a href=\"dashboard-messages.html\" class=\"header-notifications-button ripple-effect button-sliding-icon\">View All Messages<i class=\"icon-material-outline-arrow-right-alt\"></i></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t\t<!--  User Notifications / End -->\n\n\t\t\t\t<!-- User Menu -->\n\t\t\t\t<div class=\"header-widget\">\n\n\t\t\t\t\t<!-- Messages -->\n\t\t\t\t\t<div class=\"header-notifications user-menu\">\n\t\t\t\t\t\t<div class=\"header-notifications-trigger\">\n\t\t\t\t\t\t\t<a href=\"#\"><div class=\"user-avatar status-online\"><img src=\"images/user-avatar-small-01.jpg\" alt=\"\"></div></a>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<!-- Dropdown -->\n\t\t\t\t\t\t<div class=\"header-notifications-dropdown\">\n\n\t\t\t\t\t\t\t<!-- User Status -->\n\t\t\t\t\t\t\t<div class=\"user-status\">\n\n\t\t\t\t\t\t\t\t<!-- User Name / Avatar -->\n\t\t\t\t\t\t\t\t<div class=\"user-details\">\n\t\t\t\t\t\t\t\t\t<div class=\"user-avatar status-online\"><img src=\"images/user-avatar-small-01.jpg\" alt=\"\"></div>\n\t\t\t\t\t\t\t\t\t<div class=\"user-name\">\n\t\t\t\t\t\t\t\t\t\tTom Smith <span>Freelancer</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<!-- User Status Switcher -->\n\t\t\t\t\t\t\t\t<div class=\"status-switch\" id=\"snackbar-user-status\">\n\t\t\t\t\t\t\t\t\t<label class=\"user-online current-status\">Online</label>\n\t\t\t\t\t\t\t\t\t<label class=\"user-invisible\">Invisible</label>\n\t\t\t\t\t\t\t\t\t<!-- Status Indicator -->\n\t\t\t\t\t\t\t\t\t<span class=\"status-indicator\" aria-hidden=\"true\"></span>\n\t\t\t\t\t\t\t\t</div>\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<ul class=\"user-menu-small-nav\">\n\t\t\t\t\t\t\t<li><a href=\"dashboard.html\"><i class=\"icon-material-outline-dashboard\"></i> Dashboard</a></li>\n\t\t\t\t\t\t\t<li><a href=\"dashboard-settings.html\"><i class=\"icon-material-outline-settings\"></i> Settings</a></li>\n\t\t\t\t\t\t\t<li><a href=\"index-logged-out.html\"><i class=\"icon-material-outline-power-settings-new\"></i> Logout</a></li>\n\t\t\t\t\t\t</ul>\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t\t<!-- User Menu / End -->\n\n\t\t\t\t<!-- Mobile Navigation Button -->\n\t\t\t\t<span class=\"mmenu-trigger\">\n\t\t\t\t\t<button class=\"hamburger hamburger--collapse\" type=\"button\">\n\t\t\t\t\t\t<span class=\"hamburger-box\">\n\t\t\t\t\t\t\t<span class=\"hamburger-inner\"></span>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t</button>\n\t\t\t\t</span>\n\n\t\t\t</div>\n\t\t\t<!-- Right Side Content / End -->\n\n\t\t</div>\n\t</div>\n\t<!-- Header / End -->\n\n</header>\n<div class=\"clearfix\"></div>\n<router-outlet></router-outlet>\n\n    <!-- Footer\n================================================== -->\n<div id=\"footer\">\n\n  <!-- Footer Top Section -->\n  <div class=\"footer-top-section\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-xl-12\">\n\n          <!-- Footer Rows Container -->\n          <div class=\"footer-rows-container\">\n\n            <!-- Left Side -->\n            <div class=\"footer-rows-left\">\n              <div class=\"footer-row\">\n                <div class=\"footer-row-inner footer-logo\">\n                  <img src=\"images/logo2.png\" alt=\"\">\n                </div>\n              </div>\n            </div>\n\n            <!-- Right Side -->\n            <div class=\"footer-rows-right\">\n\n              <!-- Social Icons -->\n              <div class=\"footer-row\">\n                <div class=\"footer-row-inner\">\n                  <ul class=\"footer-social-links\">\n                    <li>\n                      <a href=\"#\" title=\"Facebook\" data-tippy-placement=\"bottom\" data-tippy-theme=\"light\">\n                        <i class=\"icon-brand-facebook-f\"></i>\n                      </a>\n                    </li>\n                    <li>\n                      <a href=\"#\" title=\"Twitter\" data-tippy-placement=\"bottom\" data-tippy-theme=\"light\">\n                        <i class=\"icon-brand-twitter\"></i>\n                      </a>\n                    </li>\n                    <li>\n                      <a href=\"#\" title=\"Google Plus\" data-tippy-placement=\"bottom\" data-tippy-theme=\"light\">\n                        <i class=\"icon-brand-google-plus-g\"></i>\n                      </a>\n                    </li>\n                    <li>\n                      <a href=\"#\" title=\"LinkedIn\" data-tippy-placement=\"bottom\" data-tippy-theme=\"light\">\n                        <i class=\"icon-brand-linkedin-in\"></i>\n                      </a>\n                    </li>\n                  </ul>\n                  <div class=\"clearfix\"></div>\n                </div>\n              </div>\n\n              <!-- Language Switcher -->\n              <div class=\"footer-row\">\n                <div class=\"footer-row-inner\">\n                  <select class=\"selectpicker language-switcher\" data-selected-text-format=\"count\" data-size=\"5\">\n                    <option selected>English</option>\n                    <option>Français</option>\n                    <option>Español</option>\n                    <option>Deutsch</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n\n          </div>\n          <!-- Footer Rows Container / End -->\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- Footer Top Section / End -->\n\n  <!-- Footer Middle Section -->\n  <div class=\"footer-middle-section\">\n    <div class=\"container\">\n      <div class=\"row\">\n\n        <!-- Links -->\n        <div class=\"col-xl-2 col-lg-2 col-md-3\">\n          <div class=\"footer-links\">\n            <h3>For Candidates</h3>\n            <ul>\n              <li><a href=\"#\"><span>Browse Jobs</span></a></li>\n              <li><a href=\"#\"><span>Add Resume</span></a></li>\n              <li><a href=\"#\"><span>Job Alerts</span></a></li>\n              <li><a href=\"#\"><span>My Bookmarks</span></a></li>\n            </ul>\n          </div>\n        </div>\n\n        <!-- Links -->\n        <div class=\"col-xl-2 col-lg-2 col-md-3\">\n          <div class=\"footer-links\">\n            <h3>For Employers</h3>\n            <ul>\n              <li><a href=\"#\"><span>Browse Candidates</span></a></li>\n              <li><a href=\"#\"><span>Post a Job</span></a></li>\n              <li><a href=\"#\"><span>Post a Task</span></a></li>\n              <li><a href=\"#\"><span>Plans & Pricing</span></a></li>\n            </ul>\n          </div>\n        </div>\n\n        <!-- Links -->\n        <div class=\"col-xl-2 col-lg-2 col-md-3\">\n          <div class=\"footer-links\">\n            <h3>Helpful Links</h3>\n            <ul>\n              <li><a href=\"#\"><span>Contact</span></a></li>\n              <li><a href=\"#\"><span>Privacy Policy</span></a></li>\n              <li><a href=\"#\"><span>Terms of Use</span></a></li>\n            </ul>\n          </div>\n        </div>\n\n        <!-- Links -->\n        <div class=\"col-xl-2 col-lg-2 col-md-3\">\n          <div class=\"footer-links\">\n            <h3>Account</h3>\n            <ul>\n              <li><a href=\"#\"><span>Log In</span></a></li>\n              <li><a href=\"#\"><span>My Account</span></a></li>\n            </ul>\n          </div>\n        </div>\n\n        <!-- Newsletter -->\n        <div class=\"col-xl-4 col-lg-4 col-md-12\">\n          <h3><i class=\"icon-feather-mail\"></i> Sign Up For a Newsletter</h3>\n          <p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>\n          <form action=\"#\" method=\"get\" class=\"newsletter\">\n            <input type=\"text\" name=\"fname\" placeholder=\"Enter your email address\">\n            <button type=\"submit\"><i class=\"icon-feather-arrow-right\"></i></button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- Footer Middle Section / End -->\n\n  <!-- Footer Copyrights -->\n  <div class=\"footer-bottom-section\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-xl-12\">\n          © 2018 <strong>Hireo</strong>. All Rights Reserved.\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- Footer Copyrights / End -->\n\n</div>\n<!-- Footer / End -->";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
   /*!**************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
@@ -5365,6 +5709,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     __webpack_exports__["default"] = "\t<!-- Dashboard Sidebar\n\t================================================== -->\n\n\t<div class=\"dashboard-sidebar-inner\" data-simplebar>\n\t\t<div class=\"dashboard-nav-container\">\n\n\t\t\t<!-- Responsive Navigation Trigger -->\n\t\t\t<a href=\"#\" class=\"dashboard-responsive-nav-trigger\">\n\t\t\t\t<span class=\"hamburger hamburger--collapse\" >\n\t\t\t\t\t<span class=\"hamburger-box\">\n\t\t\t\t\t\t<span class=\"hamburger-inner\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</span>\n\t\t\t\t<span class=\"trigger-title\">Dashboard Navigation</span>\n\t\t\t</a>\n\t\t\t\n\t\t\t<!-- Navigation -->\n\t\t\t<div class=\"dashboard-nav\">\n\t\t\t\t<div class=\"dashboard-nav-inner\">\n\n\t\t\t\t\t<ul data-submenu-title=\"Start\">\n\t\t\t\t\t\t<li><a routerLink='/profile/dashboard'><i class=\"icon-material-outline-dashboard\"></i> Dashboard</a></li>\n\t\t\t\t\t\t<li><a routerLink='/profile/post-anonymous'><i class=\"icon-material-outline-star-border\"></i> Send SMS</a></li>\n\t\t\t\t\t\t<li><a routerLink='/profile/manage-subscription'><i class=\"icon-material-outline-star-border\"></i>Subscription Services</a></li>\n\t\t\t\t\t\t<!-- <li><a href=\"dashboard-reviews.html\"><i class=\"icon-material-outline-rate-review\"></i> Send SMS to Friend</a></li> -->\n\t\t\t\t\t</ul>\n\t\t\t\t\t\n\t\t\t\t\t<ul data-submenu-title=\"Manage\">\n\t\t\t\t\t\t<li class=\"active-submenu\"><a href=\"#\"><i class=\"icon-material-outline-business-center\"></i> Friends</a>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-request\">Request <span class=\"nav-tag\">3</span></a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-list\">List</a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-suggestion\">Suggestion</a></li>\n\t\t\t\t\t\t\t\t<li><a routerLink=\"/profile/friend-receive\">Receive</a></li>\n\t\t\t\t\t\t\t</ul>\t\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\n\t\t\t\t\t<ul data-submenu-title=\"Account\">\n\t\t\t\t\t\t<li><a routerLink=\"/profile/setting\"><i class=\"icon-material-outline-settings\"></i> Settings</a></li>\n\t\t\t\t\t\t<li><a href=\"javascript:void(0)\" (click)=\"logout()\"><i class=\"icon-material-outline-power-settings-new\" ></i> Log Out</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!-- Navigation / End -->\n\n\t\t</div>\n\t</div>\n\t<!-- Dashboard Sidebar / End -->";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/profile/subscription-popup/subscription-popup.component.html":
+  /*!********************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/profile/subscription-popup/subscription-popup.component.html ***!
+    \********************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppProfileSubscriptionPopupSubscriptionPopupComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<!-- Membership Plans -->\n<div class=\"section\">\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\n\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t<!-- Section Headline -->\n\t\t\t\t<div class=\"section-headline centered margin-top-0 margin-bottom-35\">\n          <h3>Subscription Plans</h3>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\n\t\t\t<div class=\"col-xl-12\">\n\n\t\t\t\t<!-- Billing Cycle  -->\n\n\t\t\t\t<!-- Pricing Plans Container -->\n\t\t\t\t<div class=\"pricing-plans-container\">\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan\">\n\t\t\t\t\t\t<h3>Basic Plan</h3>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>4,49$</strong>/ monthly</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Basic Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>1 Listing</li>\n\t\t\t\t\t\t\t\t<li>30 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Select</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan recommended\">\n\t\t\t\t\t\t<div class=\"recommended-badge\">Recommended</div>\n\t\t\t\t\t\t<h3>Standard Plan</h3>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>24,99$</strong>/ 6 months</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Standard Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>5 Listings</li>\n\t\t\t\t\t\t\t\t<li>60 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n            <a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Select</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<!-- Plan -->\n\t\t\t\t\t<div class=\"pricing-plan\">\n\t\t\t\t\t\t<h3>Extended Plan</h3>\n\t\t\t\t\t\t<div class=\"pricing-plan-label billed-monthly-label\"><strong>$42,99$</strong>/ year</div>\n\t\t\t\t\t\t<div class=\"pricing-plan-features\">\n\t\t\t\t\t\t\t<strong>Features of Extended Plan</strong>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>Unlimited Listings Listing</li>\n\t\t\t\t\t\t\t\t<li>90 Days Visibility</li>\n\t\t\t\t\t\t\t\t<li>Highlighted in Search Results</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"pages-checkout-page.html\" class=\"button full-width margin-top-20\">Select</a>\n          </div>\n          \n\n\t\t\t\t</div>\n\n      </div>\n      \n      <div class=\"paypal_section col-xl-12\" #paypal></div>\n\n\n\t\t</div>\n\t</div>\n</div>\n\n<script src=\"https://www.paypal.com/sdk/js?client-id=AS3JLKKieETS2ocsg4X-PKPE5_q9zp1WEINeCHLTwniEjCnYPOQ1U3uuNBofUCBZo_qq_OTymJXj25S_\"></script>\n\n<!-- Membership Plans / End-->";
     /***/
   },
 
@@ -5973,6 +6337,244 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/admin/admin-login/admin-login.component.scss":
+  /*!**************************************************************!*\
+    !*** ./src/app/admin/admin-login/admin-login.component.scss ***!
+    \**************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminAdminLoginAdminLoginComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".login-register-page {\n  padding-top: 250px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vYWRtaW4tbG9naW4vRDpcXFByb2plY3RcXEZQVFxcQ2xpZW50IC0gRmluYWwgLSBTZW0zL3NyY1xcYXBwXFxhZG1pblxcYWRtaW4tbG9naW5cXGFkbWluLWxvZ2luLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hZG1pbi9hZG1pbi1sb2dpbi9hZG1pbi1sb2dpbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi9hZG1pbi1sb2dpbi9hZG1pbi1sb2dpbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2dpbi1yZWdpc3Rlci1wYWdlIHtcclxuICBwYWRkaW5nLXRvcDogMjUwcHg7XHJcblxyXG59IiwiLmxvZ2luLXJlZ2lzdGVyLXBhZ2Uge1xuICBwYWRkaW5nLXRvcDogMjUwcHg7XG59Il19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/admin/admin-login/admin-login.component.ts":
+  /*!************************************************************!*\
+    !*** ./src/app/admin/admin-login/admin-login.component.ts ***!
+    \************************************************************/
+
+  /*! exports provided: AdminLoginComponent */
+
+  /***/
+  function srcAppAdminAdminLoginAdminLoginComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminLoginComponent", function () {
+      return AdminLoginComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_authentication_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/authentication.service */
+    "./src/app/services/authentication.service.ts");
+    /* harmony import */
+
+
+    var src_app_services_alert_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/services/alert.service */
+    "./src/app/services/alert.service.ts");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+
+    var AdminLoginComponent = /*#__PURE__*/function () {
+      function AdminLoginComponent(authenticationService, alertService, formBuilder, router) {
+        _classCallCheck(this, AdminLoginComponent);
+
+        this.authenticationService = authenticationService;
+        this.alertService = alertService;
+        this.formBuilder = formBuilder;
+        this.router = router;
+      }
+
+      _createClass(AdminLoginComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.loginAdminForm = this.formBuilder.group({
+            email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
+            password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required]
+          });
+        }
+      }, {
+        key: "onLogin",
+        value: function onLogin() {
+          var _this = this;
+
+          console.log(this.loginAdminForm);
+
+          if (this.loginAdminForm.invalid) {
+            alert('invalid');
+            return;
+          } else {
+            this.authenticationService.login(this.l.email.value, this.l.password.value).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["first"])()).subscribe(function (data) {
+              if (data) {
+                console.log('login', data);
+              }
+
+              _this.alertService.successCounterup('Login', 'Login Success');
+
+              setTimeout(function () {
+                _this.router.navigate(['/admin/user-list']);
+              }, 3000); // this.router.navigate([this.returnUrl]);
+            }, function (error) {
+              console.log(error); // this.error = error.error_description;
+              // this.loading = false;
+            });
+          }
+        }
+      }, {
+        key: "l",
+        get: function get() {
+          return this.loginAdminForm.controls;
+        }
+      }]);
+
+      return AdminLoginComponent;
+    }();
+
+    AdminLoginComponent.ctorParameters = function () {
+      return [{
+        type: src_app_services_authentication_service__WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"]
+      }, {
+        type: src_app_services_alert_service__WEBPACK_IMPORTED_MODULE_3__["AlertService"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]
+      }];
+    };
+
+    AdminLoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'sms-admin-login',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./admin-login.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin-login/admin-login.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./admin-login.component.scss */
+      "./src/app/admin/admin-login/admin-login.component.scss"))["default"]]
+    })], AdminLoginComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/admin/admin.component.scss":
+  /*!********************************************!*\
+    !*** ./src/app/admin/admin.component.scss ***!
+    \********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminAdminComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWluLmNvbXBvbmVudC5zY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/admin/admin.component.ts":
+  /*!******************************************!*\
+    !*** ./src/app/admin/admin.component.ts ***!
+    \******************************************/
+
+  /*! exports provided: AdminComponent */
+
+  /***/
+  function srcAppAdminAdminComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminComponent", function () {
+      return AdminComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var AdminComponent = /*#__PURE__*/function () {
+      function AdminComponent() {
+        _classCallCheck(this, AdminComponent);
+      }
+
+      _createClass(AdminComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AdminComponent;
+    }();
+
+    AdminComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'sms-admin',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./admin.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/admin.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./admin.component.scss */
+      "./src/app/admin/admin.component.scss"))["default"]]
+    })], AdminComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/app-routing.module.ts":
   /*!***************************************!*\
     !*** ./src/app/app-routing.module.ts ***!
@@ -6039,6 +6641,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./auth/auth.guard */
     "./src/app/auth/auth.guard.ts");
+    /* harmony import */
+
+
+    var _admin_admin_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./admin/admin.component */
+    "./src/app/admin/admin.component.ts");
+    /* harmony import */
+
+
+    var _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./admin/admin-login/admin-login.component */
+    "./src/app/admin/admin-login/admin-login.component.ts");
 
     var routes = [{
       path: 'client',
@@ -6064,6 +6678,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
       },
       canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
+    }, {
+      path: 'admin/login',
+      component: _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_9__["AdminLoginComponent"]
+    }, {
+      path: 'admin',
+      component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_8__["AdminComponent"],
+      loadChildren: function loadChildren() {
+        return __webpack_require__.e(
+        /*! import() | admin-admin-module */
+        "admin-admin-module").then(__webpack_require__.bind(null,
+        /*! ./admin/admin.module */
+        "./src/app/admin/admin.module.ts")).then(function (m) {
+          return m.AdminModule;
+        });
+      }
     }, {
       path: '',
       redirectTo: '/client/home',
@@ -6364,7 +6993,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! @angular/fire/auth */
-    "./node_modules/@angular/fire/fesm2015/angular-fire-auth.js"); // NgrX
+    "./node_modules/@angular/fire/fesm2015/angular-fire-auth.js");
+    /* harmony import */
+
+
+    var _profile_subscription_popup_subscription_popup_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    /*! ./profile/subscription-popup/subscription-popup.component */
+    "./src/app/profile/subscription-popup/subscription-popup.component.ts");
+    /* harmony import */
+
+
+    var _admin_admin_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    /*! ./admin/admin.component */
+    "./src/app/admin/admin.component.ts");
+    /* harmony import */
+
+
+    var _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    /*! ./admin/admin-login/admin-login.component */
+    "./src/app/admin/admin-login/admin-login.component.ts");
+    /* harmony import */
+
+
+    var ng2_charts__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    /*! ng2-charts */
+    "./node_modules/ng2-charts/fesm2015/ng2-charts.js"); // NgrX
 
 
     var firebaseConfig = {
@@ -6382,14 +7035,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _auth_login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"], _layout_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"], _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _layout_header_admin_header_admin_component__WEBPACK_IMPORTED_MODULE_18__["HeaderAdminComponent"], _layout_sidebar_admin_sidebar_admin_component__WEBPACK_IMPORTED_MODULE_19__["SidebarAdminComponent"], _layout_footer_admin_footer_admin_component__WEBPACK_IMPORTED_MODULE_21__["FooterAdminComponent"], _layout_normal_layout_normal_layout_component__WEBPACK_IMPORTED_MODULE_16__["NormalLayoutComponent"], _layout_profile_layout_profile_layout_component__WEBPACK_IMPORTED_MODULE_17__["ProfileLayoutComponent"], _layout_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_22__["PageNotFoundComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _auth_login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"], _layout_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"], _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _layout_header_admin_header_admin_component__WEBPACK_IMPORTED_MODULE_18__["HeaderAdminComponent"], _layout_sidebar_admin_sidebar_admin_component__WEBPACK_IMPORTED_MODULE_19__["SidebarAdminComponent"], _layout_footer_admin_footer_admin_component__WEBPACK_IMPORTED_MODULE_21__["FooterAdminComponent"], _layout_normal_layout_normal_layout_component__WEBPACK_IMPORTED_MODULE_16__["NormalLayoutComponent"], _layout_profile_layout_profile_layout_component__WEBPACK_IMPORTED_MODULE_17__["ProfileLayoutComponent"], _layout_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_22__["PageNotFoundComponent"], _profile_subscription_popup_subscription_popup_component__WEBPACK_IMPORTED_MODULE_32__["SubscriptionPopupComponent"], _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_34__["AdminLoginComponent"], _admin_admin_component__WEBPACK_IMPORTED_MODULE_33__["AdminComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _material_module__WEBPACK_IMPORTED_MODULE_7__["MaterialModule"], _feature_feature_module__WEBPACK_IMPORTED_MODULE_10__["FeatureModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_14__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_14__["ReactiveFormsModule"], _sweetalert2_ngx_sweetalert2__WEBPACK_IMPORTED_MODULE_15__["SweetAlert2Module"].forRoot(), _ngrx_store__WEBPACK_IMPORTED_MODULE_25__["StoreModule"].forRoot({
         count: _state_app_reducer__WEBPACK_IMPORTED_MODULE_26__["counterReducer"]
       }), _ngrx_effects__WEBPACK_IMPORTED_MODULE_27__["EffectsModule"].forRoot([]), _ngrx_store_devtools__WEBPACK_IMPORTED_MODULE_24__["StoreDevtoolsModule"].instrument({
         maxAge: 25,
         logOnly: src_environments_environment__WEBPACK_IMPORTED_MODULE_23__["environment"].production
-      }), simplebar_angular__WEBPACK_IMPORTED_MODULE_20__["SimplebarAngularModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_28__["AngularFireModule"].initializeApp(firebaseConfig), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_29__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_31__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_30__["AngularFireStorageModule"] // storage
-      ],
+      }), simplebar_angular__WEBPACK_IMPORTED_MODULE_20__["SimplebarAngularModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_28__["AngularFireModule"].initializeApp(firebaseConfig), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_29__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_31__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_30__["AngularFireStorageModule"], ng2_charts__WEBPACK_IMPORTED_MODULE_35__["ChartsModule"]],
       providers: [{
         provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HTTP_INTERCEPTORS"],
         useClass: _auth_jwt_interceptor__WEBPACK_IMPORTED_MODULE_12__["JwtInterceptor"],
@@ -6400,7 +7052,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         multi: true
       }],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-      entryComponents: [_auth_login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"]]
+      entryComponents: [_auth_login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"], _profile_subscription_popup_subscription_popup_component__WEBPACK_IMPORTED_MODULE_32__["SubscriptionPopupComponent"]]
     })], AppModule);
     /***/
   },
@@ -6558,7 +7210,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ErrorInterceptor, [{
         key: "intercept",
         value: function intercept(request, next) {
-          var _this = this;
+          var _this2 = this;
 
           return next.handle(request).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(function (err) {
             console.log('err', err); // if (err.status === 401) {
@@ -6568,7 +7220,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             var error = err.error.Message || err.statusText || err.error; // console.log('error', error);
 
-            _this.alertService.error(error);
+            _this2.alertService.error(error);
 
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["throwError"])(error);
           }));
@@ -6815,7 +7467,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this2 = this;
+          var _this3 = this;
 
           console.log(this.f);
           this.submitted = true; // stop here if form is invalid
@@ -6829,29 +7481,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var fileRef = this.storage.ref(filePath);
             var task = this.storage.upload("ProjectImage/".concat(this.currentDate), this.file);
             task.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["finalize"])(function () {
-              _this2.downloadURL = fileRef.getDownloadURL();
+              _this3.downloadURL = fileRef.getDownloadURL();
 
-              _this2.downloadURL.subscribe(function (url) {
+              _this3.downloadURL.subscribe(function (url) {
                 if (url) {
-                  _this2.fb = url;
+                  _this3.fb = url;
 
-                  _this2.authenticationService.register(_this2.f.email.value, _this2.f.password.value, _this2.f.password.value, _this2.f.phoneNumber.value, _this2.fb, _this2.f.name.value, parseInt(_this2.f.gender.value)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["first"])()).subscribe(function (data) {
+                  _this3.authenticationService.register(_this3.f.email.value, _this3.f.password.value, _this3.f.password.value, _this3.f.phoneNumber.value, _this3.fb, _this3.f.name.value, parseInt(_this3.f.gender.value)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["first"])()).subscribe(function (data) {
                     if (data) {
                       console.log(data);
-                      _this2.userId = data.UserId;
+                      _this3.userId = data.UserId;
 
-                      _this2.verificationPhoneNumber();
+                      _this3.verificationPhoneNumber();
                     } // this.router.navigate([this.returnUrl]);
                     // this.router.navigate(['/dashboard']);
 
                   }, function (error) {
                     console.log(error);
-                    _this2.error = error.error_description;
-                    _this2.loading = false;
+                    _this3.error = error.error_description;
+                    _this3.loading = false;
                   });
                 }
 
-                console.log('link', _this2.fb);
+                console.log('link', _this3.fb);
               });
             })).subscribe(function (url) {
               if (url) {
@@ -6894,7 +7546,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onLogin",
         value: function onLogin() {
-          var _this3 = this;
+          var _this4 = this;
 
           console.log(this.loginForm);
 
@@ -6907,24 +7559,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 console.log('login', data);
               }
 
-              _this3.dialogRef.close();
+              _this4.dialogRef.close();
 
-              _this3.alertService.successCounterup('Login', 'Login Success');
+              _this4.alertService.successCounterup('Login', 'Login Success');
 
               setTimeout(function () {
-                _this3.router.navigate(['/profile/post-anonymous']);
+                _this4.router.navigate(['/profile/post-anonymous']);
               }, 3000); // this.router.navigate([this.returnUrl]);
             }, function (error) {
               console.log(error);
-              _this3.error = error.error_description;
-              _this3.loading = false;
+              _this4.error = error.error_description;
+              _this4.loading = false;
             });
           }
         }
       }, {
         key: "verificationPhoneNumber",
         value: function verificationPhoneNumber() {
-          var _this4 = this;
+          var _this5 = this;
 
           sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire({
             title: 'Please submit your code !!!',
@@ -6948,11 +7600,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             console.log('result', result);
 
             if (result.value) {
-              _this4.authenticationService.phoneVerification(_this4.userId, result.value).subscribe(function (data) {
+              _this5.authenticationService.phoneVerification(_this5.userId, result.value).subscribe(function (data) {
                 if (data) {
-                  _this4.alertService.successCounterup('Register', 'Register Success !!!');
+                  _this5.alertService.successCounterup('Register', 'Register Success !!!');
 
-                  _this4.dialogRef.close(); // setTimeout(() => {
+                  _this5.dialogRef.close(); // setTimeout(() => {
                   //   this.router.navigate(['/client/home']);
                   // }, 1500);
 
@@ -7166,11 +7818,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getSuggestionFriend",
         value: function getSuggestionFriend() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.adminService.getRecommendFriend().subscribe(function (friends) {
             console.log(friends);
-            _this5.friend = friends;
+            _this6.friend = friends;
           });
         }
       }]);
@@ -7432,13 +8084,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HeaderAdminComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.store.dispatch(_profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_4__["ProfileGetUserInfo"]());
           this.store.select(_profile_state_profile_selector__WEBPACK_IMPORTED_MODULE_3__["userInfo"]).subscribe(function (data) {
             // console.log(data);
             if (data) {
-              _this6.avatar = data.Avatar;
+              _this7.avatar = data.Avatar;
             }
           });
         }
@@ -7558,11 +8210,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HeaderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this8 = this;
 
           this.isSubscribing = true;
           this.store.select(_profile_state_profile_selector__WEBPACK_IMPORTED_MODULE_5__["userInfo"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeWhile"])(function () {
-            return _this7.isSubscribing;
+            return _this8.isSubscribing;
           })).subscribe(function (data) {
             return console.log(data);
           });
@@ -7611,22 +8263,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/layout/normal-layout/normal-layout.component.css":
-  /*!******************************************************************!*\
-    !*** ./src/app/layout/normal-layout/normal-layout.component.css ***!
-    \******************************************************************/
+  "./src/app/layout/normal-layout/normal-layout.component.scss":
+  /*!*******************************************************************!*\
+    !*** ./src/app/layout/normal-layout/normal-layout.component.scss ***!
+    \*******************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppLayoutNormalLayoutNormalLayoutComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppLayoutNormalLayoutNormalLayoutComponentScss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9ub3JtYWwtbGF5b3V0L25vcm1hbC1sYXlvdXQuY29tcG9uZW50LmNzcyJ9 */";
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9ub3JtYWwtbGF5b3V0L25vcm1hbC1sYXlvdXQuY29tcG9uZW50LnNjc3MifQ== */";
     /***/
   },
 
@@ -7681,8 +8333,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! raw-loader!./normal-layout.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/layout/normal-layout/normal-layout.component.html"))["default"],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./normal-layout.component.css */
-      "./src/app/layout/normal-layout/normal-layout.component.css"))["default"]]
+      /*! ./normal-layout.component.scss */
+      "./src/app/layout/normal-layout/normal-layout.component.scss"))["default"]]
     })], NormalLayoutComponent);
     /***/
   },
@@ -7981,199 +8633,187 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/common */
-    "./node_modules/@angular/common/fesm2015/common.js");
-    /* harmony import */
-
-
-    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! @angular/platform-browser/animations */
-    "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-    /* harmony import */
-
-
-    var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/material/checkbox */
     "./node_modules/@angular/material/esm2015/checkbox.js");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/esm2015/button.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/esm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/material/autocomplete */
     "./node_modules/@angular/material/esm2015/autocomplete.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/esm2015/datepicker.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/esm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/radio */
     "./node_modules/@angular/material/esm2015/radio.js");
     /* harmony import */
 
 
-    var _angular_material_select__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _angular_material_select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/select */
     "./node_modules/@angular/material/esm2015/select.js");
     /* harmony import */
 
 
-    var _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _angular_material_slider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! @angular/material/slider */
     "./node_modules/@angular/material/esm2015/slider.js");
     /* harmony import */
 
 
-    var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @angular/material/slide-toggle */
     "./node_modules/@angular/material/esm2015/slide-toggle.js");
     /* harmony import */
 
 
-    var _angular_material_menu__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _angular_material_menu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @angular/material/menu */
     "./node_modules/@angular/material/esm2015/menu.js");
     /* harmony import */
 
 
-    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @angular/material/sidenav */
     "./node_modules/@angular/material/esm2015/sidenav.js");
     /* harmony import */
 
 
-    var _angular_material_badge__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @angular/material/badge */
     "./node_modules/@angular/material/esm2015/badge.js");
     /* harmony import */
 
 
-    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @angular/material/toolbar */
     "./node_modules/@angular/material/esm2015/toolbar.js");
     /* harmony import */
 
 
-    var _angular_material_list__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _angular_material_list__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @angular/material/list */
     "./node_modules/@angular/material/esm2015/list.js");
     /* harmony import */
 
 
-    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! @angular/material/grid-list */
     "./node_modules/@angular/material/esm2015/grid-list.js");
     /* harmony import */
 
 
-    var _angular_material_card__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! @angular/material/card */
     "./node_modules/@angular/material/esm2015/card.js");
     /* harmony import */
 
 
-    var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! @angular/material/stepper */
     "./node_modules/@angular/material/esm2015/stepper.js");
     /* harmony import */
 
 
-    var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! @angular/material/tabs */
     "./node_modules/@angular/material/esm2015/tabs.js");
     /* harmony import */
 
 
-    var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @angular/material/expansion */
     "./node_modules/@angular/material/esm2015/expansion.js");
     /* harmony import */
 
 
-    var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! @angular/material/button-toggle */
     "./node_modules/@angular/material/esm2015/button-toggle.js");
     /* harmony import */
 
 
-    var _angular_material_chips__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    var _angular_material_chips__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! @angular/material/chips */
     "./node_modules/@angular/material/esm2015/chips.js");
     /* harmony import */
 
 
-    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! @angular/material/icon */
     "./node_modules/@angular/material/esm2015/icon.js");
     /* harmony import */
 
 
-    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
     /*! @angular/material/progress-spinner */
     "./node_modules/@angular/material/esm2015/progress-spinner.js");
     /* harmony import */
 
 
-    var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
     /*! @angular/material/progress-bar */
     "./node_modules/@angular/material/esm2015/progress-bar.js");
     /* harmony import */
 
 
-    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! @angular/material/dialog */
     "./node_modules/@angular/material/esm2015/dialog.js");
     /* harmony import */
 
 
-    var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! @angular/material/tooltip */
     "./node_modules/@angular/material/esm2015/tooltip.js");
     /* harmony import */
 
 
-    var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! @angular/material/snack-bar */
     "./node_modules/@angular/material/esm2015/snack-bar.js");
     /* harmony import */
 
 
-    var _angular_material_table__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    var _angular_material_table__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
     /*! @angular/material/table */
     "./node_modules/@angular/material/esm2015/table.js");
     /* harmony import */
 
 
-    var _angular_material_sort__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    var _angular_material_sort__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! @angular/material/sort */
     "./node_modules/@angular/material/esm2015/sort.js");
     /* harmony import */
 
 
-    var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
     /*! @angular/material/paginator */
     "./node_modules/@angular/material/esm2015/paginator.js");
 
@@ -8183,9 +8823,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       declarations: [],
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_4__["MatCheckboxModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_4__["MatCheckboxModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_6__["MatInputModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_7__["MatAutocompleteModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__["MatRadioModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_11__["MatSelectModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_13__["MatSlideToggleModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_16__["MatBadgeModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_17__["MatToolbarModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_18__["MatListModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_19__["MatGridListModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_20__["MatCardModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_22__["MatTabsModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_23__["MatExpansionModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_24__["MatButtonToggleModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_25__["MatChipsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_26__["MatIconModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_27__["MatProgressSpinnerModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_28__["MatProgressBarModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_29__["MatDialogModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_30__["MatTooltipModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_31__["MatSnackBarModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_32__["MatTableModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_33__["MatSortModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_34__["MatPaginatorModule"]],
-      exports: [_angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_17__["MatToolbarModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_26__["MatIconModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_16__["MatBadgeModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_18__["MatListModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_19__["MatGridListModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_6__["MatInputModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_11__["MatSelectModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__["MatRadioModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_25__["MatChipsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_30__["MatTooltipModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_32__["MatTableModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_34__["MatPaginatorModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_29__["MatDialogModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_22__["MatTabsModule"]],
-      providers: [_angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerModule"]]
+      imports: [// CommonModule,
+      // BrowserAnimationsModule,
+      _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_2__["MatCheckboxModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_2__["MatCheckboxModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_5__["MatAutocompleteModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_6__["MatDatepickerModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatFormFieldModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__["MatRadioModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_9__["MatSelectModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_10__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_11__["MatSlideToggleModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_12__["MatMenuModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_13__["MatSidenavModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_15__["MatToolbarModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_16__["MatListModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_17__["MatGridListModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_19__["MatStepperModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_20__["MatTabsModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_21__["MatExpansionModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_22__["MatButtonToggleModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_23__["MatChipsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__["MatIconModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_25__["MatProgressSpinnerModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_26__["MatProgressBarModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_27__["MatDialogModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_28__["MatTooltipModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_29__["MatSnackBarModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_30__["MatTableModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_31__["MatSortModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_30__["MatTableModule"]],
+      exports: [_angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_15__["MatToolbarModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__["MatIconModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_13__["MatSidenavModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_16__["MatListModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_17__["MatGridListModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatFormFieldModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_9__["MatSelectModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__["MatRadioModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_6__["MatDatepickerModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_23__["MatChipsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_28__["MatTooltipModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_30__["MatTableModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_27__["MatDialogModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_20__["MatTabsModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_30__["MatTableModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_11__["MatSlideToggleModule"]],
+      providers: [_angular_material_datepicker__WEBPACK_IMPORTED_MODULE_6__["MatDatepickerModule"]]
     })], MaterialModule);
     /***/
   },
@@ -8341,6 +8983,154 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var subscribeList = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["createSelector"])(profileFeature, function (state) {
       return state.subscribeList;
     });
+    /***/
+  },
+
+  /***/
+  "./src/app/profile/subscription-popup/subscription-popup.component.css":
+  /*!*****************************************************************************!*\
+    !*** ./src/app/profile/subscription-popup/subscription-popup.component.css ***!
+    \*****************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppProfileSubscriptionPopupSubscriptionPopupComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".pricing-plans-container {\r\n  margin-top: 40px;\r\n\r\n}\r\n/* .paypal_section {\r\n  position: absolute;\r\n  right: 0;\r\n  bottom: 0;\r\n} */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZmlsZS9zdWJzY3JpcHRpb24tcG9wdXAvc3Vic2NyaXB0aW9uLXBvcHVwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7O0FBRWxCO0FBQ0E7Ozs7R0FJRyIsImZpbGUiOiJzcmMvYXBwL3Byb2ZpbGUvc3Vic2NyaXB0aW9uLXBvcHVwL3N1YnNjcmlwdGlvbi1wb3B1cC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByaWNpbmctcGxhbnMtY29udGFpbmVyIHtcclxuICBtYXJnaW4tdG9wOiA0MHB4O1xyXG5cclxufVxyXG4vKiAucGF5cGFsX3NlY3Rpb24ge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICByaWdodDogMDtcclxuICBib3R0b206IDA7XHJcbn0gKi8iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/profile/subscription-popup/subscription-popup.component.ts":
+  /*!****************************************************************************!*\
+    !*** ./src/app/profile/subscription-popup/subscription-popup.component.ts ***!
+    \****************************************************************************/
+
+  /*! exports provided: SubscriptionPopupComponent */
+
+  /***/
+  function srcAppProfileSubscriptionPopupSubscriptionPopupComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SubscriptionPopupComponent", function () {
+      return SubscriptionPopupComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/material/dialog */
+    "./node_modules/@angular/material/esm2015/dialog.js");
+
+    var SubscriptionPopupComponent = /*#__PURE__*/function () {
+      function SubscriptionPopupComponent(dialog) {
+        _classCallCheck(this, SubscriptionPopupComponent);
+
+        this.dialog = dialog;
+        this.vipAccount = {
+          price: 70,
+          description: 'Vip Account'
+        };
+      }
+
+      _createClass(SubscriptionPopupComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.integratePaypal();
+        }
+      }, {
+        key: "integratePaypal",
+        value: function integratePaypal() {
+          var _this9 = this;
+
+          paypal.Buttons({
+            createOrder: function createOrder(data, actions) {
+              return actions.order.create({
+                purchase_units: [{
+                  description: _this9.vipAccount.description,
+                  amount: {
+                    currency_code: 'USD',
+                    value: _this9.vipAccount.price
+                  }
+                }]
+              });
+            },
+            onApprove: function onApprove(data, actions) {
+              return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](_this9, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+                var order;
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                  while (1) {
+                    switch (_context.prev = _context.next) {
+                      case 0:
+                        _context.next = 2;
+                        return actions.order.capture();
+
+                      case 2:
+                        order = _context.sent;
+                        // this.showMsg('Payment Successful !!!', 'This message will close in <b></b> milliseconds.');
+                        alert('success');
+                        console.log('paypal', order);
+                        setTimeout(function () {// this.upgradeAccount();
+                        }, 2500);
+
+                      case 6:
+                      case "end":
+                        return _context.stop();
+                    }
+                  }
+                }, _callee);
+              }));
+            },
+            onError: function onError(err) {
+              console.log(err);
+            }
+          }).render(this.paypalElement.nativeElement);
+        }
+      }]);
+
+      return SubscriptionPopupComponent;
+    }();
+
+    SubscriptionPopupComponent.ctorParameters = function () {
+      return [{
+        type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]
+      }];
+    };
+
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('paypal', {
+      "static": true
+    })], SubscriptionPopupComponent.prototype, "paypalElement", void 0);
+    SubscriptionPopupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'sms-subscription-popup',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./subscription-popup.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/profile/subscription-popup/subscription-popup.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./subscription-popup.component.css */
+      "./src/app/profile/subscription-popup/subscription-popup.component.css"))["default"]]
+    })], SubscriptionPopupComponent);
     /***/
   },
 
@@ -8685,7 +9475,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AuthenticationService, [{
         key: "login",
         value: function login(username, password) {
-          var _this8 = this;
+          var _this10 = this;
 
           // return this.http.post<any>(`${environment.apiUrl}/users/authenticate`, { username, password })
           //     .pipe(map(user => {
@@ -8702,7 +9492,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             // store user details and jwt token in local storage to keep user logged in between page refreshes
             localStorage.setItem('currentUser', JSON.stringify(user));
 
-            _this8.currentUserSubject.next(user);
+            _this10.currentUserSubject.next(user);
 
             return user;
           }));

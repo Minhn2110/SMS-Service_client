@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"firebase-auth":"firebase-auth","profile-profile-module":"profile-profile-module"}[chunkId]||chunkId) +    "-es5.js"
+/******/ 		return __webpack_require__.p + "" + ({"admin-admin-module":"admin-admin-module","firebase-auth":"firebase-auth","profile-profile-module":"profile-profile-module"}[chunkId]||chunkId) +    "-es5.js"
 /******/ 	}
 /******/
 /******/ 	// The require function

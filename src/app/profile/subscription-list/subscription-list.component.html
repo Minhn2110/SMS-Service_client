@@ -55,7 +55,7 @@
 
 									<!-- Buttons -->
 									<div class="buttons-to-right always-visible">
-                    <a href="javascript:void(0)" class="button ripple-effect" (click)="enterSubscriptionLength(item.Id)" *ngIf="item.active"><i class="icon-material-outline-supervisor-account" ></i> Subscribe</a>
+                    <a href="javascript:void(0)" class="button ripple-effect" (click)="openDialog(item.Id)" *ngIf="item.active"><i class="icon-material-outline-supervisor-account" ></i> Subscribe</a>
                     <a href="javascript:void(0)" *ngIf="!item.active" class="button dark ripple-effect"><i class="icon-feather-rotate-ccw"></i> Already Subscribed</a>
 										<a href="javascript:void(0)" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top" (click)="unsubscribeService(item.Id)"><i class="icon-feather-trash-2"></i></a>
 									</div>

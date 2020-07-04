@@ -201,7 +201,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\t\t\t<!-- Dashboard Headline -->\n\t\t\t<div class=\"dashboard-headline\">\n\t\t\t\t<h3>Manage Subscriptions</h3>\n\n\t\t\t\t<!-- Breadcrumbs -->\n\t\t\t\t<nav id=\"breadcrumbs\" class=\"dark\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t\t\t\t<li><a href=\"#\">Dashboard</a></li>\n\t\t\t\t\t\t<li>Manage Tasks</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</nav>\n\t\t\t</div>\n\t\n\t\t\t<!-- Row -->\n\t\t\t<div class=\"row\">\n\n\t\t\t\t<!-- Dashboard Box -->\n\t\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t\t<div class=\"dashboard-box margin-top-0\">\n\n\t\t\t\t\t\t<!-- Headline -->\n\t\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t\t\t<h3><i class=\"icon-material-outline-assignment\"></i> My Tasks</h3>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"content\">\n\t\t\t\t\t\t\t<ul class=\"dashboard-box-list\">\n\t\t\t\t\t\t\t\t<li *ngFor=\"let item of subscriptionList\">\n\t\t\t\t\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t\t\t\t\t<div class=\"job-listing width-adjustment\">\n\n\t\t\t\t\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\"><a href=\"#\">{{item.Name}}</a> <span class=\"dashboard-status-button yellow\">Expiring</span></h3>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 23 hours left</li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<!-- Task Details -->\n\t\t\t\t\t\t\t\t\t<ul class=\"dashboard-task-info\">\n\t\t\t\t\t\t\t\t\t\t<li><strong>3</strong><span>Subscribers</span></li>\n\t\t\t\t\t\t\t\t\t\t<li><strong>${{item.Price}}</strong><span>Price</span></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\n\t\t\t\t\t\t\t\t\t<!-- Buttons -->\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-to-right always-visible\">\n                    <a href=\"javascript:void(0)\" class=\"button ripple-effect\" (click)=\"enterSubscriptionLength(item.Id)\" *ngIf=\"item.active\"><i class=\"icon-material-outline-supervisor-account\" ></i> Subscribe</a>\n                    <a href=\"javascript:void(0)\" *ngIf=\"!item.active\" class=\"button dark ripple-effect\"><i class=\"icon-feather-rotate-ccw\"></i> Already Subscribed</a>\n\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"button gray ripple-effect ico\" title=\"Remove\" data-tippy-placement=\"top\" (click)=\"unsubscribeService(item.Id)\"><i class=\"icon-feather-trash-2\"></i></a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\t\t\t<!-- Row / End -->";
+    __webpack_exports__["default"] = "\t\t\t<!-- Dashboard Headline -->\n\t\t\t<div class=\"dashboard-headline\">\n\t\t\t\t<h3>Manage Subscriptions</h3>\n\n\t\t\t\t<!-- Breadcrumbs -->\n\t\t\t\t<nav id=\"breadcrumbs\" class=\"dark\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t\t\t\t<li><a href=\"#\">Dashboard</a></li>\n\t\t\t\t\t\t<li>Manage Tasks</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</nav>\n\t\t\t</div>\n\t\n\t\t\t<!-- Row -->\n\t\t\t<div class=\"row\">\n\n\t\t\t\t<!-- Dashboard Box -->\n\t\t\t\t<div class=\"col-xl-12\">\n\t\t\t\t\t<div class=\"dashboard-box margin-top-0\">\n\n\t\t\t\t\t\t<!-- Headline -->\n\t\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t\t\t<h3><i class=\"icon-material-outline-assignment\"></i> My Tasks</h3>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"content\">\n\t\t\t\t\t\t\t<ul class=\"dashboard-box-list\">\n\t\t\t\t\t\t\t\t<li *ngFor=\"let item of subscriptionList\">\n\t\t\t\t\t\t\t\t\t<!-- Job Listing -->\n\t\t\t\t\t\t\t\t\t<div class=\"job-listing width-adjustment\">\n\n\t\t\t\t\t\t\t\t\t\t<!-- Job Listing Details -->\n\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-details\">\n\n\t\t\t\t\t\t\t\t\t\t\t<!-- Details -->\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-description\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"job-listing-title\"><a href=\"#\">{{item.Name}}</a> <span class=\"dashboard-status-button yellow\">Expiring</span></h3>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<!-- Job Listing Footer -->\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"job-listing-footer\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><i class=\"icon-material-outline-access-time\"></i> 23 hours left</li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<!-- Task Details -->\n\t\t\t\t\t\t\t\t\t<ul class=\"dashboard-task-info\">\n\t\t\t\t\t\t\t\t\t\t<li><strong>3</strong><span>Subscribers</span></li>\n\t\t\t\t\t\t\t\t\t\t<li><strong>${{item.Price}}</strong><span>Price</span></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\n\t\t\t\t\t\t\t\t\t<!-- Buttons -->\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-to-right always-visible\">\n                    <a href=\"javascript:void(0)\" class=\"button ripple-effect\" (click)=\"openDialog(item.Id)\" *ngIf=\"item.active\"><i class=\"icon-material-outline-supervisor-account\" ></i> Subscribe</a>\n                    <a href=\"javascript:void(0)\" *ngIf=\"!item.active\" class=\"button dark ripple-effect\"><i class=\"icon-feather-rotate-ccw\"></i> Already Subscribed</a>\n\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"button gray ripple-effect ico\" title=\"Remove\" data-tippy-placement=\"top\" (click)=\"unsubscribeService(item.Id)\"><i class=\"icon-feather-trash-2\"></i></a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\t\t\t<!-- Row / End -->";
     /***/
   },
 
@@ -1846,10 +1846,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }));
       });
       this.getsubscribeList$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["createEffect"])(function () {
-        return _this13.actions$.pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["ofType"])(_profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileGetSubscribeService"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(function (obj) {
+        return _this13.actions$.pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_3__["ofType"])(_profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileGetSubscribeService"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["mergeMap"])(function (obj) {
           return _this13.adminService.getAllServices(obj.status).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["tap"])(function (subscribeList) {
-            subscribeList.forEach(function (item2) {
-              item2.active = true;
+            subscribeList.forEach(function (x) {
+              x.active = true;
             });
 
             _this13.adminService.getAllServices(true).subscribe(function (res) {
@@ -1857,17 +1857,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 if (res.length > 0) {
                   res.forEach(function (item1) {
                     subscribeList.forEach(function (item2) {
-                      if (item1.Id == item2.Id) {
+                      // debugger
+                      if (item1.Id === item2.Id) {
                         item2.active = false;
-                      } else {
-                        item2.active = true;
-                      }
+                      } else {}
                     });
                   });
                 }
               }
             });
-          }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["delay"])(2000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (subscribeList) {
+          }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["delay"])(3000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (subscribeList) {
             return _profile_actions__WEBPACK_IMPORTED_MODULE_6__["ProfileGetSubscribeServiceSuccess"]({
               subscribeList: subscribeList
             });
@@ -2051,14 +2050,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _profile_state_profile_actions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ../../profile/state/profile.actions */
     "./src/app/profile/state/profile.actions.ts");
+    /* harmony import */
+
+
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/material/dialog */
+    "./node_modules/@angular/material/esm2015/dialog.js");
+    /* harmony import */
+
+
+    var _subscription_popup_subscription_popup_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../subscription-popup/subscription-popup.component */
+    "./src/app/profile/subscription-popup/subscription-popup.component.ts");
 
     var SubscriptionListComponent = /*#__PURE__*/function () {
-      function SubscriptionListComponent(adminService, alertService, store) {
+      function SubscriptionListComponent(adminService, alertService, store, dialog) {
         _classCallCheck(this, SubscriptionListComponent);
 
         this.adminService = adminService;
         this.alertService = alertService;
         this.store = store;
+        this.dialog = dialog;
       }
 
       _createClass(SubscriptionListComponent, [{
@@ -2136,6 +2148,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this16.alertService.successCounterup('Subscription', 'UnSubscription Success !!!');
           });
         }
+      }, {
+        key: "openDialog",
+        value: function openDialog() {
+          var dialogRef = this.dialog.open(_subscription_popup_subscription_popup_component__WEBPACK_IMPORTED_MODULE_9__["SubscriptionPopupComponent"], {
+            height: '600px',
+            width: '950px'
+          });
+          dialogRef.afterClosed().subscribe(function (result) {
+            console.log("Dialog result: ".concat(result));
+          });
+        }
       }]);
 
       return SubscriptionListComponent;
@@ -2148,6 +2171,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: src_app_services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"]
       }, {
         type: _ngrx_store__WEBPACK_IMPORTED_MODULE_5__["Store"]
+      }, {
+        type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
       }];
     };
 

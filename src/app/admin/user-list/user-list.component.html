@@ -1,0 +1,176 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header Container
+================================================== -->
+  <!-- Header Container / End -->
+
+  <!-- Titlebar
+================================================== -->
+  <div id="titlebar" class="gradient">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+
+          <h2>User Interface Elements</h2>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs" class="dark">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li>User Interface Elements</li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Table & Notifications
+================================================== -->
+  <!-- Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-md-12">
+        <!-- Fun Facts Container -->
+        <div class="fun-facts-container">
+          <div class="fun-fact" data-fun-fact-color="#36bd78">
+            <div class="fun-fact-text">
+              <span>User Count</span>
+              <h4>22</h4>
+            </div>
+            <div class="fun-fact-icon"><i class="icon-material-outline-gavel" style="color: rgb(54, 189, 120);"></i>
+            </div>
+          </div>
+          <div class="fun-fact" data-fun-fact-color="#efa80f">
+            <div class="fun-fact-text">
+              <span>Message Count Per Month</span>
+              <h4>28</h4>
+            </div>
+            <div class="fun-fact-icon"><i class="icon-material-outline-rate-review"></i></div>
+          </div>
+
+          <!-- Last one has to be hidden below 1600px, sorry :( -->
+          <div class="fun-fact" data-fun-fact-color="#2a41e6">
+            <div class="fun-fact-text">
+              <span>Message Count Per Day</span>
+              <h4>987</h4>
+            </div>
+            <div class="fun-fact-icon"><i class="icon-feather-trending-up"></i></div>
+          </div>
+        </div>
+        <!-- <div class="chart-wrapper">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+          </canvas>
+        </div> -->
+      </div>
+      <div class="col-xl-7">
+        <!-- Dashboard Box -->
+        <div class="dashboard-box main-box-in-row">
+          <div class="headline">
+            <h3><i class="icon-feather-bar-chart-2"></i> Message Analysis </h3>
+            <!-- <div class="sort-by">
+              <select class="selectpicker hide-tick">
+                <option>Last 6 Months</option>
+                <option>This Year</option>
+                <option>This Month</option>
+              </select>
+            </div> -->
+          </div>
+          <div class="content">
+            <!-- Chart -->
+            <div class="chart">
+              <!-- <canvas id="chart" width="100" height="45"></canvas> -->
+              <canvas baseChart  width="100" height="45" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+              [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+            </canvas>
+            </div>
+          </div>
+        </div>
+        <!-- Dashboard Box / End -->
+      </div>
+      <div class="col-xl-5 col-md-12">
+        <div class="dashboard-box main-box-in-row">
+          <div class="headline">
+            <h3><i class="icon-feather-bar-chart-2"></i> User List </h3>
+          </div>
+          <div class="content">
+            <div class="mat-elevation-z8">
+              <table mat-table [dataSource]="dataSource" class="basic-table">
+    
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element; let i = index;"> {{i + 1}} </td>
+                </ng-container>
+    
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Name}} </td>
+                </ng-container>
+    
+                <ng-container matColumnDef="email">
+                  <th mat-header-cell *matHeaderCellDef> Email </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
+                </ng-container>
+    
+                <ng-container matColumnDef="status">
+                  <th mat-header-cell *matHeaderCellDef> Status </th>
+                  <td mat-cell *matCellDef="let element"> {{element.Status == 1 ? 'Active' : 'Deactive'}} </td>
+                </ng-container>
+    
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                  <th mat-header-cell *matHeaderCellDef> Action </th>
+                  <td mat-cell *matCellDef="let element">
+                    <mat-slide-toggle checked='{{element.Status == 1 ? true : false}}'
+                      (change)='changeStatus($event, element.Id)'></mat-slide-toggle>
+                  </td>
+                </ng-container>
+    
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="symbol">
+                  <th mat-header-cell *matHeaderCellDef> Action </th>
+                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+    
+              <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div class="section-headline margin-bottom-30 margin-top-30">
+          <h4>Table</h4>
+        </div> -->
+
+      </div>
+    </div>
+    <div class="row">
+
+
+
+
+
+    </div>
+
+
+  </div>
+  <!-- Container / End -->
+
+
+  <div class="margin-top-70"></div>
+
+
+
+</div>
+<!-- Wrapper / End -->

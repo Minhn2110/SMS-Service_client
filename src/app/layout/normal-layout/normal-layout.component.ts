@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'sms-normal-layout',
   templateUrl: './normal-layout.component.html',
-  styleUrls: ['./normal-layout.component.css']
+  styleUrls: ['./normal-layout.component.scss']
 })
 export class NormalLayoutComponent implements OnInit {
 

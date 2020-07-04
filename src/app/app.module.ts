@@ -33,6 +33,11 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { SubscriptionPopupComponent } from './profile/subscription-popup/subscription-popup.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+
+import { ChartsModule } from 'ng2-charts';
 
 
 const firebaseConfig = {
@@ -55,7 +60,10 @@ const firebaseConfig = {
     FooterAdminComponent,
     NormalLayoutComponent,
     ProfileLayoutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SubscriptionPopupComponent,
+    AdminLoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -76,12 +84,14 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
 		AngularFirestoreModule, // firestore
 		AngularFireAuthModule, // auth
-		AngularFireStorageModule // storage
+    AngularFireStorageModule,
+    ChartsModule
+    
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ], bootstrap: [AppComponent],
-  entryComponents: [LoginComponent],
+  entryComponents: [LoginComponent, SubscriptionPopupComponent],
 })
 export class AppModule { }

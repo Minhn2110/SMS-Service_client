@@ -13,7 +13,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $sms-client-primary: mat-palette($mat-indigo);
-$sms-client-accent: mat-palette($mat-pink, A200, A100, A400);
+$sms-client-accent: mat-palette($mat-indigo, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $sms-client-warn: mat-palette($mat-red);
@@ -26,8 +26,8 @@ $sms-client-theme: mat-light-theme($sms-client-primary, $sms-client-accent, $sms
 // that you are using.
 @include angular-material-theme($sms-client-theme);
 
-/* You can add global styles to this file, and also import other style files */
-@charset "UTF-8";
+// /* You can add global styles to this file, and also import other style files */
+// @charset "UTF-8";
 
 // @import './assets/css/bootstrap-grid.css';
 @import './assets/css/style.css';
@@ -41,3 +41,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .swal2-styled.swal2-confirm {
   background-color: #2a41e8 !important ;
 }
+
