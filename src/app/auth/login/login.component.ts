@@ -8,6 +8,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { AlertService } from 'src/app/services/alert.service';
 import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
+import { SearchCountryField, TooltipLabel, CountryISO } from 'ngx-intl-tel-input';
 
 @Component({
   selector: 'sms-login',
@@ -16,6 +17,11 @@ import { Observable } from 'rxjs';
   encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
+  separateDialCode = true;
+	SearchCountryField = SearchCountryField;
+	TooltipLabel = TooltipLabel;
+	CountryISO = CountryISO;
+	preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
   loginForm: FormGroup;
   registerForm: FormGroup;
   loading = false;
@@ -47,8 +53,10 @@ export class LoginComponent implements OnInit {
       email: ['', Validators.required],
       password: ['', Validators.required],
       phoneNumber: ['', Validators.required],
-      gender: [2, Validators.required],
+      gender: ['', Validators.required],
       name: ['', Validators.required],
+      address: ['', Validators.required],
+      avatar: ['', Validators.required],
     });
     this.loginForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -68,7 +76,7 @@ export class LoginComponent implements OnInit {
 
     // stop here if form is invalid
     if (this.registerForm.invalid) {
-      alert('invalid');
+      this.alertService.error('Please recheck your data');
       return;
     } else {
       this.loading = true;
@@ -83,7 +91,7 @@ export class LoginComponent implements OnInit {
             this.downloadURL.subscribe(url => {
               if (url) {
                 this.fb = url;
-                this.authenticationService.register(this.f.email.value, this.f.password.value, this.f.password.value,  this.f.phoneNumber.value, this.fb,
+                this.authenticationService.register(this.f.email.value, this.f.password.value, this.f.password.value,  this.f.phoneNumber.value.e164Number, this.fb,
                   this.f.name.value, parseInt(this.f.gender.value))
                   .pipe(first())
                   .subscribe(
@@ -114,11 +122,15 @@ export class LoginComponent implements OnInit {
 
     }
   }
+  changePreferredCountries() {
+		this.preferredCountries = [CountryISO.India, CountryISO.Canada];
+	}
   uploadAvatar(e) {
     this.currentDate = Date.now();
     this.file = e.target.files[0];
     this.fileName = e.target.files[0].name;
-    console.log(this.file);
+    this.registerForm.controls['avatar'].setValue(this.file ? this.file.name : '');
+    console.log(this.registerForm.get(['avatar']).value);
   }
   // sendImageToFirebase() {
   //   const filePath = `ProjectImage/${this.currentDate}`;
@@ -191,11 +203,8 @@ export class LoginComponent implements OnInit {
       if (result.value) {
         this.authenticationService.phoneVerification(this.userId, result.value).subscribe(data => {
           if (data) {
-            this.alertService.successCounterup('Register', 'Register Success !!!');
-            this.dialogRef.close();
-            // setTimeout(() => {
-            //   this.router.navigate(['/client/home']);
-            // }, 1500);
+            this.alertService.successCounterup('Register', 'Register Success, please Sign in again .');
+            this.dialogRef.close()
           }
         })
       } else {

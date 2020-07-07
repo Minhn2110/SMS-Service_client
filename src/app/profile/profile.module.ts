@@ -17,6 +17,7 @@ import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.componen
 import { SettingsComponent } from './settings/settings.component';
 import { SubscriptionListComponent } from './subscription-list/subscription-list.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ProfileRoutingModule,
     FormsModule, ReactiveFormsModule,
     StoreModule.forFeature('profile', counterReducer),
-    EffectsModule.forFeature([ProfileEffects])
+    EffectsModule.forFeature([ProfileEffects]),
+    NgxSpinnerModule
+
   ],
   exports: [],
   providers: [],

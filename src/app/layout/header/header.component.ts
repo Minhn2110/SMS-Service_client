@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from 'src/app/auth/login/login.component';
-import { Store } from '@ngrx/store';
-import * as profileSelector from '../../profile/state/profile.selector'
-import { takeWhile } from 'rxjs/operators';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'sms-header',
@@ -11,30 +9,43 @@ import { takeWhile } from 'rxjs/operators';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  user:  any;
   constructor(
-    private store: Store,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private authenticationService: AuthenticationService
   ) { }
 
   isSubscribing: boolean;
+  isUserInfo: boolean;
   ngOnInit() {
     this.isSubscribing = true;
-    this.store.select(profileSelector.userInfo).pipe(takeWhile(() => this.isSubscribing)).subscribe(data => console.log(data));
+    this.isUserInfo = false;
+    this.isLoggedIn();
+  }
+  isLoggedIn() {
+    this.user = JSON.parse(localStorage.getItem('currentUser'));
+    console.log(this.user);
+    if (this.user) {
+      this.isUserInfo = true;
+    } else {
+      this.isUserInfo = false;
+    }
   }
   openDialog() {
     const dialogRef = this.dialog.open(LoginComponent, {
       height: '650px',
-      width: '460px',
+      width: '450px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
+  logout() {
+    this.authenticationService.logout();
+    this.isLoggedIn();
+  }
   ngOnDestroy(): void {
-    //Called once, before the instance is destroyed.
-    //Add 'implements OnDestroy' to the class.
     this.isSubscribing = false;
   }
 

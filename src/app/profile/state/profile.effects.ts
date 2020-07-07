@@ -22,8 +22,7 @@ export class ProfileEffects {
         ),
         catchError(() => EMPTY)
       ))
-  )
-  );
+  ));
   getFriendList$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(ProfileActions.ProfileActionTypes.ProfileGetFriendList),

@@ -13,7 +13,7 @@
 					<form method="post" id="login-form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
 						<div class="input-with-icon-left">
 							<i class="icon-material-baseline-mail-outline"></i>
-							<input type="text" class="input-text with-border" placeholder="Email Address" formControlName="name"/>
+							<input type="text" class="input-text with-border" placeholder="Email Address" formControlName="name" />
 						</div>
 
 						<div class="input-with-icon-left">
@@ -50,36 +50,46 @@
 				</div>
 
 				<!-- Form -->
-				<form method="post" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+				<form method="post" [formGroup]="registerForm" (ngSubmit)="onSubmit()" autocomplete="off">
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-person-pin"></i>
-						<input type="text" class="input-text with-border" formControlName="name" placeholder="Name" />
+						<input type="text" class="input-text with-border" formControlName="name" placeholder="Name"
+							autocomplete="off" />
 					</div>
 
 					<div class="input-with-icon-left">
 						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border" formControlName="email" placeholder="Email Address" />
+						<input type="text" class="input-text with-border" formControlName="email" placeholder="Email Address"
+							autocomplete="off" />
 					</div>
 
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-lock"></i>
-						<input type="password" class="input-text with-border" formControlName="password" placeholder="Password" />
+						<input type="password" class="input-text with-border" formControlName="password" placeholder="Password"
+							autocomplete="off" />
 					</div>
 
 					<div class="input-with-icon-left">
-						<i class="icon-feather-phone"></i>
-						<input type="text" class="input-text with-border" formControlName="phoneNumber" [(ngModel)]="phoneNumber"
-							placeholder="Phone Number" />
+						<i class="icon-line-awesome-university"></i>
+						<input type="text" class="input-text with-border" formControlName="address" placeholder="Address"
+							autocomplete="off" />
 					</div>
 
-					<!-- <div class="input-with-icon-left">
-						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border" formControlName="avartar" placeholder="Avartar" />
-					</div> -->
-					<div class="uploadButton margin-top-0">
-						<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload" (change)="uploadAvatar($event)" multiple/>
-						<label class="uploadButton-button ripple-effect" for="upload" >Upload Avatar</label>
+					<div class="input-with-icon-left">
+						<ngx-intl-tel-input [inputId]="'adsasd'" [cssClass]="'custom'" [preferredCountries]="preferredCountries"
+							[enableAutoCountrySelect]="false" [enablePlaceholder]="false" [searchCountryFlag]="false"
+							[searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="true"
+							[selectedCountryISO]="CountryISO.Vietnam" [maxLength]="20" [tooltipField]="TooltipLabel.Name"
+							[phoneValidation]="true" [separateDialCode]="separateDialCode" name="phone" formControlName="phoneNumber">
+						</ngx-intl-tel-input>
+					</div>
+
+					<div class="uploadButton">
+						<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload"
+							(change)="uploadAvatar($event)" multiple />
+						<label class="uploadButton-button ripple-effect" for="upload">Upload Avatar</label>
 						<span class="uploadButton-file-name">{{fileName}}</span>
+						<input type="hidden" name="fileHidden" formControlName="avatar"/>
 					</div>
 
 					<div class='register-select'>
@@ -99,13 +109,13 @@
 
 
 				<!-- Social Login -->
-				<div class="social-login-separator"><span>or</span></div>
+				<!-- <div class="social-login-separator"><span>or</span></div>
 				<div class="social-login-buttons">
 					<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Register via
 						Facebook</button>
 					<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Register via
 						Google+</button>
-				</div>
+				</div> -->
 
 			</div>
 		</mat-tab>
@@ -120,5 +130,3 @@
 
 	</div> -->
 </mat-dialog-content>
-
-

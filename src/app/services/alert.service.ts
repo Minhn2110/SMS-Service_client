@@ -51,6 +51,16 @@ export class AlertService {
       },
     });
   }
+  info(title, mgs) {
+    return Swal.fire({
+      icon: 'info',
+      title: title,
+      text: mgs,
+      customClass: {
+        confirmButton: 'button'
+      },
+    });
+  }
 
   actionSuccess(msg) {
     Swal.fire({

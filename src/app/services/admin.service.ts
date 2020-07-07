@@ -39,6 +39,9 @@ export class AdminService {
   getRecommendFriend() {
     return this.http.get<any>(`${environment.apiUrl}/api/Friend/GetRecommendFriend`)
   }
+  getRecommendFriendPublic() {
+    return this.http.get<any>(`${environment.apiUrl}/api/Friend/GetRecommendFriendPublic`)
+  }
   setHeader(body) {
     // let headers: HttpHeaders = new HttpHeaders();
     // headers = headers.set('angularVN', 'Angular Viet Nam'); // --> gán lại cho biến headers

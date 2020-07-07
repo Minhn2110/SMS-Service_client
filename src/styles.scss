@@ -41,4 +41,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .swal2-styled.swal2-confirm {
   background-color: #2a41e8 !important ;
 }
+.swal2-actions.swal2-loading {
+  align-items: center;
+  justify-content: center;
+}
+.swal2-popup {
+  z-index: 10000;
+}
 

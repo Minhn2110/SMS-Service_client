@@ -38,7 +38,8 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 
 import { ChartsModule } from 'ng2-charts';
-
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBBignCfPEtIIGntZzCpopvW0ZaJ_vl0SQ",
@@ -85,7 +86,9 @@ const firebaseConfig = {
 		AngularFirestoreModule, // firestore
 		AngularFireAuthModule, // auth
     AngularFireStorageModule,
-    ChartsModule
+    ChartsModule,
+    NgxIntlTelInputModule,
+    NgxSpinnerModule
     
   ],
   providers: [
