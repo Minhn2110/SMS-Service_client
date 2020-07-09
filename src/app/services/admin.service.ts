@@ -57,6 +57,9 @@ export class AdminService {
   subscribeServices(id, day) {
     return this.http.get<any>(`${environment.apiUrl}/api/Services/Subscribe?serviceId=${id}&due=${day}`);
   }
+  smsExtendServices(money) {
+    return this.http.get<any>(`${environment.apiUrl}/api/Sms/Charge?money=${money}`);
+  }
   unSubscribeServices(id) {
     return this.http.get<any>(`${environment.apiUrl}/api/Services/UnSubscribe?serviceId=${id}`);
   }

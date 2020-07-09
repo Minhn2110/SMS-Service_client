@@ -30,10 +30,10 @@ $sms-client-theme: mat-light-theme($sms-client-primary, $sms-client-accent, $sms
 // @charset "UTF-8";
 
 // @import './assets/css/bootstrap-grid.css';
+// @import './assets/css/invoice.css';
 @import './assets/css/style.css';
 @import './assets/css/colors/blue.css';
 @import './assets/css/icons.css';
-// @import './assets/css/invoice.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -45,7 +45,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   align-items: center;
   justify-content: center;
 }
-.swal2-popup {
-  z-index: 10000;
+.swal2-container {
+  z-index: 100000 !important;
 }
 

@@ -1,0 +1,95 @@
+<!-- Print Button -->
+<div class="print-button-container">
+  <a href="javascript:void(0)" (click) = "goBack()" class="print-button" style="margin-right: 20px;">Go to Home</a>
+  <a href="javascript:window.print()"  class="print-button">Print this invoice</a>
+</div>
+
+<!-- Invoice -->
+<div id="invoice">
+
+  <!-- Header -->
+  <div class="row">
+    <div class="col-xl-6">
+      <div id="logo"><img src="../../../assets/admin/images/logo.png" alt=""></div>
+    </div>
+
+    <div class="col-xl-6">
+
+      <p id="details">
+        <strong>Order:</strong> #00124 <br>
+        <strong>Issued:</strong> {{this.currentDate}}<br>
+        Due 7 days from date of issue
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Client & Supplier -->
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>Invoice</h2>
+    </div>
+
+    <div class="col-xl-6">
+      <strong class="margin-bottom-5">Supplier</strong>
+      <p>
+        Online Services <br>
+        8A Ton That Thuyet Street, Detech Tower <br>
+        Hanoi, CF44 6ZL, VietNam <br>
+      </p>
+    </div>
+
+    <div class="col-xl-6">
+      <strong class="margin-bottom-5">Customer</strong>
+      <p>
+        {{userName}} <br>
+        36 Edgewater Street <br>
+        Melbourne, 2540, Australia <br>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Invoice -->
+  <div class="row">
+    <div class="col-xl-12">
+      <table class="margin-top-20">
+        <tr>
+          <th>Description</th>
+          <th>Price</th>
+          <th>VAT (20%)</th>
+          <th>Total</th>
+        </tr>
+
+        <tr>
+          <td>{{this.subscriptionType}} Plan</td>
+          <td>${{this.fee}}</td>
+          <td>${{this.vat}}</td>
+          <td>${{this.total}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-xl-4 col-xl-offset-8">
+      <table id="totals">
+        <tr>
+          <th>Total Due</th>
+          <th><span>${{this.total}}</span></th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="row">
+    <div class="col-xl-12">
+      <ul id="footer">
+        <li><span>https://sms-service-t1809e.herokuapp.com/</span></li>
+        <li>fpt@example.com</li>
+        <li>(+84) 38 386 0666</li>
+      </ul>
+    </div>
+  </div>
+
+</div>

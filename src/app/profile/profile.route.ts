@@ -10,23 +10,30 @@ import { FriendReiceveComponent } from './friend-reiceve/friend-reiceve.componen
 import { SettingsComponent } from './settings/settings.component';
 import { SubscriptionListComponent } from './subscription-list/subscription-list.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ProfileLayoutComponent } from '../layout/profile-layout/profile-layout.component';
 
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  { path: 'post-anonymous', component: PostAnonymousMsgComponent, canActivate: [AuthGuard] },
-  { path: 'post-anonymous/:id', component: PostAnonymousMsgComponent},
-  { path: 'friend-list', component: FriendListComponent, canActivate: [AuthGuard] },
-  { path: 'friend-suggestion', component: FriendSuggestionComponent, canActivate: [AuthGuard] },
-  { path: 'friend-request', component: FriendRequestComponent, canActivate: [AuthGuard] },
-  { path: 'friend-receive', component: FriendReiceveComponent, canActivate: [AuthGuard] },
-  { path: 'manage-subscription', component: SubscriptionListComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: 'setting', component: SettingsComponent, canActivate: [AuthGuard] },
+  {
+    path: '',
+    component: ProfileLayoutComponent,
+    children: [
+      { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+      { path: 'post-anonymous', component: PostAnonymousMsgComponent, canActivate: [AuthGuard] },
+      { path: 'post-anonymous/:id', component: PostAnonymousMsgComponent },
+      { path: 'friend-list', component: FriendListComponent, canActivate: [AuthGuard] },
+      { path: 'friend-suggestion', component: FriendSuggestionComponent, canActivate: [AuthGuard] },
+      { path: 'friend-request', component: FriendRequestComponent, canActivate: [AuthGuard] },
+      { path: 'friend-receive', component: FriendReiceveComponent, canActivate: [AuthGuard] },
+      { path: 'manage-subscription', component: SubscriptionListComponent },
+      { path: 'checkout', component: CheckoutComponent },
+      { path: 'setting', component: SettingsComponent, canActivate: [AuthGuard] },
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ProfileRoutingModule {}
+export class ProfileRoutingModule { }

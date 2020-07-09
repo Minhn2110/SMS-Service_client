@@ -15,8 +15,7 @@ import { ErrorInterceptor } from './auth/error.interceptor';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { NormalLayoutComponent } from './layout/normal-layout/normal-layout.component';
-import { ProfileLayoutComponent } from './layout/profile-layout/profile-layout.component';
-import { HeaderAdminComponent } from './layout/header-admin/header-admin.component';
+// import { ProfileLayoutComponent } from './layout/profile-layout/profile-layout.component'; 
 import { SidebarAdminComponent } from './layout/sidebar-admin/sidebar-admin.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { FooterAdminComponent } from './layout/footer-admin/footer-admin.component';
@@ -40,6 +39,8 @@ import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { ChartsModule } from 'ng2-charts';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { InvoiceComponent } from './profile/invoice/invoice.component';
+import { SmsExtensionPopupComponent } from './profile/sms-extension-popup/sms-extension-popup.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBBignCfPEtIIGntZzCpopvW0ZaJ_vl0SQ",
@@ -56,15 +57,14 @@ const firebaseConfig = {
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    HeaderAdminComponent,
-    SidebarAdminComponent,
-    FooterAdminComponent,
     NormalLayoutComponent,
-    ProfileLayoutComponent,
+    // ProfileLayoutComponent, 
     PageNotFoundComponent,
     SubscriptionPopupComponent,
     AdminLoginComponent,
-    AdminComponent
+    AdminComponent,
+    SmsExtensionPopupComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,
@@ -95,6 +95,6 @@ const firebaseConfig = {
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ], bootstrap: [AppComponent],
-  entryComponents: [LoginComponent, SubscriptionPopupComponent],
+  entryComponents: [LoginComponent, SubscriptionPopupComponent, SmsExtensionPopupComponent],
 })
 export class AppModule { }

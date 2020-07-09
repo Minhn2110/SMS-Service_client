@@ -5,6 +5,9 @@ import { Store } from '@ngrx/store';
 import * as profileSelector from '../../profile/state/profile.selector'
 import { AdminService } from 'src/app/services/admin.service';
 import { AlertService } from 'src/app/services/alert.service';
+import { Router } from '@angular/router';
+import { takeWhile } from 'rxjs/operators';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 declare var paypal;
@@ -24,30 +27,37 @@ export class CheckoutComponent implements OnInit {
   id: any;
   subscriptionType: string;
   vipAccount = {
-    price: 70,
+    price: 1,
     description: 'Vip Account',
   };
+  isSubscribing: boolean;
   constructor(
     private store: Store,
     private adminService: AdminService,
     private alertService: AlertService,
+    private router: Router,
+    private spinner: NgxSpinnerService
+
     // private dialogRef: MatDialogRef<SubscriptionPopupComponent>, // Import Login Dialog Component to close
 
   ) { }
 
   ngOnInit() {
-    this.store.select(profileSelector.subscribeInfo).subscribe(obj => {
+    this.isSubscribing = true;
+    this.getSubscribeInfo();
+    this.integratePaypal();
+  }
+  getSubscribeInfo() {
+    this.store.select(profileSelector.subscribeInfo).pipe(takeWhile(() => this.isSubscribing)).subscribe(obj => {
       if (obj) {
         this.fee = obj.subscribePrice;
         this.vat = 0.2 * obj.subscribePrice;
         this.total = this.fee + this.vat;
         this.subscriptionType = obj.subscriptionPlan;
-        this.id = obj.id; 
+        this.id = obj.id;
         console.log(this.id);
       }
     });
-    this.integratePaypal();
-
   }
   integratePaypal(): void {
     paypal
@@ -56,10 +66,10 @@ export class CheckoutComponent implements OnInit {
           return actions.order.create({
             purchase_units: [
               {
-                description: this.vipAccount.description,
+                description: 'SMS Online Services Payment',
                 amount: {
                   currency_code: 'USD',
-                  value: this.vipAccount.price
+                  value: this.total ? this.total : 1
                 }
               }
             ]
@@ -69,22 +79,35 @@ export class CheckoutComponent implements OnInit {
           const order = await actions.order.capture();
           let length = 0;
           if (this.subscriptionType == 'Basic') {
-            length = 30;
+            length = 1;
           } else if (this.subscriptionType == 'Standard') {
-            length = 60;
+            length = 3;
           } else if (this.subscriptionType == 'Extended') {
-            length = 365;
+            length = 12;
           }
-          // this.showMsg('Payment Successful !!!', 'This message will close in <b></b> milliseconds.');
-          alert('success')
           console.log('paypal', order);
           setTimeout(() => {
-            this.adminService.subscribeServices(this.id, length).subscribe(data => {
-              if (data) {
-                this.alertService.successCounterup('Subscription', 'Subscription Success !!!');
-              }
-            })
-            // this.upgradeAccount();
+            this.spinner.show();
+            if (this.id) {
+              this.adminService.subscribeServices(this.id, length).subscribe(data => {
+                if (data) {
+                  this.spinner.hide();
+                  this.alertService.successCounterup('Online SMS Services', 'Subscription Success !!!');
+                  setTimeout(() => {
+                    this.router.navigate(['/invoice']);
+                  }, 2100);
+                }
+              });
+            } else {
+              this.adminService.smsExtendServices(this.total).subscribe(data => {
+                if (data) {
+                  this.alertService.successCounterup('Online SMS Services', 'SMS Extend Success !!!');
+                  setTimeout(() => {
+                    this.router.navigate(['/invoice']);
+                  }, 2100);
+                }
+              });
+            }
           }, 2500);
         },
         onError: err => {
@@ -92,6 +115,10 @@ export class CheckoutComponent implements OnInit {
         }
       })
       .render(this.paypalElement.nativeElement);
+  }
+
+  ngOnDestroy(): void {
+    this.isSubscribing = false;
   }
 
 

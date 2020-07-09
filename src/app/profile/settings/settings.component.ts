@@ -9,11 +9,13 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 import { AdminService } from 'src/app/services/admin.service';
 import * as ProfileActions from '../../profile/state/profile.actions';
 import { AlertService } from 'src/app/services/alert.service';
+import { MatDialog } from '@angular/material/dialog';
+import { SmsExtensionPopupComponent } from '../sms-extension-popup/sms-extension-popup.component';
 
 @Component({
   selector: 'sms-settings',
   templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.css']
+  styleUrls: ['./settings.component.scss']
 })
 export class SettingsComponent implements OnInit {
   settingForm: FormGroup;
@@ -21,6 +23,7 @@ export class SettingsComponent implements OnInit {
   isSubscribing: boolean;
   name: string;
   avatar: string;
+  accountBalance: any;
   currentDate: any;
   file: File;
   fileName: string;
@@ -32,7 +35,9 @@ export class SettingsComponent implements OnInit {
     private storage: AngularFireStorage,
     private authenticationService: AuthenticationService,
     private adminService: AdminService,
-    private alertService: AlertService
+    private alertService: AlertService,
+    public dialog: MatDialog,
+
 
   ) { }
 
@@ -46,6 +51,7 @@ export class SettingsComponent implements OnInit {
       if(data) {
         this.name = data.Name;
         this.avatar = data.Avatar;
+        this.accountBalance = data.Balance;
       }
     });
   }
@@ -107,6 +113,20 @@ export class SettingsComponent implements OnInit {
     this.file = e.target.files[0];
     this.fileName = e.target.files[0].name;
     console.log(this.file);
+  }
+  openDialog() {
+    const dialogRef = this.dialog.open(SmsExtensionPopupComponent, {
+      height: '630px',
+      width: '1050px',
+      // data: {
+      //   price: itemPrice,
+      //   id: itemId,
+      // }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.

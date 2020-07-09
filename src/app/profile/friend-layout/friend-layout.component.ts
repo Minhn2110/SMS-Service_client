@@ -6,6 +6,8 @@ import { increment, decrement, reset } from 'src/app/state/app.actions';
 import * as profileSelector from '../../profile/state/profile.selector';
 import * as ProfileActions from '../../profile/state/profile.actions';
 import { AlertService } from 'src/app/services/alert.service';
+import { takeWhile } from 'rxjs/operators';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'sms-friend-layout',
@@ -20,15 +22,19 @@ export class FriendLayoutComponent implements OnInit {
   title: string;
   totalFriend: number;
   userName: string;
+  isSubscribing: boolean;
   constructor(
     private adminService: AdminService,
     private store: Store,
-    private alertService: AlertService
+    private alertService: AlertService,
+    private spinner: NgxSpinnerService
+
 
   ) {
   }
 
   ngOnInit() {
+    this.isSubscribing = true;
     this.getUserInfo();
     if (this.type == 'suggestion') {
       this.title = 'Manage Friend Suggestion';
@@ -46,7 +52,7 @@ export class FriendLayoutComponent implements OnInit {
     console.log(this.type);
   }
   getUserInfo() {
-    this.store.select(profileSelector.userInfo).subscribe(data => {
+    this.store.select(profileSelector.userInfo).pipe(takeWhile(() => this.isSubscribing)).subscribe(data => {
       // console.log('a', data);
       if (data) {
         this.userName = data.Name;
@@ -55,39 +61,47 @@ export class FriendLayoutComponent implements OnInit {
     });
   }
   getSuggestionFriend() {
+    this.spinner.show();
     this.adminService.getRecommendFriend().subscribe(friends => {
       console.log(friends);
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.spinner.hide();
       }
     });
   }
   getRequestFriend() {
+    this.spinner.show();
     this.adminService.getFriendList(true, '', true, 1, 10).subscribe(friends => {
       console.log(friends);
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.spinner.hide();
       }
     });
   }
   getReceiveFriend() {
+    this.spinner.show();
     this.adminService.getFriendList(false, '', true, 1, 10).subscribe(friends => {
       console.log(friends);
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.spinner.hide();
       }
     });
   }
   getListFriend() {
+    this.spinner.show();
     this.store.dispatch(ProfileActions.ProfileGetFriendList())
     this.store.select(profileSelector.friendList).subscribe(friends => {
       console.log(friends);
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.spinner.hide();
       }
     })
     // this.adminService.getFriendList(null, '', true, 1, 10).subscribe(friends => {
@@ -138,6 +152,11 @@ export class FriendLayoutComponent implements OnInit {
         // Reset datasource
       }
     });
+  }
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    this.isSubscribing = false;
   }
 
 }

@@ -25,6 +25,6 @@ const _counterReducer = createReducer(
   // on(reset, state => 0),
 );
  
-export function counterReducer(state, action) {
+export function profileReducer(state, action) {
   return _counterReducer(state, action);
 }

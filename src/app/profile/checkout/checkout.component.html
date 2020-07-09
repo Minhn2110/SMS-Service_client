@@ -31,7 +31,7 @@
 
 
       <!-- Payment Methods Accordion -->
-      <div class="payment margin-top-30">
+      <div class="payment">
 
         <!-- <div class="payment-tab payment-tab-active">
           <div class="payment-tab-trigger">
@@ -112,8 +112,8 @@
         <div class="boxed-widget-inner">
           <ul>
             <li>Current Fees <span>$ {{this.fee}}</span></li>
-            <li>VAT (20%) <span>$ {{this.vat}}</span></li>
-            <li class="total-costs">Final Price <span>$ {{this.total}}</span></li>
+            <li>VAT (20%) <span>$ {{this.vat | number : '1.2-2'}}</span></li>
+            <li class="total-costs">Final Price <span>$ {{this.total | number : '1.2-2'}}</span></li>
           </ul>
         </div>
       </div>
@@ -129,4 +129,5 @@
 
   </div>
 </div>
+<a routerLink='/profile/invoice'>aaa</a>
 <!-- Container / End -->
