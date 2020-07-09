@@ -13,14 +13,14 @@ import { Color, Label } from 'ng2-charts';
 
 export class UserListComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  displayedColumns: string[] = ['position', 'name', 'email', 'status', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'name', 'email', 'status', 'weight'];
   dataSource = new MatTableDataSource<any>();
 
   barChartOptions: ChartOptions = {
     responsive: true,
   };
   // barChartLabels: Label[] = ['Apple', 'Banana', 'Kiwifruit', 'Blueberry', 'Orange', 'Grapes'];
-  barChartLabels: Label[] = ['CountInRange', 'CountPerDay', 'CountPerMonth', 'ProfitInRange', 'ProfitPerDay', 'ProfitPerMonth'];
+  barChartLabels: Label[] = ['CountInRange', 'Daily SMS', 'Monthly SMS', 'ProfitInRange', 'Daily Revenue', 'Monthly Revenue'];
 
   barChartType: ChartType = 'bar';
   barChartLegend = true;

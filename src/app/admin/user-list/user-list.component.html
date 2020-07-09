@@ -12,14 +12,13 @@
       <div class="row">
         <div class="col-xl-12">
 
-          <h2>User Interface Elements</h2>
+          <h2>Dashboard</h2>
 
           <!-- Breadcrumbs -->
           <nav id="breadcrumbs" class="dark">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Pages</a></li>
-              <li>User Interface Elements</li>
+              <li><a href="javascript:void(0)">Admin</a></li>
+              <li>Dashboard</li>
             </ul>
           </nav>
 
@@ -62,32 +61,21 @@
             <div class="fun-fact-icon"><i class="icon-feather-trending-up"></i></div>
           </div>
         </div>
-        <!-- <div class="chart-wrapper">
-          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
-            [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
-          </canvas>
-        </div> -->
       </div>
       <div class="col-xl-7">
         <!-- Dashboard Box -->
         <div class="dashboard-box main-box-in-row">
           <div class="headline">
             <h3><i class="icon-feather-bar-chart-2"></i> Message Analysis </h3>
-            <!-- <div class="sort-by">
-              <select class="selectpicker hide-tick">
-                <option>Last 6 Months</option>
-                <option>This Year</option>
-                <option>This Month</option>
-              </select>
-            </div> -->
           </div>
           <div class="content">
             <!-- Chart -->
             <div class="chart">
               <!-- <canvas id="chart" width="100" height="45"></canvas> -->
-              <canvas baseChart  width="100" height="45" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
-              [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
-            </canvas>
+              <canvas baseChart width="100" height="45" [datasets]="barChartData" [labels]="barChartLabels"
+                [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend"
+                [chartType]="barChartType">
+              </canvas>
             </div>
           </div>
         </div>
@@ -101,29 +89,29 @@
           <div class="content">
             <div class="mat-elevation-z8">
               <table mat-table [dataSource]="dataSource" class="basic-table">
-    
+
                 <!-- Position Column -->
                 <ng-container matColumnDef="position">
                   <th mat-header-cell *matHeaderCellDef> No. </th>
                   <td mat-cell *matCellDef="let element; let i = index;"> {{i + 1}} </td>
                 </ng-container>
-    
+
                 <!-- Name Column -->
                 <ng-container matColumnDef="name">
                   <th mat-header-cell *matHeaderCellDef> Name </th>
                   <td mat-cell *matCellDef="let element"> {{element.Name}} </td>
                 </ng-container>
-    
+
                 <ng-container matColumnDef="email">
                   <th mat-header-cell *matHeaderCellDef> Email </th>
                   <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
                 </ng-container>
-    
+
                 <ng-container matColumnDef="status">
                   <th mat-header-cell *matHeaderCellDef> Status </th>
                   <td mat-cell *matCellDef="let element"> {{element.Status == 1 ? 'Active' : 'Deactive'}} </td>
                 </ng-container>
-    
+
                 <!-- Weight Column -->
                 <ng-container matColumnDef="weight">
                   <th mat-header-cell *matHeaderCellDef> Action </th>
@@ -132,17 +120,12 @@
                       (change)='changeStatus($event, element.Id)'></mat-slide-toggle>
                   </td>
                 </ng-container>
-    
-                <!-- Symbol Column -->
-                <ng-container matColumnDef="symbol">
-                  <th mat-header-cell *matHeaderCellDef> Action </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-                </ng-container>
-    
+
+
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
               </table>
-    
+
               <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
             </div>
           </div>

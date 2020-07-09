@@ -1,0 +1,14 @@
+
+::ng-deep {
+  .intl-tel-input {
+    width: 500px;
+    input {
+      padding-left: 110px !important;
+    }
+  }
+}
+
+input:read-only {
+  background: darkgray;
+  color: white;
+}

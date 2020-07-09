@@ -7,32 +7,43 @@ import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
 import * as profileSelector from '../../profile/state/profile.selector';
 import * as ProfileActions from '../../profile/state/profile.actions';
+import { SearchCountryField, TooltipLabel, CountryISO } from 'ngx-intl-tel-input';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'sms-post-anonymous-msg',
   templateUrl: './post-anonymous-msg.component.html',
-  styleUrls: ['./post-anonymous-msg.component.css']
+  styleUrls: ['./post-anonymous-msg.component.scss']
 })
 export class PostAnonymousMsgComponent implements OnInit {
   postAnonymousMsgForm: FormGroup
   friendId: any;
   currentFriendArray: any[] = [];
   currentFriend: any;
+  separateDialCode = true;
+  SearchCountryField = SearchCountryField;
+  TooltipLabel = TooltipLabel;
+  CountryISO = CountryISO;
+  preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
+  isFriend: boolean;
   constructor(
     private formBuilder: FormBuilder,
     private adminService: AdminService,
-    private route: ActivatedRoute, 
+    private route: ActivatedRoute,
     private store: Store,
-
+    private alertService: AlertService,
     private authenticationService: AuthenticationService,
   ) { }
 
   ngOnInit() {
-
     this.friendId = this.route.snapshot.paramMap.get('id');
+    if (this.friendId) {
+      this.isFriend = true;
+    } else {
+      this.isFriend = false;
+    }
     console.log(this.friendId)
     this.store.select(profileSelector.friendList).subscribe(friends => {
-      console.log('a', friends);
       if (friends && friends.length > 0) {
         this.currentFriendArray = friends;
         this.currentFriendArray = this.currentFriendArray.filter(x => x.Id == this.friendId);
@@ -41,40 +52,36 @@ export class PostAnonymousMsgComponent implements OnInit {
       }
     })
     this.postAnonymousMsgForm = this.formBuilder.group({
-      phoneNumber: [`${this.currentFriend ? this.currentFriend.PhoneNumber : '' }`, Validators.required],
-      content: ['', Validators.required],
+      phoneNumber: [`${this.currentFriend ? this.currentFriend.PhoneNumber : ''}`, Validators.required],
+      content: ['', [Validators.required, Validators.maxLength(120)]],
     });
-    this.adminService.getUserInfo().subscribe(data => console.log(data));
   }
   get f() {
     return this.postAnonymousMsgForm.controls;
   }
   onSubmit() {
     console.log(this.f);
-    alert('a');
     if (this.postAnonymousMsgForm.invalid) {
-      alert('invalid');
+      this.alertService.error('Please recheck your data');
       return;
     } else {
       let currentUser = this.authenticationService.currentUserValue;
       console.log(currentUser);
 
       const body = {
-        phoneNumber: this.f.phoneNumber.value,
+        phoneNumber: this.isFriend ? this.f.phoneNumber.value : this.f.phoneNumber.value.e164Number,
         message: this.f.content.value,
         userId: null
       }
       this.adminService.sendAnonymousMsg(body).pipe().subscribe(res => {
-            if (res) {
-              console.log(res);
-              this.showMsg('Message', 'Message sent success !!!');
-            }
-            // this.router.navigate([this.returnUrl]);
-            // this.router.navigate(['/dashboard']);
-          },
-          error => {
-            console.log(error);
-          });
+        if (res) {
+          console.log(res);
+          this.showMsg('Message', res);
+        }
+      },
+        error => {
+          console.log(error);
+        });
     }
   }
 

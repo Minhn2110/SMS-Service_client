@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from 'src/app/auth/login/login.component';
 import { AuthenticationService } from 'src/app/services/authentication.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'sms-header',
@@ -9,10 +10,12 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  user:  any;
+  user: any;
   constructor(
     public dialog: MatDialog,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   isSubscribing: boolean;
@@ -44,6 +47,9 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.authenticationService.logout();
     this.isLoggedIn();
+    if (this.router.url === '/admin/user-list') {
+      this.router.navigate(['/client/home']);
+    }
   }
   ngOnDestroy(): void {
     this.isSubscribing = false;

@@ -5,9 +5,8 @@
 	<!-- Breadcrumbs -->
 	<nav id="breadcrumbs" class="dark">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Dashboard</a></li>
-			<li>Post a message</li>
+			<li><a href="javascript:void(0)">Profile</a></li>
+			<li>Send SMS</li>
 		</ul>
 	</nav>
 </div>
@@ -30,13 +29,19 @@
 						<div class="col-xl-4">
 							<div class="submit-field">
 								<h5>Phone Number</h5>
-								<input type="text" class="with-border" formControlName="phoneNumber">
+								<input type="text" class="with-border" formControlName="phoneNumber" *ngIf="this.isFriend" readonly disabled>
+								<ngx-intl-tel-input *ngIf="!this.isFriend" [inputId]="'adsasd'" [cssClass]="'custom'" [preferredCountries]="preferredCountries"
+								[enableAutoCountrySelect]="false" [enablePlaceholder]="false" [searchCountryFlag]="false"
+								[searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="true"
+								[selectedCountryISO]="CountryISO.Vietnam" [maxLength]="20" [tooltipField]="TooltipLabel.Name"
+								[phoneValidation]="true" [separateDialCode]="separateDialCode" name="phone" formControlName="phoneNumber">
+							</ngx-intl-tel-input>
 							</div>
 						</div>
 
 						<div class="col-xl-12">
 							<div class="submit-field">
-								<h5>Message</h5>
+								<h5>Message <span>(*120 letters)</span></h5>
 								<textarea cols="30" rows="5" class="with-border" formControlName="content"></textarea>
 							</div>
 						</div>

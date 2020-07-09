@@ -24,7 +24,8 @@ import { HeaderComponent } from '../layout/header/header.component';
 import { HeaderAdminComponent } from '../layout/header-admin/header-admin.component';
 import { SidebarAdminComponent } from '../layout/sidebar-admin/sidebar-admin.component';
 import { FooterAdminComponent } from '../layout/footer-admin/footer-admin.component';
-
+import { NgxPaginationModule } from 'ngx-pagination'
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 @NgModule({
   declarations: [
     ProfileLayoutComponent,
@@ -40,20 +41,22 @@ import { FooterAdminComponent } from '../layout/footer-admin/footer-admin.compon
     ProfileComponent,
     CheckoutComponent,
     HeaderAdminComponent,
-    
+
     SidebarAdminComponent,
     FooterAdminComponent,
 
   ],
-  imports: [ CommonModule,
+  imports: [CommonModule,
     ProfileRoutingModule,
     FormsModule, ReactiveFormsModule,
     StoreModule.forFeature('profile', profileReducer),
     EffectsModule.forFeature([ProfileEffects]),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxIntlTelInputModule,
+    NgxPaginationModule
 
   ],
   exports: [],
   providers: [],
 })
-export class ProfileModule {}
+export class ProfileModule { }

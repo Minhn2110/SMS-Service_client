@@ -19,19 +19,17 @@
 				<div class="dashboard-nav-inner">
 
 					<ul data-submenu-title="Start">
-						<li><a routerLink='/profile/dashboard'><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-						<li><a routerLink='/profile/post-anonymous'><i class="icon-material-outline-star-border"></i> Send SMS</a></li>
-						<li><a routerLink='/profile/manage-subscription'><i class="icon-material-outline-star-border"></i>Subscription Services</a></li>
-						<!-- <li><a href="dashboard-reviews.html"><i class="icon-material-outline-rate-review"></i> Send SMS to Friend</a></li> -->
+						<li><a routerLink='/profile/post-anonymous'><i class="icon-material-outline-email"></i> Send SMS</a></li>
+						<li><a routerLink='/profile/manage-subscription'><i class="icon-feather-rss"></i>Subscription Services</a></li>
 					</ul>
 					
 					<ul data-submenu-title="Manage">
-						<li class="active-submenu"><a href="#"><i class="icon-material-outline-business-center"></i> Friends</a>
+						<li class="active-submenu"><a href="javascript:void(0)"><i class="icon-feather-users"></i> Friends</a>
 							<ul>
-								<li><a routerLink="/profile/friend-request">Request <span class="nav-tag">3</span></a></li>
+								<li><a routerLink="/profile/friend-request">Request</a></li>
 								<li><a routerLink="/profile/friend-list">List</a></li>
 								<li><a routerLink="/profile/friend-suggestion">Suggestion</a></li>
-								<li><a routerLink="/profile/friend-receive">Receive</a></li>
+								<li><a routerLink="/profile/friend-receive">Receive<span class="nav-tag">{{this.totalFriend}}</span></a></li>
 							</ul>	
 						</li>
 					</ul>

@@ -64,8 +64,8 @@
         <tr>
           <td>{{this.subscriptionType}} Plan</td>
           <td>${{this.fee}}</td>
-          <td>${{this.vat}}</td>
-          <td>${{this.total}}</td>
+          <td>${{this.vat | number : '1.2-2'}}</td>
+          <td>${{this.total | number : '1.2-2'}}</td>
         </tr>
       </table>
     </div>

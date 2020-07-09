@@ -23,7 +23,7 @@ export class CheckoutComponent implements OnInit {
 
   fee: number;
   vat: number
-  total: number;
+  total: number = 1;
   id: any;
   subscriptionType: string;
   vipAccount = {
@@ -45,17 +45,17 @@ export class CheckoutComponent implements OnInit {
   ngOnInit() {
     this.isSubscribing = true;
     this.getSubscribeInfo();
-    this.integratePaypal();
   }
   getSubscribeInfo() {
     this.store.select(profileSelector.subscribeInfo).pipe(takeWhile(() => this.isSubscribing)).subscribe(obj => {
       if (obj) {
-        this.fee = parseInt(obj.subscribePrice);
-        this.vat = 0.2 * parseInt(obj.subscribePrice);;
+        this.fee = Number(obj.subscribePrice);
+        this.vat = 0.2 * Number(obj.subscribePrice);;
         this.total = this.fee + this.vat;
         this.subscriptionType = obj.subscriptionPlan;
         this.id = obj.id;
-        console.log(this.id);
+        console.log(this.total);
+        this.integratePaypal();
       }
     });
   }
@@ -69,7 +69,7 @@ export class CheckoutComponent implements OnInit {
                 description: 'SMS Online Services Payment',
                 amount: {
                   currency_code: 'USD',
-                  value: this.total ? this.total : 1
+                  value: this.total.toFixed(2)
                 }
               }
             ]
@@ -87,11 +87,9 @@ export class CheckoutComponent implements OnInit {
           }
           console.log('paypal', order);
           setTimeout(() => {
-            this.spinner.show();
             if (this.id) {
               this.adminService.subscribeServices(this.id, length).subscribe(data => {
                 if (data) {
-                  this.spinner.hide();
                   this.alertService.successCounterup('Online SMS Services', 'Subscription Success !!!');
                   setTimeout(() => {
                     this.router.navigate(['/invoice']);
@@ -99,7 +97,7 @@ export class CheckoutComponent implements OnInit {
                 }
               });
             } else {
-              this.adminService.smsExtendServices(this.total).subscribe(data => {
+              this.adminService.smsExtendServices(this.fee).subscribe(data => {
                 if (data) {
                   this.alertService.successCounterup('Online SMS Services', 'SMS Extend Success !!!');
                   setTimeout(() => {

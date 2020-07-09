@@ -16,6 +16,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class SubscriptionListComponent implements OnInit {
   subscriptionList: any;
+
   constructor(
     private adminService: AdminService,
     private alertService: AlertService,
@@ -24,7 +25,8 @@ export class SubscriptionListComponent implements OnInit {
     private spinner: NgxSpinnerService
 
 
-  ) { }
+  ) {
+   }
 
   ngOnInit() {
     this.getSubscriptionList();

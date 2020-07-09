@@ -47,8 +47,8 @@ export class AuthenticationService {
         localStorage.removeItem('currentUser');
         this.currentUserSubject.next(null); 
     }
-    register(Email: string, Password: string, ConfirmPassword: string, PhoneNumber: string, Avatar: any, Name: string, Gender: number, ) {
-        return this.http.post<any>(`${environment.apiUrl}/api/Account/Register`, { Email, Password, ConfirmPassword, PhoneNumber, Avatar, Name, Gender })
+    register(Email: string, Password: string, ConfirmPassword: string, PhoneNumber: string, Avatar: any, Name: string, Gender: number, Address: string) {
+        return this.http.post<any>(`${environment.apiUrl}/api/Account/Register`, { Email, Password, ConfirmPassword, PhoneNumber, Avatar, Name, Gender, Address })
         .pipe(map(user => {
             console.log('register', user);
             // store user details and jwt token in local storage to keep user logged in between page refreshes

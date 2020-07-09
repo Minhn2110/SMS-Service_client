@@ -12,17 +12,19 @@ import { NgxSpinnerService } from 'ngx-spinner';
 @Component({
   selector: 'sms-friend-layout',
   templateUrl: './friend-layout.component.html',
-  styleUrls: ['./friend-layout.component.css']
+  styleUrls: ['./friend-layout.component.scss']
 })
 export class FriendLayoutComponent implements OnInit {
   count$: Observable<number>;
 
   @Input() type: string;
-  datasource: any;
+  datasource = [];
   title: string;
   totalFriend: number;
   userName: string;
   isSubscribing: boolean;
+  isPaging: boolean;
+  config: any;
   constructor(
     private adminService: AdminService,
     private store: Store,
@@ -31,9 +33,15 @@ export class FriendLayoutComponent implements OnInit {
 
 
   ) {
+    this.config = {
+      itemsPerPage: 3,
+      currentPage: 1,
+      totalItems: this.datasource.length
+    };
   }
 
   ngOnInit() {
+    this.isPaging = true;
     this.isSubscribing = true;
     this.getUserInfo();
     if (this.type == 'suggestion') {
@@ -51,6 +59,14 @@ export class FriendLayoutComponent implements OnInit {
     }
     console.log(this.type);
   }
+
+  pagingControl() {
+    if(this.totalFriend == 0) {
+      this.isPaging = false;
+    } else {
+      this.isPaging = true;
+    }
+  }
   getUserInfo() {
     this.store.select(profileSelector.userInfo).pipe(takeWhile(() => this.isSubscribing)).subscribe(data => {
       // console.log('a', data);
@@ -67,6 +83,7 @@ export class FriendLayoutComponent implements OnInit {
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.pagingControl();
         this.spinner.hide();
       }
     });
@@ -78,6 +95,7 @@ export class FriendLayoutComponent implements OnInit {
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.pagingControl();
         this.spinner.hide();
       }
     });
@@ -89,6 +107,8 @@ export class FriendLayoutComponent implements OnInit {
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.adminService.passfriendReceived(this.totalFriend);
+        this.pagingControl();
         this.spinner.hide();
       }
     });
@@ -101,6 +121,7 @@ export class FriendLayoutComponent implements OnInit {
       if (friends) {
         this.totalFriend = friends.length;
         this.datasource = friends;
+        this.pagingControl();
         this.spinner.hide();
       }
     })
@@ -153,6 +174,10 @@ export class FriendLayoutComponent implements OnInit {
       }
     });
   }
+  pageChanged(event){
+    // window.scroll(0,0);
+    this.config.currentPage = event;
+  } 
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.

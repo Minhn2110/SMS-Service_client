@@ -91,8 +91,10 @@ export class LoginComponent implements OnInit {
             this.downloadURL.subscribe(url => {
               if (url) {
                 this.fb = url;
-                this.authenticationService.register(this.f.email.value, this.f.password.value, this.f.password.value,  this.f.phoneNumber.value.e164Number, this.fb,
-                  this.f.name.value, parseInt(this.f.gender.value))
+                this.authenticationService.register(
+                  this.f.email.value, this.f.password.value, this.f.password.value,  this.f.phoneNumber.value.e164Number, this.fb,
+                  this.f.name.value, parseInt(this.f.gender.value), this.f.address.value
+                  )
                   .pipe(first())
                   .subscribe(
                     data => {
@@ -101,8 +103,6 @@ export class LoginComponent implements OnInit {
                         this.userId = data.UserId;
                         this.verificationPhoneNumber();
                       }
-                      // this.router.navigate([this.returnUrl]);
-                      // this.router.navigate(['/dashboard']);
                     },
                     error => {
                       console.log(error);
