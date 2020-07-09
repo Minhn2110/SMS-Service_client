@@ -50,8 +50,8 @@ export class CheckoutComponent implements OnInit {
   getSubscribeInfo() {
     this.store.select(profileSelector.subscribeInfo).pipe(takeWhile(() => this.isSubscribing)).subscribe(obj => {
       if (obj) {
-        this.fee = obj.subscribePrice;
-        this.vat = 0.2 * obj.subscribePrice;
+        this.fee = parseInt(obj.subscribePrice);
+        this.vat = 0.2 * parseInt(obj.subscribePrice);;
         this.total = this.fee + this.vat;
         this.subscriptionType = obj.subscriptionPlan;
         this.id = obj.id;

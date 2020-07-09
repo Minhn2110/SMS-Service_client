@@ -18,7 +18,7 @@ const routes: Routes = [
     path: '',
     component: ProfileLayoutComponent,
     children: [
-      { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+      // { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
       { path: 'post-anonymous', component: PostAnonymousMsgComponent, canActivate: [AuthGuard] },
       { path: 'post-anonymous/:id', component: PostAnonymousMsgComponent },
       { path: 'friend-list', component: FriendListComponent, canActivate: [AuthGuard] },
