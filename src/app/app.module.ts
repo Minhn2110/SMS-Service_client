@@ -41,6 +41,7 @@ import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InvoiceComponent } from './profile/invoice/invoice.component';
 import { SmsExtensionPopupComponent } from './profile/sms-extension-popup/sms-extension-popup.component';
+import { SharedModule } from './shared.module';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBBignCfPEtIIGntZzCpopvW0ZaJ_vl0SQ",
@@ -55,16 +56,11 @@ const firebaseConfig = {
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent,
-    FooterComponent,
     NormalLayoutComponent,
-    // ProfileLayoutComponent, 
-    PageNotFoundComponent,
     SubscriptionPopupComponent,
     AdminLoginComponent,
-    AdminComponent,
     SmsExtensionPopupComponent,
-    InvoiceComponent
+    InvoiceComponent, 
   ],
   imports: [
     BrowserModule,
@@ -72,6 +68,7 @@ const firebaseConfig = {
     BrowserAnimationsModule,
     MaterialModule,
     FeatureModule,
+    SharedModule,
     HttpClientModule,
     FormsModule, ReactiveFormsModule,
     SweetAlert2Module.forRoot(),

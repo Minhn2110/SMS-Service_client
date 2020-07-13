@@ -20,7 +20,7 @@
 							<i class="icon-material-outline-lock"></i>
 							<input type="password" class="input-text with-border" placeholder="Password" formControlName="password" />
 						</div>
-						<a href="#" class="forgot-password">Forgot Password?</a>
+						<!-- <a href="#" class="forgot-password">Forgot Password?</a> -->
 					</form>
 
 					<!-- Button -->
@@ -53,48 +53,82 @@
 				<form method="post" [formGroup]="registerForm" (ngSubmit)="onSubmit()" autocomplete="off">
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-person-pin"></i>
-						<input type="text" class="input-text with-border" formControlName="name" placeholder="Name"
-							autocomplete="off" />
+						<input type="text" class="input-text with-border form-control" formControlName="name" placeholder="Name"
+							autocomplete="off" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+						<div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+							<div *ngIf="f.name.errors.required">Please fill in your name.</div>
+						</div>
 					</div>
 
 					<div class="input-with-icon-left">
 						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border" formControlName="email" placeholder="Email Address"
-							autocomplete="off" />
+						<input type="text" class="input-text with-border form-control" formControlName="email"
+							placeholder="Email Address" autocomplete="off"
+							[ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+						<div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+							<div *ngIf="f.email.errors.required">Email is required</div>
+							<div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+						</div>
 					</div>
 
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-lock"></i>
-						<input type="password" class="input-text with-border" formControlName="password" placeholder="Password"
-							autocomplete="off" />
+						<input type="password" class="input-text with-border form-control" formControlName="password"
+							placeholder="Password" autocomplete="off" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+						<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+							<div *ngIf="f.password.errors.required">Please fill in your password.</div>
+						</div>
+					</div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-lock"></i>
+						<input type="password" class="input-text with-border form-control" formControlName="confirmPassword"
+							placeholder="Confirm Password" autocomplete="off"
+							[ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+						<div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+							<div *ngIf="f.confirmPassword.errors.required">Please fill in your confirmPassword.</div>
+							<div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+						</div>
 					</div>
 
 					<div class="input-with-icon-left">
 						<i class="icon-line-awesome-university"></i>
-						<input type="text" class="input-text with-border" formControlName="address" placeholder="Address"
-							autocomplete="off" />
+						<input type="text" class="input-text with-border form-control" formControlName="address"
+							placeholder="Address" autocomplete="off" [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+						<div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+							<div *ngIf="f.address.errors.required">Please fill in your address.</div>
+						</div>
 					</div>
 
 					<div class="input-with-icon-left">
-						<ngx-intl-tel-input [inputId]="'adsasd'" [cssClass]="'custom'" [preferredCountries]="preferredCountries"
-							[enableAutoCountrySelect]="false" [enablePlaceholder]="false" [searchCountryFlag]="false"
-							[searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="true"
-							[selectedCountryISO]="CountryISO.Vietnam" [maxLength]="20" [tooltipField]="TooltipLabel.Name"
-							[phoneValidation]="true" [separateDialCode]="separateDialCode" name="phone" formControlName="phoneNumber">
+						<ngx-intl-tel-input class="myNgxinput form-control" [inputId]="'adsasd'" [cssClass]="'custom'"
+							[preferredCountries]="preferredCountries" [enableAutoCountrySelect]="false" [enablePlaceholder]="false"
+							[searchCountryFlag]="false" [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+							[selectFirstCountry]="true" [selectedCountryISO]="CountryISO.Vietnam" [maxLength]="20"
+							[tooltipField]="TooltipLabel.Name" [phoneValidation]="true" [separateDialCode]="separateDialCode"
+							name="phone" formControlName="phoneNumber"
+							[ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
 						</ngx-intl-tel-input>
+						<div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback phoneNumberError">
+							<div *ngIf="f.phoneNumber.errors.required">Phone Number Required</div>
+						</div>
 					</div>
 
+					
 					<div class="uploadButton uploadAvatarBtn">
 						<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload"
 							(change)="uploadAvatar($event)" multiple />
 						<label class="uploadButton-button ripple-effect" for="upload">Upload Avatar</label>
 						<span class="uploadButton-file-name">{{fileName}}</span>
-						<input type="hidden" name="fileHidden" formControlName="avatar"/>
+						<input type="hidden" class="form-control" name="fileHidden" formControlName="avatar" [ngClass]="{ 'is-invalid': submitted && f.avatar.errors }" />
+						<div *ngIf="submitted && f.avatar.errors" class="invalid-feedback">
+							<div class="avatarError" *ngIf="f.avatar.errors.required">Please upload your avatar.</div>
+						</div>
 					</div>
 
 					<div class='register-select'>
 						<mat-radio-group formControlName="gender">
-							<mat-radio-button value=1>Male</mat-radio-button>
+							<mat-radio-button value=1 [checked]="true">Male</mat-radio-button>
 							<mat-radio-button value=2>Female</mat-radio-button>
 							<mat-radio-button value=3>Others</mat-radio-button>
 						</mat-radio-group>

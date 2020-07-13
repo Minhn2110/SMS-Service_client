@@ -21,7 +21,6 @@
 }
 
 .register {
-
 }
 .mat-radio-checked {
   .mat-radio-outer-circle {
@@ -37,7 +36,6 @@
   display: flex;
   justify-content: space-around;
 }
-
 
 // .swal2-header {
 //   font-weight: 700;
@@ -68,4 +66,20 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.invalid-feedback {
+  margin-top: -16px;
+}
+.phoneNumberError {
+  margin: 0 !important;
+}
+.myNgxinput {
+  padding: 0 !important;
+  border: 0 !important;
+}
 
+.avatarError {
+  font-size: 12.8px;
+  text-align: end;
+  margin-top: -21px;
+  margin-right: 56px;
+}

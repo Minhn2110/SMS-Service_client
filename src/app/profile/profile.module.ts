@@ -53,7 +53,7 @@ import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
     EffectsModule.forFeature([ProfileEffects]),
     NgxSpinnerModule,
     NgxIntlTelInputModule,
-    NgxPaginationModule
+    NgxPaginationModule,
 
   ],
   exports: [],

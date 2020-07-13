@@ -70,13 +70,14 @@ export class PostAnonymousMsgComponent implements OnInit {
 
       const body = {
         phoneNumber: this.isFriend ? this.f.phoneNumber.value : this.f.phoneNumber.value.e164Number,
-        message: this.f.content.value,
+        message: `${this.f.content.value} - Sent by SMS Online Services`,
         userId: null
       }
       this.adminService.sendAnonymousMsg(body).pipe().subscribe(res => {
         if (res) {
           console.log(res);
           this.showMsg('Message', res);
+          this.postAnonymousMsgForm.reset();
         }
       },
         error => {

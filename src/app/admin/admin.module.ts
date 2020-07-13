@@ -7,17 +7,18 @@ import { UserListComponent } from './user-list/user-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
 import { ChartsModule } from 'ng2-charts';
+import { SharedModule } from '../shared.module';
 
 @NgModule({
   declarations: [
-    // AdminComponent,
-    // AdminLoginComponent,
-    UserListComponent
+    UserListComponent,
+    AdminComponent,
   ],
   imports: [ 
     CommonModule, 
     AdminRoutingModule,
     FormsModule, ReactiveFormsModule,
+    SharedModule,
     MaterialModule,
     ChartsModule
 

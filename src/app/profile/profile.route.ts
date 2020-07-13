@@ -18,7 +18,6 @@ const routes: Routes = [
     path: '',
     component: ProfileLayoutComponent,
     children: [
-      // { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
       { path: 'post-anonymous', component: PostAnonymousMsgComponent, canActivate: [AuthGuard] },
       { path: 'post-anonymous/:id', component: PostAnonymousMsgComponent },
       { path: 'friend-list', component: FriendListComponent, canActivate: [AuthGuard] },
@@ -28,6 +27,7 @@ const routes: Routes = [
       { path: 'manage-subscription', component: SubscriptionListComponent },
       { path: 'checkout', component: CheckoutComponent },
       { path: 'setting', component: SettingsComponent, canActivate: [AuthGuard] },
+      { path: '', redirectTo: 'setting', pathMatch: 'full' },
     ]
   }
 ];

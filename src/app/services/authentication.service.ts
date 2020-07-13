@@ -5,13 +5,15 @@ import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { User } from '../models/user';
 import { HttpClient } from '@angular/common/http';
+import { AlertService } from './alert.service';
 
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {
     private currentUserSubject: BehaviorSubject<User>;
     public currentUser: Observable<User>;
 
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient, private alertService: AlertService,
+    ) {
         this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
         this.currentUser = this.currentUserSubject.asObservable();
     }
@@ -29,11 +31,11 @@ export class AuthenticationService {
         //         return user;
         //     }));
         let model = "username=" + username + "&password=" + password + "&grant_type=" + "password";
-            return this.http.post<any>(`${environment.apiUrl}/token`,  model, {
-                // headers: {
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-                // }
-              })
+        return this.http.post<any>(`${environment.apiUrl}/token`, model, {
+            // headers: {
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+            // }
+        })
             .pipe(map(user => {
                 // store user details and jwt token in local storage to keep user logged in between page refreshes
                 localStorage.setItem('currentUser', JSON.stringify(user));
@@ -44,28 +46,29 @@ export class AuthenticationService {
 
     logout() {
         // remove user from local storage to log user out
+        this.alertService.successCounterup('Online SMS Services', 'Log Out Success')
         localStorage.removeItem('currentUser');
-        this.currentUserSubject.next(null); 
+        this.currentUserSubject.next(null);
     }
     register(Email: string, Password: string, ConfirmPassword: string, PhoneNumber: string, Avatar: any, Name: string, Gender: number, Address: string) {
         return this.http.post<any>(`${environment.apiUrl}/api/Account/Register`, { Email, Password, ConfirmPassword, PhoneNumber, Avatar, Name, Gender, Address })
-        .pipe(map(user => {
-            console.log('register', user);
-            // store user details and jwt token in local storage to keep user logged in between page refreshes
-            // localStorage.setItem('currentUser', JSON.stringify(user));
-            // this.currentUserSubject.next(user);
-            return user;
-        }));
+            .pipe(map(user => {
+                console.log('register', user);
+                // store user details and jwt token in local storage to keep user logged in between page refreshes
+                // localStorage.setItem('currentUser', JSON.stringify(user));
+                // this.currentUserSubject.next(user);
+                return user;
+            }));
     }
     phoneVerification(UserId: string, Code: any) {
-        return this.http.post<any>(`${environment.apiUrl}/api/Account/RegisterVerificationCodeAsync`, {UserId, Code })
-        .pipe(map(user => {
-            console.log('verification', user);
-            // store user details and jwt token in local storage to keep user logged in between page refreshes
-            // localStorage.setItem('currentUser', JSON.stringify(user));
-            // this.currentUserSubject.next(user);
-            return user;
-        }));
+        return this.http.post<any>(`${environment.apiUrl}/api/Account/RegisterVerificationCodeAsync`, { UserId, Code })
+            .pipe(map(user => {
+                console.log('verification', user);
+                // store user details and jwt token in local storage to keep user logged in between page refreshes
+                // localStorage.setItem('currentUser', JSON.stringify(user));
+                // this.currentUserSubject.next(user);
+                return user;
+            }));
     }
     getArticle(): Observable<any> {
         // return this.http.get<any>(`https://t1809ecoinmarket20200608234615.azurewebsites.net/api/posts`);
@@ -75,9 +78,9 @@ export class AuthenticationService {
             // 'Accept': 'application/json',
             // 'Access-Control-Allow-Origin': 'http://localhost:8888/'
             // }
-          });
-      }
-      upgradeAccount(token: any): Observable<any> {
+        });
+    }
+    upgradeAccount(token: any): Observable<any> {
         return this.http.put<any>(`https://t1809ecoinmarket20200608234615.azurewebsites.net/api/rank`, { token });
-      }
+    }
 }

@@ -18,10 +18,10 @@ import { SearchCountryField, TooltipLabel, CountryISO } from 'ngx-intl-tel-input
 })
 export class LoginComponent implements OnInit {
   separateDialCode = true;
-	SearchCountryField = SearchCountryField;
-	TooltipLabel = TooltipLabel;
-	CountryISO = CountryISO;
-	preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
+  SearchCountryField = SearchCountryField;
+  TooltipLabel = TooltipLabel;
+  CountryISO = CountryISO;
+  preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
   loginForm: FormGroup;
   registerForm: FormGroup;
   loading = false;
@@ -50,13 +50,16 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
 
     this.registerForm = this.formBuilder.group({
-      email: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
+      confirmPassword: ['', Validators.required],
       phoneNumber: ['', Validators.required],
-      gender: ['', Validators.required],
+      gender: [1, Validators.required],
       name: ['', Validators.required],
       address: ['', Validators.required],
       avatar: ['', Validators.required],
+    }, {
+      validator: this.MustMatch('password', 'confirmPassword')
     });
     this.loginForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -65,6 +68,25 @@ export class LoginComponent implements OnInit {
 
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
+
+  MustMatch(controlName: string, matchingControlName: string) {
+    return (formGroup: FormGroup) => {
+        const control = formGroup.controls[controlName];
+        const matchingControl = formGroup.controls[matchingControlName];
+
+        if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+            // return if another validator has already found an error on the matchingControl
+            return;
+        }
+
+        // set error on matchingControl if validation fails
+        if (control.value !== matchingControl.value) {
+            matchingControl.setErrors({ mustMatch: true });
+        } else {
+            matchingControl.setErrors(null);
+        }
+    }
+}
 
   get f() { return this.registerForm.controls; }
   get l() { return this.loginForm.controls; }
@@ -76,6 +98,7 @@ export class LoginComponent implements OnInit {
 
     // stop here if form is invalid
     if (this.registerForm.invalid) {
+      console.log(this.registerForm);
       this.alertService.error('Please recheck your data');
       return;
     } else {
@@ -92,9 +115,9 @@ export class LoginComponent implements OnInit {
               if (url) {
                 this.fb = url;
                 this.authenticationService.register(
-                  this.f.email.value, this.f.password.value, this.f.password.value,  this.f.phoneNumber.value.e164Number, this.fb,
+                  this.f.email.value, this.f.password.value, this.f.password.value, this.f.phoneNumber.value.e164Number, this.fb,
                   this.f.name.value, parseInt(this.f.gender.value), this.f.address.value
-                  )
+                )
                   .pipe(first())
                   .subscribe(
                     data => {
@@ -123,8 +146,8 @@ export class LoginComponent implements OnInit {
     }
   }
   changePreferredCountries() {
-		this.preferredCountries = [CountryISO.India, CountryISO.Canada];
-	}
+    this.preferredCountries = [CountryISO.India, CountryISO.Canada];
+  }
   uploadAvatar(e) {
     this.currentDate = Date.now();
     this.file = e.target.files[0];
