@@ -35,7 +35,7 @@ export class AdminLoginComponent implements OnInit {
   onLogin() {
     console.log(this.loginAdminForm);
     if (this.loginAdminForm.invalid) {
-      alert('invalid');
+      this.alertService.error('Please recheck your data');
       return;
     } else {
       this.authenticationService.login(this.l.email.value, this.l.password.value).pipe(first())

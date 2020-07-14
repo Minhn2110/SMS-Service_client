@@ -181,7 +181,7 @@ export class LoginComponent implements OnInit {
   onLogin() {
     console.log(this.loginForm);
     if (this.loginForm.invalid) {
-      alert('invalid');
+      this.alertService.error('Please recheck your data');
       return;
     } else {
       this.authenticationService.login(this.l.name.value, this.l.password.value).pipe(first())
